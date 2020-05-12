@@ -1,0 +1,11 @@
+import com.groovycalamari.iawriterblog.gradle.IAWriterBlogPlugin
+
+apply plugin: IAWriterBlogPlugin
+
+site {
+    title = 'Sergio del Amo'
+    about = ''
+    url = 'https://sergiodelamo.com'
+    iatemplate = file('templates/IAWriter.iatemplate')
+    keywords = ['geb', 'grails', 'micronaut', 'groovy', 'wordpress', 'woocommerce']
+}
