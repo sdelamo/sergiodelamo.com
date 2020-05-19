@@ -12,7 +12,7 @@ There are two modules to help you with Azure Functions development:
 
 - Simple Azure Functions - [io.microaut.azure:micronaut-azure-function](https://micronaut-projects.github.io/micronaut-azure/snapshot/guide/index.html#simpleAzureFunctions)
 
-- Azure HTTP Functions - [io.microaut.azure:micronaut-azure-function](https://micronaut-projects.github.io/micronaut-azure/snapshot/guide/index.html#azureHttpFunctions)
+- Azure HTTP Functions - [io.microaut.azure:micronaut-azure-function-http](https://micronaut-projects.github.io/micronaut-azure/snapshot/guide/index.html#azureHttpFunctions)
 
 ### Micronaut Simple Azure Functions 
 
