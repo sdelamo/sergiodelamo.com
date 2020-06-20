@@ -1,35 +1,28 @@
 package com.groovycalamari.iawriterblog
 
-import groovy.transform.CompileStatic
-import groovy.transform.ToString
+import edu.umd.cs.findbugs.annotations.NonNull
+import edu.umd.cs.findbugs.annotations.Nullable
 
-@ToString
-@CompileStatic
-class Post {
+interface Post {
 
-    public static final String TITLE = "title"
-    public static final String DESCRIPTION = "description"
-    public static final String DATE = "date"
-    String filename
+    @NonNull
+    Map<String, String> getMetadata()
 
-    Map<String, String> metadata
+    @Nullable
+    String getTitle()
 
-    List<String> lines
+    @Nullable
+    String getDate()
 
-    boolean isBlogPost() {
-        metadata.containsKey(DATE)
-    }
+    @Nullable
+    String getContent()
 
-    String getTitle() {
-        metadata.get(TITLE)
-    }
+    @Nullable
+    String getDescription()
 
-    String getDescription() {
-        metadata.get(DESCRIPTION)
-    }
+    @NonNull
+    String getPath();
 
-
-    String getPath() {
-        return filename.replaceAll(".md", ".html")
-    }
+    @NonNull
+    Type getType()
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 original authors
+ * Copyright 2017-2020 original authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package io.micronaut.rss;
 
-import javax.annotation.Nullable;
+import edu.umd.cs.findbugs.annotations.Nullable;
 import java.time.ZonedDateTime;
 import java.util.List;
 
@@ -271,7 +271,7 @@ public class RssItem {
         /**
          *
          * @param title The title of the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder title(String title) {
             rssItem.setTitle(title);
@@ -281,7 +281,7 @@ public class RssItem {
         /**
          *
          * @param link The URL of the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder link(String link) {
             rssItem.setLink(link);
@@ -291,7 +291,7 @@ public class RssItem {
         /**
          *
          * @param description The item synopsis.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder description(String description) {
             rssItem.setDescription(description);
@@ -301,7 +301,7 @@ public class RssItem {
         /**
          *
          * @param author Email address of the author of the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder author(String author) {
             rssItem.setAuthor(author);
@@ -311,7 +311,7 @@ public class RssItem {
         /**
          *
          * @param category A list of categories.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder category(List<String> category) {
             rssItem.setCategory(category);
@@ -321,7 +321,7 @@ public class RssItem {
         /**
          *
          * @param comments URL of a page for comments relating to the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder comments(String comments) {
             rssItem.setComments(comments);
@@ -331,7 +331,7 @@ public class RssItem {
         /**
          *
          * @param enclosure A media object that is attached to the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder enclosure(RssItemEnclosure enclosure) {
             rssItem.setEnclosure(enclosure);
@@ -341,7 +341,7 @@ public class RssItem {
         /**
          *
          * @param pubDate When the item was published.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder pubDate(ZonedDateTime pubDate) {
             rssItem.setPubDate(pubDate);
@@ -351,7 +351,7 @@ public class RssItem {
         /**
          *
          * @param guid A string that uniquely identifies the item.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder guid(String guid) {
             rssItem.setGuid(guid);
@@ -361,7 +361,7 @@ public class RssItem {
         /**
          *
          * @param source The RSS channel that the item came from.
-         * @return {@link Builder}
+         * @return {@link RssItem.Builder}
          */
         public Builder source(String source) {
             rssItem.setSource(source);

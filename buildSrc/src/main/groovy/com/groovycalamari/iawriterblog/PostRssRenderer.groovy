@@ -8,7 +8,11 @@ import io.micronaut.rss.RssItem
 
 class PostRssRenderer {
 
-    void render(List<Post> posts, String title, String url, String description, File output,
+    void render(List<Post> posts,
+                String title,
+                String url,
+                String description,
+                File output,
                 HtmlRenderer htmlRenderer) {
         RssChannel.Builder builder = RssChannel.builder(title, url, description)
         //builder.pubDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
@@ -18,7 +22,7 @@ class PostRssRenderer {
 //                .managingEditor("editor@example.com")
 //                .webMaster("webmaster@example.com")
 
-        for (Post post : posts) {
+        for (MarkdownPost post : posts) {
             builder.item(RssItem.builder()
                     .title(post.getTitle())
                     .link(UriBuilder.of(URI.create(url)).path(post.path).toString())

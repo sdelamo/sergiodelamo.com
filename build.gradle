@@ -6,6 +6,6 @@ site {
     title = 'Sergio del Amo'
     about = ''
     url = 'https://sergiodelamo.com'
-    iatemplate = file('templates/IAWriter.iatemplate')
+    iatemplate = file('templates/SergioDelAmo.iatemplate')
     keywords = ['geb', 'grails', 'micronaut', 'groovy', 'wordpress', 'woocommerce']
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 original authors
+ * Copyright 2017-2020 original authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package io.micronaut.rss;
 
-import javax.annotation.Nullable;
+import edu.umd.cs.findbugs.annotations.Nullable;
 import java.util.Optional;
 
 /**
@@ -138,8 +138,8 @@ public class RssChannelImage {
      * @param link The URL of the site,
      * @return A Builder to {@link RssChannelImage}.
      */
-    public static Builder builder(String title, String url, String link) {
-        return new Builder(title, url, link);
+    public static RssChannelImage.Builder builder(String title, String url, String link) {
+        return new RssChannelImage.Builder(title, url, link);
     }
 
     /**
@@ -198,9 +198,9 @@ public class RssChannelImage {
         /**
          *
          * @param width width of the image in pixels.
-         * @return The {@link Builder}
+         * @return The {@link RssChannelImage.Builder}
          */
-        public Builder width(Integer width) {
+        public RssChannelImage.Builder width(Integer width) {
             image.setWidth(width);
             return this;
         }
@@ -208,9 +208,9 @@ public class RssChannelImage {
         /**
          *
          * @param height height of the image in pixels.
-         * @return The {@link Builder}
+         * @return The {@link RssChannelImage.Builder}
          */
-        public Builder height(Integer height) {
+        public RssChannelImage.Builder height(Integer height) {
             image.setHeight(height);
             return this;
         }
@@ -218,9 +218,9 @@ public class RssChannelImage {
         /**
          *
          * @param description The longer image description.
-         * @return The {@link Builder}
+         * @return The {@link RssChannelImage.Builder}
          */
-        public Builder description(String description) {
+        public RssChannelImage.Builder description(String description) {
             image.setDescription(description);
             return this;
         }

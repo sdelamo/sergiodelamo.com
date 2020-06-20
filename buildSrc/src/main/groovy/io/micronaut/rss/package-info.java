@@ -13,22 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package io.micronaut.rss;
-
-import java.io.Writer;
-
 /**
- * Interface which defines the render of an {@link io.micronaut.rss.RssChannel} to {@link java.io.Writer}.
+ * RSS related classes in Micronaut.
  *
- * @author Sergio del Amo
+ * @author sdelamo
  * @since 1.0
  */
-public interface RssFeedRenderer {
-    /**
-     * Writes an RSS channel to a {@link java.io.Writer}.
-     * @param rssChannel The RSS channel to render
-     * @param writer A Writer to write the RSS feed into
-     */
-    void render(Writer writer, RssChannel rssChannel);
-}
+package io.micronaut.rss;

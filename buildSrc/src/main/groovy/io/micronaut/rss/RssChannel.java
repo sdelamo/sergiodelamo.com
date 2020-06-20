@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 original authors
+ * Copyright 2017-2020 original authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package io.micronaut.rss;
 
-import javax.annotation.Nullable;
+import edu.umd.cs.findbugs.annotations.Nullable;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -236,7 +236,6 @@ public class RssChannel {
         }
         return Optional.of(cloud);
     }
-
 
     /**
      * ttl stands for time to live. It's a number of minutes that indicates how long a channel can be cached before refreshing from the source. More info here.

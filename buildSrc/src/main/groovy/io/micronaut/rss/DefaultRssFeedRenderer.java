@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 original authors
+ * Copyright 2017-2020 original authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package io.micronaut.rss;
 
-import io.micronaut.core.io.Writable;
+import edu.umd.cs.findbugs.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,8 +39,27 @@ import java.util.Map;
 @Singleton
 public class DefaultRssFeedRenderer implements RssFeedRenderer {
     private static final Logger LOG = LoggerFactory.getLogger(DefaultRssFeedRenderer.class);
-    public static final String CDDATA_CLOSE = "]]>";
-    public static final String CDATA_OPEN = "<![CDATA[";
+    private static final String LOWER_THAN = "<";
+    private static final String DESCRIPTION = "description";
+    private static final String CATEGORY = "category";
+    private static final String LANGUAGE = "language";
+    private static final String COPYRIGHT = "copyright";
+    private static final String PUB_DATE = "pubDate";
+    private static final String HEIGHT = "height";
+    private static final String WIDTH = "width";
+    private static final String TITLE = "title";
+    private static final String LINK = "link";
+    private static final String IMAGE = "image";
+    private static final String URL = "url";
+    private static final String SKIP_HOURS = "skipHours";
+    private static final String HOUR = "hour";
+    private static final String SKIP_DAYS = "skipDays";
+    private static final String DAY = "day";
+    private static final String TEXT_INPUT = "textInput";
+    private static final String NAME = "name";
+    private static final String ITEM = "item";
+    private static final String RSS = "rss";
+    private static final String CHANNEL = "channel";
 
     /**
      *
@@ -71,26 +90,43 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
      * @param sw An XML Stream writer
      * @param rssItem An RSS Item
      */
-    protected void writeRssItem(XMLStreamWriter sw, RssItem rssItem){
-        try {
-            rssItem.getTitle().ifPresent(title -> writeElement(sw, "title", title));
-            rssItem.getLink().ifPresent(link -> writeElement(sw, "link", link));
-
-            rssItem.getDescription().ifPresent(description -> {
-                if (description.contains("<")) {
-                    try {
-                        sw.writeStartElement("description");
-                        sw.writeCData(description);
-                        sw.writeEndElement();
-                    } catch (XMLStreamException e) {
-                        if (LOG.isErrorEnabled()) {
-                            LOG.error(e.getMessage());
-                        }
+    protected void writeRssItemDescription(XMLStreamWriter sw, RssItem rssItem) {
+        rssItem.getDescription().ifPresent(description -> {
+            if (shouldWrapDescriptionWithCData(description)) {
+                try {
+                    sw.writeStartElement(DESCRIPTION);
+                    sw.writeCData(description);
+                    sw.writeEndElement();
+                } catch (XMLStreamException e) {
+                    if (LOG.isErrorEnabled()) {
+                        LOG.error(e.getMessage());
                     }
-                } else {
-                    writeElement(sw, "description", description);
                 }
-            });
+            } else {
+                writeElement(sw, DESCRIPTION, description);
+            }
+        });
+    }
+
+    /**
+     *
+     * @param description RSS Item description
+     * @return Whether description should be wrapped with <![CDATA[ ]]
+     */
+    protected boolean shouldWrapDescriptionWithCData(@NonNull String description) {
+        return description.contains(LOWER_THAN);
+    }
+
+    /**
+     *
+     * @param sw An XML Stream writer
+     * @param rssItem An RSS Item
+     */
+    protected void writeRssItem(XMLStreamWriter sw, RssItem rssItem) {
+        try {
+            rssItem.getTitle().ifPresent(title -> writeElement(sw, TITLE, title));
+            rssItem.getLink().ifPresent(link -> writeElement(sw, "link", link));
+            writeRssItemDescription(sw, rssItem);
             rssItem.getAuthor().ifPresent(author -> writeElement(sw, "author", author));
 
             if (rssItem.getCategory().isPresent()) {
@@ -165,18 +201,18 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
      * @param rssChannel An RSS Channel
      */
     protected void writeRssChannel(XMLStreamWriter sw, RssChannel rssChannel) {
-        writeElement(sw, "title", rssChannel.getTitle());
-        writeElement(sw, "link", rssChannel.getLink());
+        writeElement(sw, TITLE, rssChannel.getTitle());
+        writeElement(sw, LINK, rssChannel.getLink());
         if (rssChannel.getImage().isPresent()) {
             try {
-                sw.writeStartElement("image");
+                sw.writeStartElement(IMAGE);
                 RssChannelImage image = rssChannel.getImage().get();
-                writeElement(sw, "title", image.getTitle());
-                writeElement(sw, "link", image.getLink());
-                writeElement(sw, "url", image.getUrl());
-                image.getWidth().ifPresent(width -> writeElement(sw, "width", width));
-                image.getWidth().ifPresent(height -> writeElement(sw, "height", height));
-                image.getDescription().ifPresent(description -> writeElement(sw, "description", description));
+                writeElement(sw, TITLE, image.getTitle());
+                writeElement(sw, LINK, image.getLink());
+                writeElement(sw, URL, image.getUrl());
+                image.getWidth().ifPresent(width -> writeElement(sw, WIDTH, width));
+                image.getWidth().ifPresent(height -> writeElement(sw, HEIGHT, height));
+                image.getDescription().ifPresent(description -> writeElement(sw, DESCRIPTION, description));
                 sw.writeEndElement();
             } catch (XMLStreamException e) {
                 if (LOG.isErrorEnabled()) {
@@ -184,21 +220,21 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
                 }
             }
         }
-        writeElement(sw, "description", rssChannel.getDescription());
-        rssChannel.getLanguage().ifPresent(language -> writeElement(sw, "language", language.getLanguageCode()));
-        rssChannel.getCopyright().ifPresent(copyright -> writeElement(sw, "copyright", copyright));
-        rssChannel.getPubDate().ifPresent(pubDate -> writeElement(sw, "pubDate", pubDate));
+        writeElement(sw, DESCRIPTION, rssChannel.getDescription());
+        rssChannel.getLanguage().ifPresent(language -> writeElement(sw, LANGUAGE, language.getLanguageCode()));
+        rssChannel.getCopyright().ifPresent(copyright -> writeElement(sw, COPYRIGHT, copyright));
+        rssChannel.getPubDate().ifPresent(pubDate -> writeElement(sw, PUB_DATE, pubDate));
         if (rssChannel.getCategory().isPresent()) {
             for (List<String> categoryList : rssChannel.getCategory().get()) {
-                writeCategory(sw, categoryList, "category");
+                writeCategory(sw, categoryList, CATEGORY);
             }
         }
 
         if (rssChannel.getSkipHours().isPresent()) {
             try {
-            sw.writeStartElement("skipHours");
+            sw.writeStartElement(SKIP_HOURS);
             for (RssSkipHours skipHours : rssChannel.getSkipHours().get()) {
-                writeElement(sw, "hour", String.valueOf(skipHours.getValue()));
+                writeElement(sw, HOUR, String.valueOf(skipHours.getValue()));
             }
             sw.writeEndElement();
             } catch (XMLStreamException e) {
@@ -210,9 +246,9 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
 
         if (rssChannel.getSkipDays().isPresent()) {
             try {
-                sw.writeStartElement("skipDays");
+                sw.writeStartElement(SKIP_DAYS);
                 for (RssSkipDays skipDay : rssChannel.getSkipDays().get()) {
-                    writeElement(sw, "day", String.valueOf(skipDay.getDayName()));
+                    writeElement(sw, DAY, String.valueOf(skipDay.getDayName()));
                 }
                 sw.writeEndElement();
             } catch (XMLStreamException e) {
@@ -225,11 +261,11 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
         if (rssChannel.getTextInput().isPresent()) {
             RssTextInput textInput = rssChannel.getTextInput().get();
             try {
-                sw.writeStartElement("textInput");
-                writeElement(sw, "title", textInput.getTitle());
-                writeElement(sw, "name", textInput.getName());
-                writeElement(sw, "link", textInput.getLink());
-                writeElement(sw, "description", textInput.getDescription());
+                sw.writeStartElement(TEXT_INPUT);
+                writeElement(sw, TITLE, textInput.getTitle());
+                writeElement(sw, NAME, textInput.getName());
+                writeElement(sw, LINK, textInput.getLink());
+                writeElement(sw, DESCRIPTION, textInput.getDescription());
                 sw.writeEndElement();
             } catch (XMLStreamException e) {
                 if (LOG.isErrorEnabled()) {
@@ -241,7 +277,7 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
         if (rssChannel.getItem().isPresent()) {
             for (RssItem rssItem : rssChannel.getItem().get()) {
                 try {
-                    sw.writeStartElement("item");
+                    sw.writeStartElement(ITEM);
                     writeRssItem(sw, rssItem);
                     sw.writeEndElement();
                 } catch (XMLStreamException e) {
@@ -253,39 +289,30 @@ public class DefaultRssFeedRenderer implements RssFeedRenderer {
         }
     }
 
-    /**
-     *
-     * @param rssChannel The RSS Channel
-     * @return The rendered RSS Channel
-     */
     @Override
-    public Writable render(RssChannel rssChannel) {
-        return (writer) -> render(writer, rssChannel);
-    }
-
     public void render(Writer writer, RssChannel rssChannel) {
-        XMLOutputFactory xmlOutputFactory = XMLOutputFactory.newFactory();
-        try {
-            final XMLStreamWriter sw = xmlOutputFactory.createXMLStreamWriter(writer);
+            XMLOutputFactory xmlOutputFactory = XMLOutputFactory.newFactory();
+            try {
+                final XMLStreamWriter sw = xmlOutputFactory.createXMLStreamWriter(writer);
 
-            if (sw != null && rssChannel != null) {
-                sw.writeStartDocument("UTF-8", "1.0");
-                sw.writeStartElement("rss");
-                for (String key : getRssAttributes().keySet()) {
-                    sw.writeAttribute(key, getRssAttributes().get(key));
+                if (sw != null && rssChannel != null) {
+                    sw.writeStartDocument("UTF-8", "1.0");
+                    sw.writeStartElement(RSS);
+                    for (String key : getRssAttributes().keySet()) {
+                        sw.writeAttribute(key, getRssAttributes().get(key));
+                    }
+
+                    sw.writeStartElement(CHANNEL);
+                    writeRssChannel(sw, rssChannel);
+                    sw.writeEndElement();
+
+                    sw.writeEndElement();
+                    sw.writeEndDocument();
                 }
-
-                sw.writeStartElement("channel");
-                writeRssChannel(sw, rssChannel);
-                sw.writeEndElement();
-
-                sw.writeEndElement();
-                sw.writeEndDocument();
+            } catch (XMLStreamException e) {
+                if (LOG.isErrorEnabled()) {
+                    LOG.error(e.getMessage());
+                }
             }
-        } catch (XMLStreamException e) {
-            if (LOG.isErrorEnabled()) {
-                LOG.error(e.getMessage());
-            }
-        }
     }
 }

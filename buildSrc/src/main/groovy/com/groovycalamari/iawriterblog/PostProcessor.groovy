@@ -40,7 +40,7 @@ class PostProcessor {
                         lineNumber++
                     }
                 }
-                posts << new Post(filename: filename, lines: lines, metadata: metadata)
+                posts << new MarkdownPost(filename: filename, lines: lines, metadata: metadata)
             }
         }
         posts

@@ -7,5 +7,5 @@ import javax.validation.constraints.NotNull
 interface HtmlRenderer {
 
     @Nonnull
-    String render(@Nonnull @NotNull @Valid Post post)
+    String render(@Nonnull @NotNull @Valid MarkdownPost post)
 }

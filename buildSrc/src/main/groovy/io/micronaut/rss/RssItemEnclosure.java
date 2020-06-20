@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 original authors
+ * Copyright 2017-2020 original authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,9 @@
 
 package io.micronaut.rss;
 
-import javax.annotation.Nonnull;
+
+import edu.umd.cs.findbugs.annotations.NonNull;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
@@ -35,7 +37,7 @@ public class RssItemEnclosure {
      * The URL attribute points to your podcast content. The file extension specified within the URL attribute determines whether or note content appears in the podcast directory. Supported file formats include M4A, MP3, MOV, MP4, M4V, PDF, and EPUB.
      */
     @NotBlank
-    @Nonnull
+    @NonNull
     private String url;
 
     /**
@@ -43,11 +45,11 @@ public class RssItemEnclosure {
      */
     @Positive
     @NotNull
-    @Nonnull
+    @NonNull
     private Integer length;
 
     @NotNull
-    @Nonnull
+    @NonNull
     private String type;
 
     /**
@@ -85,8 +87,8 @@ public class RssItemEnclosure {
     /**
      * @return A RssItemEnclosure.Builder
      */
-    public static Builder builder() {
-        return new Builder();
+    public static RssItemEnclosure.Builder builder() {
+        return new RssItemEnclosure.Builder();
     }
 
     /**
@@ -121,9 +123,9 @@ public class RssItemEnclosure {
         /**
          *
          * @param url A URL to the podcast content.
-         * @return The {@link Builder}
+         * @return The {@link RssItemEnclosure.Builder}
          */
-        public Builder url(String url) {
+        public RssItemEnclosure.Builder url(String url) {
             enclosure.setUrl(url);
             return this;
         }
@@ -131,9 +133,9 @@ public class RssItemEnclosure {
         /**
          *
          * @param length The file size in bytes.
-         * @return The {@link Builder}
+         * @return The {@link RssItemEnclosure.Builder}
          */
-        public Builder length(Integer length) {
+        public RssItemEnclosure.Builder length(Integer length) {
             enclosure.setLength(length);
             return this;
         }
@@ -141,9 +143,9 @@ public class RssItemEnclosure {
         /**
          *
          * @param type A standard MIME type.
-         * @return The {@link Builder}
+         * @return The {@link RssItemEnclosure.Builder}
          */
-        public Builder type(String type) {
+        public RssItemEnclosure.Builder type(String type) {
             enclosure.setType(type);
             return this;
         }

@@ -60,15 +60,15 @@ class PostRenderer implements com.groovycalamari.iawriterblog.HtmlRenderer {
     private String renderPostWithTemplateContent(@Nonnull @NotNull Map<String, String> sitemeta,
                                                  @Nonnull @NotNull @Valid Post post,
                                                  @NotNull @Nonnull String templateText) {
-        String html = render(post)
+        String html = post instanceof MarkdownPost ? render(post) : post.content
         html = wrapTags(html)
         renderHtmlWithTemplateContent(html, sitemeta + post.metadata, templateText)
     }
 
     @Nonnull
     String renderHtmlWithTemplateContent(@Nonnull @NotNull String html,
-                                                 @Nonnull @NotNull Map<String, String> meta,
-                                                 @NotNull @Nonnull String templateText) {
+                                         @Nonnull @NotNull Map<String, String> meta,
+                                         @NotNull @Nonnull String templateText) {
         String outputHtml = templateText
         String result = outputHtml.replaceAll(' data-document>', ">" + html)
         result = PostProcessor.replaceLineWithMetadata(result, meta)
@@ -76,8 +76,8 @@ class PostRenderer implements com.groovycalamari.iawriterblog.HtmlRenderer {
     }
 
     @Nonnull
-   String render(@Nonnull @NotNull @Valid Post post) {
-        Node document = parser.parse(post.lines.join("\n"))
+   String render(@Nonnull @NotNull @Valid MarkdownPost post) {
+        Node document = parser.parse(post.content)
         return renderer.render(document)
     }
 }

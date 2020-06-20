@@ -10,8 +10,6 @@ import org.gradle.api.plugins.BasePlugin
 @CompileStatic
 class IAWriterBlogPlugin implements Plugin<Project> {
 
-    public static final String TASK_RENDER_TAGS = 'renderTags'
-    public static final String TASK_RENDER_ARCHIVE = 'renderArchive'
     public static final String TASK_RENDER_BLOG = 'renderBlog'
     public static final String EXTENSION_SITE = 'site'
     public static final String TASK_COPY_TEMPLATE_CSS = 'copyTemplateCss'
@@ -19,7 +17,6 @@ class IAWriterBlogPlugin implements Plugin<Project> {
     public static final String TASK_COPY_TEMPLATE_IMAGES = 'copyTemplateImages'
     public static final String TASK_COPY_SOURCE_IMAGES = 'copySourceImages'
     public static final String TASK_COPY_TEMPLATE_JAVASCRIPT = 'copyTemplateJavascript'
-    public static final String TASK_RENDER_RSS = 'renderRss'
     public static final String TASK_BUILD = "build"
     public static final String IATEMPLATE = "iatemplate"
     public static final String[] IMAGE_EXTENSIONS = ["*.png", "*.svg", "*.jpg", "*.jpeg"] as String[]
@@ -36,6 +33,7 @@ class IAWriterBlogPlugin implements Plugin<Project> {
                 task.setProperty("title", siteExtension.title)
                 task.setProperty("url", siteExtension.url)
                 task.setProperty("about", siteExtension.about)
+                task.setProperty("keywords", siteExtension.keywords)
                 if (siteExtension.sourceDir.isPresent()) {
                     task.setProperty(SOURCE_DIR, siteExtension.sourceDir.get())
                 }
@@ -45,48 +43,12 @@ class IAWriterBlogPlugin implements Plugin<Project> {
                 if (siteExtension.robots.isPresent()) {
                     task.setProperty("robots", siteExtension.robots.get())
                 }
-                task.setProperty("keywords", siteExtension.keywords)
-                task.setProperty(IATEMPLATE, siteExtension.iatemplate)
-            }
-        })
-
-        project.tasks.register(TASK_RENDER_ARCHIVE, RenderArchive, { task ->
-            Object extension = project.getExtensions().findByName(EXTENSION_SITE)
-            if (extension instanceof SiteExtension) {
-                SiteExtension siteExtension = ((SiteExtension) extension)
-                task.setProperty("title", siteExtension.title)
-                task.setProperty("url", siteExtension.url)
-                task.setProperty("about", siteExtension.about)
-                if (siteExtension.sourceDir.isPresent()) {
-                    task.setProperty(SOURCE_DIR, siteExtension.sourceDir.get())
-                }
-                if (siteExtension.outputDir.isPresent()) {
-                    task.setProperty(OUTPUT_DIR, siteExtension.outputDir.get())
+                if (siteExtension.robotsTags.isPresent()) {
+                    task.setProperty("robotsTags", siteExtension.robotsTags.get())
                 }
                 if (siteExtension.robotsArchive.isPresent()) {
-                    task.setProperty("robots", siteExtension.robotsArchive.get())
+                    task.setProperty("robotsArchive", siteExtension.robotsArchive.get())
                 }
-                task.setProperty("keywords", siteExtension.keywords)
-                task.setProperty(IATEMPLATE, siteExtension.iatemplate)
-            }
-        })
-        project.tasks.register(TASK_RENDER_TAGS, RenderTags, { task ->
-            Object extension = project.getExtensions().findByName(EXTENSION_SITE)
-            if (extension instanceof SiteExtension) {
-                SiteExtension siteExtension = ((SiteExtension) extension)
-                task.setProperty("title", siteExtension.title)
-                task.setProperty("url", siteExtension.url)
-                task.setProperty("about", siteExtension.about)
-                if (siteExtension.sourceDir.isPresent()) {
-                    task.setProperty(SOURCE_DIR, siteExtension.sourceDir.get())
-                }
-                if (siteExtension.outputDir.isPresent()) {
-                    task.setProperty(OUTPUT_DIR, siteExtension.outputDir.get())
-                }
-                if (siteExtension.robotsTags.isPresent()) {
-                    task.setProperty("robots", siteExtension.robotsTags.get())
-                }
-                task.setProperty("keywords", siteExtension.keywords)
                 task.setProperty(IATEMPLATE, siteExtension.iatemplate)
             }
         })
@@ -133,21 +95,6 @@ class IAWriterBlogPlugin implements Plugin<Project> {
                 }
             }
         })
-        project.tasks.register(TASK_RENDER_RSS, RenderRss, { task ->
-            Object extension = project.getExtensions().findByName(EXTENSION_SITE)
-            if (extension instanceof SiteExtension) {
-                SiteExtension siteExtension = ((SiteExtension) extension)
-                task.setProperty("title", siteExtension.title)
-                task.setProperty("url", siteExtension.url)
-                task.setProperty("about", siteExtension.about)
-                if (siteExtension.sourceDir.isPresent()) {
-                    task.setProperty(SOURCE_DIR, siteExtension.sourceDir.get())
-                }
-                if (siteExtension.outputDir.isPresent()) {
-                    task.setProperty(OUTPUT_DIR, siteExtension.outputDir.get())
-                }
-            }
-        })
 
         project.tasks.register(TASK_COPY_SOURCE_IMAGES, CopySourceImages, { task ->
             Object extension = project.getExtensions().findByName(EXTENSION_SITE)
@@ -166,14 +113,11 @@ class IAWriterBlogPlugin implements Plugin<Project> {
             @Override
             void execute(Task task) {
                 task.dependsOn(TASK_RENDER_BLOG)
-                task.dependsOn(TASK_RENDER_ARCHIVE)
-                task.dependsOn(TASK_RENDER_TAGS)
                 task.dependsOn(TASK_COPY_TEMPLATE_CSS)
                 task.dependsOn(TASK_COPY_TEMPLATE_FONTS)
                 task.dependsOn(TASK_COPY_TEMPLATE_IMAGES)
                 task.dependsOn(TASK_COPY_TEMPLATE_JAVASCRIPT)
                 task.dependsOn(TASK_COPY_TEMPLATE_CSS)
-                task.dependsOn(TASK_RENDER_RSS)
                 task.dependsOn(TASK_COPY_SOURCE_IMAGES)
             }
         })
