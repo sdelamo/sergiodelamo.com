@@ -24,4 +24,4 @@ jobs:
 
       - name: Copy files to bucket with the AWS CLI
         run: |
-          aws s3 sync build s3://sergiodelamo.com
+          aws s3 sync build/dist s3://sergiodelamo.com
