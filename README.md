@@ -1,1 +1,3 @@
-# Sergio del Amo Blog
+# sergiodelamo.com
+
+Build sergiodelamo.com website

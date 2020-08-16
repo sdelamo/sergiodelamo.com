@@ -1,11 +1,16 @@
-import com.groovycalamari.iawriterblog.gradle.IAWriterBlogPlugin
+import io.micronaut.gradle.MicronautWebsitePlugin
 
-apply plugin: IAWriterBlogPlugin
+apply plugin: MicronautWebsitePlugin
 
-site {
-    title = 'Sergio del Amo'
-    about = ''
-    url = 'https://sergiodelamo.com'
-    iatemplate = file('templates/SergioDelAmo.iatemplate')
-    keywords = ['geb', 'grails', 'micronaut', 'groovy', 'wordpress', 'woocommerce']
+micronaut {
+    assets = file("assets")
+    posts = file("posts")
+    pages = file("pages")
+    template = file("templates/document.html")
+    output = project.buildDir
+    title = 'Sergio del Amo Blog'
+    url = System.getenv('GITHUB_RUN_ID') != null ? 'https://sergiodelamo.com' : 'http://localhost:8890'
+    description = 'Personal blog of Sergio del Amo'
+    keywords = ['gradle', 'spock', 'geb', 'grails', 'groovy','java', 'wordpress', 'woocommerce', 'micronaut']
+    robots = 'all'
 }
