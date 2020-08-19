@@ -128,13 +128,11 @@ class RenderSiteTask extends DefaultTask {
         } else {
             resolvedMetadata.put("CSS", "")
         }
-
         if (resolvedMetadata.containsKey("JAVASCRIPT")) {
             resolvedMetadata.put("JAVASCRIPT", "<script src='" + resolvedMetadata['JAVASCRIPT'] + "'></script>")
         } else {
             resolvedMetadata.put("JAVASCRIPT", "")
         }
-
         if (!resolvedMetadata.containsKey("HTML header")) {
             resolvedMetadata.put("HTML header", "")
         }

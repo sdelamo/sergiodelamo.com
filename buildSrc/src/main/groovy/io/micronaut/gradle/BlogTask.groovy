@@ -291,6 +291,7 @@ class BlogTask extends DefaultTask {
             }
             File tagFile = new File("${outputDir.absolutePath}/tag/${tag}.html")
             tagFile.createNewFile()
+
             renderArchive(tagFile, postsTagged, templateText, globalMetadata, "Tag: $tag")
         }
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
