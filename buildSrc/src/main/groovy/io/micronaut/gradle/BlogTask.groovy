@@ -309,7 +309,8 @@ class BlogTask extends DefaultTask {
             "<article class='post'><h2><a href=\"/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}</p></article>"
         }.join("\n")
 
-        String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, metadata, templateText)
+        Map<String, String> m = RenderSiteTask.processMetadata(metadata)
+        String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
         output.createNewFile()
         output.text = renderedHtml
     }
