@@ -295,7 +295,6 @@ class BlogTask extends DefaultTask {
             renderArchive(tagFile, postsTagged, templateText, globalMetadata, "Tag: $tag")
         }
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
-        //renderTags(globalMetadata, outputDir, tagsMap.keySet(), listOfPosts, templateText)
         renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
     }
 
@@ -310,7 +309,8 @@ class BlogTask extends DefaultTask {
             "<article class='post'><h2><a href=\"/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}</p></article>"
         }.join("\n")
 
-        Map<String, String> m = RenderSiteTask.processMetadata(metadata)
+        Map<String, String> m = new HashMap<>(metadata)
+        m = RenderSiteTask.processMetadata(m)
         String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
         output.createNewFile()
         output.text = renderedHtml
@@ -332,46 +332,6 @@ class BlogTask extends DefaultTask {
 
     static String postLink(HtmlPost post) {
         post.metadata.url + '/' + BLOG + '/' + post.path
-    }
-
-    @CompileDynamic
-    private static String postCard(HtmlPost htmlPost) {
-        String imageUrl = htmlPost.metadata['image'] ? (htmlPost.metadata.url + '/' + IMAGES + '/' + htmlPost.metadata['image']) : null
-        StringWriter writer = new StringWriter()
-        MarkupBuilder mb = new MarkupBuilder(writer)
-        mb.article(class: 'blogcard', style: imageUrl ? 'background-image: url(' + imageUrl + ')' : '') {
-            a(href: postLink(htmlPost)) {
-                h3 {
-                    mkp.yield RenderSiteTask.formatDate(htmlPost.metadata.date)
-                }
-                h2 {
-                    mkp.yield htmlPost.metadata.title
-                }
-            }
-        }
-        writer.toString()
-    }
-
-    @CompileDynamic
-    private static String renderTagTitle(String tag) {
-        StringWriter writer = new StringWriter()
-        MarkupBuilder mb = new MarkupBuilder(writer)
-        mb.h1 {
-            span 'Tag:'
-            b tag
-        }
-        writer.toString()
-    }
-
-    @CompileDynamic
-    private static String tagsCard(Map<String, String> sitemeta, Set<Tag> tags) {
-        StringWriter writer = new StringWriter()
-        MarkupBuilder mb = new MarkupBuilder(writer)
-        mb.article(class: 'tagcloud blogcard desktop') {
-            h3 'Post by Tag'
-            mkp.yieldUnescaped TagCloud.tagCloud(sitemeta['url'] + "/" + BLOG + "/" + TAG , tags, false)
-        }
-        return writer.toString()
     }
 
       private static void renderRss(Map<String, String> sitemeta, List<RssItem> rssItems, File outputFile) {
