@@ -400,8 +400,8 @@ class BlogTask extends DefaultTask {
         builder.lastBuildDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
                 .docs("http://blogs.law.harvard.edu/tech/rss")
                 .generator("Micronaut RSS")
-                .managingEditor("sergio.delamo@softamo.com")
-                .webMaster("sergio.delamo@softamo.com")
+                .managingEditor("sergio.delamo@hey.com")
+                .webMaster("sergio.delamo@hey.com")
         for (RssItem item : rssItems) {
             builder.item(item)
         }

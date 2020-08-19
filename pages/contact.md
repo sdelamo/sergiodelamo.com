@@ -6,7 +6,7 @@ description: Link to Sergio del Amo social media accounts ( twitter, Linked In),
 
 Phone: <a href="tel:34630442937">+34 630 44 29 73</a>
 
-Email: <a href="mailto:sergio.delamo@softamo.com">sergio.delamo@softamo.com</a>
+Email: <a href="mailto:sergio.delamo@hey.com">sergio.delamo@hey.com</a>
 
 Twitter: [@sdelamo](https://twitter.com/sdelamo)
 
