@@ -328,28 +328,6 @@ class BlogTask extends DefaultTask {
         }
     }
 
-    static void renderTags(Map<String, String> metadata,
-                           File outputDir,
-                           Set<String> tags,
-                           List<HtmlPost> posts,
-                           String templateText) {
-        File tagFolder = new File(outputDir.absolutePath + "/${TAG}")
-        tagFolder.mkdir()
-
-        Map<String, String> resolvedMetadata = RenderSiteTask.processMetadata(metadata)
-
-        for (String tag : tags) {
-            List<String> tagCards = []
-            List<HtmlPost> postsTagged = posts.findAll { it.tags.contains(tag) }
-            for (HtmlPost post : postsTagged) {
-                tagCards << postCard(post)
-            }
-            File tagFile = new File("${tagFolder.absolutePath}/${tag}.html")
-            resolvedMetadata['title'] = "${tag.toUpperCase()} | Blog | Micronaut Framework".toString()
-//            renderCards(tagFile, tagCards, resolvedMetadata, templateText, renderTagTitle(tag))
-        }
-    }
-
     static String postLink(HtmlPost post) {
         post.metadata.url + '/' + BLOG + '/' + post.path
     }
