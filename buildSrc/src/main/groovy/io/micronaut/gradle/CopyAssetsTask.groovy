@@ -17,6 +17,8 @@ class CopyAssetsTask extends DefaultTask {
     static final String[] CSS_EXTENSIONS = ["*.css"] as String[]
     static final String[] IMAGE_EXTENSIONS = ["*.png", "*.svg", "*.jpg", "*.jpeg", "*.gif"]
 
+    static final String[] PDF_EXTENSIONS = ["*.pdf"]
+
     @InputDirectory
     final Property<File> assets = project.objects.property(File)
 
@@ -29,6 +31,7 @@ class CopyAssetsTask extends DefaultTask {
         copyCss()
         copyJavascripts()
         copyFonts()
+        copyPdfs()
     }
 
     File dist() {
@@ -65,6 +68,20 @@ class CopyAssetsTask extends DefaultTask {
                 copySpec.from(stylesheets)
                 copySpec.into(outputStylesheets)
                 copySpec.include(CSS_EXTENSIONS)
+            }
+        })
+    }
+
+    void copyPdfs() {
+        File outputFonts = new File(dist().absolutePath + '/pdfs')
+        outputFonts.mkdir()
+        File fonts = new File(assets.get().absolutePath + '/pdfs')
+        project.copy(new Action<CopySpec>() {
+            @Override
+            void execute(CopySpec copySpec) {
+                copySpec.from(fonts)
+                copySpec.into(outputFonts)
+                copySpec.include(PDF_EXTENSIONS)
             }
         })
     }
