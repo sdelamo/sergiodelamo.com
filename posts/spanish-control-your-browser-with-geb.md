@@ -1,10 +1,11 @@
-title:[Spanish] Control your browser with Geb
+title: Northem Quality - Control your browser with Geb
 date:July 11, 2019
+description: Video of my talk at Northem Quality user group
 ---
 
 # [%title] 
 
-#geb
+Tags: #geb
  
 [Northem Quality Community](https://northemquality.github.io/eventos_pasados.html), an online testing community, invited me to talk about Geb on June 20th.  This is a video of the talk. 
 

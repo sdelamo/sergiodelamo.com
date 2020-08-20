@@ -7,7 +7,7 @@
     <meta name="date" content="[%date]" />
     <meta name="robots" content="[%robots]"/>
     <meta charset="UTF-8">
-    <link rel="stylesheet" media="all" href="[%url]/stylesheets/iawriter.css">
+    <link rel="stylesheet" media="all" href="[%url]/stylesheets/screen.css">
     <link rel="stylesheet" media="all" href="[%url]/stylesheets/prism.css">
     <script src="[%url]/javascripts/prism.js"></script>
     <link rel=alternate type=application/rss+xml title=RSS href=[%url]/rss.xml />
@@ -18,11 +18,12 @@
 <body>
 <header class="header">
     <div class="wrapper">
-        <a href="/index.html" title="Sergio del Amo Home" class="logo" rel="home">Sergio del Amo</a>
-        <nav>
+        <a href="/index.html" title="Sergio del Amo Home" class="logo align-center" rel="home">Sergio del Amo</a>
+        <nav class="desktop">
             <ul>
                 <li><a href="/blog/index.html">Archive</a></li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blog/tag/slides.html">Slides</a></li>
                 <li><a href="/pdfs/CVSergioDelAmo.pdf">CV</a></li>
             </ul>
         </nav>
@@ -33,5 +34,15 @@
         <article data-document>&nbsp;</article>
     </div>
 </div>
+<footer>
+    <nav class="mobile align-center">
+        <ul>
+            <li><a href="/blog/index.html">Archive</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/blog/tag/slides.html">Slides</a></li>
+            <li><a href="/pdfs/CVSergioDelAmo.pdf">CV</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

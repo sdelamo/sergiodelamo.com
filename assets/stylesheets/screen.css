@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 @font-face {
     font-family: "iAWriterQuattroSBold";
     src: url("../fonts/IAWriterQuattroS-Bold.eot") format("eot"),
@@ -46,6 +95,10 @@ body {
     font-family: iAWriterQuattroSRegular, Helvetica,Arial, sans-serif
 }
 
+footer {
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 30px;
     line-height: 1.1;
@@ -81,9 +134,36 @@ a:hover {
 p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
     margin-top: 2em;
 }
+.clear {
+    clear: both;
+}
+.align-left {
+    float: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    float: right;
+}
+.mobile {
+    display: block;
+}
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 961px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}
 
 .header {
-    height: 80px;
+    height: 60px;
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: #fff;
@@ -92,20 +172,21 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .header .logo {
-    margin-top: -4px;
-    height: 61px;
-    width: 294px;
-    float: left;
     background-size: 100%;
     background-image: url(../images/sergiodelamo.png);
     background-repeat: no-repeat;
     background-position: center center;
     text-indent: -999em;
+    height: 61px;
+    width: 294px;
     text-align: left;
+    float: left;
+    margin: 0 auto;
 }
 
 .header nav li {
     display: inline;
+    vertical-align: middle;
     margin-left: 8px;
     padding: 0;
     font-family: iAWriterQuattroSRegular,Helvetica,Arial,sans-serif;
@@ -131,5 +212,10 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .container {
-    margin: 48px 0;
+    margin: 30px 0;
+}
+
+h1,
+.post {
+    margin-bottom: 20px;
 }
