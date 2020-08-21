@@ -2,6 +2,10 @@ title: Codemotion - Spiders, Webbots and scrapers with Geb
 date: Nov 18, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/aranas-webbots-y-scrapers-con-geb
 description: Slides from my talk at Codemotion 2016
+eventLanguage: Spanish
+eventName: Codemotin
+eventDate: Nov 18, 2016
+eventCity: Madrid
 ---
 
 # [%title]
