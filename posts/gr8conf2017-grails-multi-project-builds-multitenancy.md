@@ -1,14 +1,19 @@
 title: GR8Conf 2017 - Grails Multi-Project Builds & Multi tenancy
 date: Jun 1, 2017
+video: https://www.youtube.com/watch?v=Dkdmdw2ZE3E
 speakerdeck: https://speakerdeck.com/sdelamo/grails-multi-project-builds-multitenancy
 description: Slides from my talk at GR8Conf 2017.
+eventName: GR8Conf EU
+eventCity: Copenhagen
+eventDate: Jun 01, 2017
+eventLanguage: English
 ---
 
 # [%title]
 
 [%date]
 
-Tags: #slides #grail #gradle #multitenancy
+Tags: #slides #grail #gradle #multitenancy #video
 
 [%description]
 
