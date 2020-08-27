@@ -224,16 +224,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.post ol,
-.post ul {
+.wrapper ol,
+.wrapper ul {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 20px !important;
 }
-.post iframe {
+.wrapper iframe {
     overflow: auto;
     margin-bottom: 20px !important;
 }
-.post p {
+.wrapper p {
     margin-bottom: 20px;
 }
