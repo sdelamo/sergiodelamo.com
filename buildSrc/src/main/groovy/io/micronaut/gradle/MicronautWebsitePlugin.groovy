@@ -19,7 +19,6 @@ class MicronautWebsitePlugin implements Plugin<Project> {
     public static final String GROUP_MICRONAUT = 'micronaut'
     public static final String TASK_RENDER_BLOG = 'renderBlog'
 
-
     @Override
     void apply(Project project) {
         project.getPlugins().apply(BasePlugin.class)
