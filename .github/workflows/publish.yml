@@ -25,3 +25,6 @@ jobs:
       - name: Copy files to bucket with the AWS CLI
         run: |
           aws s3 sync build/dist s3://sergiodelamo.com
+      - name: Invalidate archive   
+        run: |
+          aws cloudfront create-invalidation --distribution-id ECETJB04M75S7 --paths "/blog/index.html"
