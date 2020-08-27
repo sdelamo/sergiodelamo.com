@@ -1,6 +1,6 @@
 ---
 title: Micronaut Java libray to consume the Curated API.
-date: Aug 27, 2020
+date: Aug 27, 2020 10:39
 description: Today, I published a Java libray to consume the Curated API. It is built with Micronaut and you can use it in a Micronaut app or as a standalone library.
 ---
 
