@@ -1,6 +1,6 @@
 package io.micronaut.gradle
 
-
+import groovy.time.TimeCategory
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import groovy.xml.MarkupBuilder
@@ -116,8 +116,13 @@ class BlogTask extends DefaultTask {
         copyBlogImages()
     }
 
+    @CompileDynamic
     static List<MarkdownPost> filterOutFuturePosts(List<MarkdownPost> posts) {
-        posts.findAll { post -> !parseDate(post.date).after(new Date()) }
+        Date d = new Date()
+        use(TimeCategory) {
+            d = d - 1.day
+        }
+        posts.findAll { post -> !parseDate(post.date).after(d) }
     }
 
     static Date parseDate(String date) throws ParseException {
