@@ -120,7 +120,7 @@ class BlogTask extends DefaultTask {
     static List<MarkdownPost> filterOutFuturePosts(List<MarkdownPost> posts) {
         Date d = new Date()
         use(TimeCategory) {
-            d = d - 1.day
+            d += 1.day
         }
         posts.findAll { post -> !parseDate(post.date).after(d) }
     }
