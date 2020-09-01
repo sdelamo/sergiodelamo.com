@@ -120,9 +120,18 @@ h3 {
     line-height: 1.7;
 }
 
-p, ul, ol {
+td, th, p, ul, ol {
     font-size: 18px;
     line-height: 1.8;
+}
+
+td, th {
+    padding: 10px 5px;
+    text-align: left;
+}
+th {
+    font-weight: bold;
+    border-bottom: 2px solid #333333;
 }
 
 a,
