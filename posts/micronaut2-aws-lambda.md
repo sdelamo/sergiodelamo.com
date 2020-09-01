@@ -14,9 +14,9 @@ Tags: #micronaut #aws #lambda
 
 [Continue reading on Micronaut Blog](https://micronaut.io/blog/2020-08-31-micronaut-2-aws-lambda.html)
 
-I wrote several companion [Micronaut Guides](https://guides.micronaut.io):
+Moreover, I wrote several companion [Micronaut Guides](https://guides.micronaut.io):
 
-| Application Type | Runtime | Tutorial |
+| Type | Runtime | Tutorial |
 | --- | --- | --- | 
 | Application | Java 11 | Deploy a Micronaut application to AWS Lambda Java 11 Runtime [JAVA](https://guides.micronaut.io/mn-application-aws-lambda-java11/guide/index.html) [KOTLIN](https://guides.micronaut.io/mn-application-aws-lambda-java11-kotlin/guide/index.html) [GROOVY](https://guides.micronaut.io/mn-application-aws-lambda-java11-groovy/guide/index.html)
 | Application | GraalVM Native Image Custom Runtime | Deploy a Micronaut application as a GraalVM Native Image to AWS Lambda [JAVA](https://guides.micronaut.io/mn-application-aws-lambda-graalvm/guide/index.html) [KOTLIN](https://guides.micronaut.io/mn-application-aws-lambda-graalvm-kotlin/guide/index.html)
