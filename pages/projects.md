@@ -4,7 +4,11 @@ description: Links to Sergio del Amo's projects
 
 ## 🖥 Micronaut Java Libraries
 
-- [Micronaut Java libray to consume the Curated API](https://sdelamo.github.io/curatedapi/index.html)
+- [Micronaut Curated API](https://sdelamo.github.io/curatedapi/index.html)  
+Micronaut Java library to consume [Curated](https://curated.co) API. 
+
+- [Micronaut Euro Rates](https://sdelamo.github.io/eurorates/index.html).  
+Micronaut Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
 
 ## 🤖 💬 Chatbots
 
