@@ -329,7 +329,7 @@ class BlogTask extends DefaultTask {
         String html = "<h1>${title}</h1>"
 
         html += posts.collect { post ->
-            "<article class='post'><h2><a href=\"/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}</p></article>"
+            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}</p></article>"
         }.join("\n")
 
         Map<String, String> m = new HashMap<>(metadata)
