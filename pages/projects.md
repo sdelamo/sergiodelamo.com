@@ -2,6 +2,11 @@ title: Projects
 description: Links to Sergio del Amo's projects
 ---
 
+## 🐘 Gradle Plugins
+
+- [Podcast Gradle Plugin](https://sdelamo.github.io/podcast-gradle-plugin/index.html)  
+Gradle plugin to generate a Podcast RSS feed.
+
 ## 🖥 Micronaut Java Libraries
 
 - [Micronaut Curated API](https://sdelamo.github.io/curatedapi/index.html)  
