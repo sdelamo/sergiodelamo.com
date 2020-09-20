@@ -1,3 +1,4 @@
+---
 title: Projects
 description: Links to Sergio del Amo's projects
 ---
