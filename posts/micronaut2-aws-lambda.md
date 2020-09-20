@@ -1,5 +1,5 @@
 ---
-title: Micronaut 2: AWS Lambda Functions (Micronaut Blog)
+title: Micronaut 2: AWS Lambda Functions 🔗 
 date: Sep 1, 2020
 description: Micronaut 2 brings improvements to the way you write AWS Lambda functions. There are several things to consider (what's is your Lambda trigger, are you able to write a GraalVM Native Image of the function) which define what dependencies do you need, what is your handler, how to mitigate cold startup. 
 ---
