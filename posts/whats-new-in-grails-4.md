@@ -1,7 +1,9 @@
-title: Madrid GUG - What's new with Grails 4
+---
+title: Madrid GUG - What's new with Grails 4 🎥 👨🏼‍🏫
 date: Sep 17, 2019
 speakerdeck: https://speakerdeck.com/sdelamo/whats-new-in-grails-4
 description: Slides from my talk at Madrid Groovy User Group
+video: https://www.youtube.com/watch?v=LrFMeG9uKb4
 ---
 
 # [%title]
