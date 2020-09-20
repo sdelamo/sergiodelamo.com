@@ -1,5 +1,6 @@
+---
 title: Grails Programmer : How to output CSV from a Grails 3  Controller
-date: Sep 20, 2020 06:46
+date: Sep 20, 2019 06:46
 ---
 
 # [%title]
@@ -8,8 +9,8 @@ date: Sep 20, 2020 06:46
 
 Tags: #grails
 
-```
-$ grails -version
+```bash
+% grails -version
 Grails Version: 3.1.11
 | Groovy Version: 2.4.7
 | JVM Version: 1.8.0_45
@@ -17,22 +18,22 @@ Grails Version: 3.1.11
 
 Create an app with the default web profile.
 
-```
+```bash
 grails create-app csv
 Application created at /Users/groovycalamari/Documents/tests/csv
 ```
 
 Enter the grails console
 
-```
-$ cd csv
-$ grais
+```bash
+% cd csv
+% grais
 ```
 
 Create a domain class
 
-```
-grails&amp;gt; create-domain-class Book
+```bash
+grails> create-domain-class Book
 | Created grails-app/domain/csv/Book.groovy
 | Created src/test/groovy/csv/BookSpec.groovy
 ```
