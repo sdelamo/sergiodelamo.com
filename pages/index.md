@@ -11,7 +11,7 @@ I write [Groovy Calamari](http://groovycalamari.com). A curated email publicatio
 
 ## 👨🏼‍🏫 Greach Conf
 
-I organize [Greach Conf](https://greachconf). A conference around microservices, JVM frameworks & JVM Languages (Java, Groovy, Kotlin, Micronaut, Quarkus, SpringBoot, Grails, Geb, Spock, Griffon, Ratpack ... )
+I organize [Greach Conf](https://greachconf). A conference around microservices, JVM frameworks (Quarkus, SpringBoot, Grails, Geb, Spock, Griffon, Ratpack) & JVM Languages (Java, Groovy, Kotlin, Micronaut,  ... ).
 
 ## 🐘 Gradle Plugins
 
