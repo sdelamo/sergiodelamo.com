@@ -10,7 +10,7 @@ description: Gradle podcast plugin allows you to create a Podcast RSS feed with 
 
 Tags: #gradle #rss
 
-Last week, I published my first [Gradle plugin](https://plugins.gradle.org). It is a podcast to create a Podcast RSS feed. Internally it uses [micronaut-itunespodcast](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html#itunespodcast) module.
+Last week, I published my first [Gradle plugin](https://plugins.gradle.org). It eases the creation of a Podcast RSS feed. Internally it uses [micronaut-itunespodcast](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html#itunespodcast) module.
 
 The plugin has an extension to configure your Podcast metadata
 
