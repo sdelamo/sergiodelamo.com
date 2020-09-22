@@ -94,7 +94,9 @@ body {
     background-color: #fafafa;
     font-family: iAWriterQuattroSRegular, -apple-system, "Helvetica Neue", Helvetica, sans-serif;
 }
-
+code {
+   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
 footer {
     margin-bottom: 20px;
 }
