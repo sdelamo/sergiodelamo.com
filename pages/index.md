@@ -15,6 +15,9 @@ I organize [Greach Conf](https://greachconf). A conference around microservices,
 
 ## 🐘 Gradle Plugins
 
+- [Build Info Gradle Plugin](https://sdelamo.github.io/build-info-gradle-plugin/index.html)  
+Gradle plugin to generate a build-info.properties file. To be used in combination with the info endpoint of  a Micronaut app. 
+
 - [Podcast Gradle Plugin](https://sdelamo.github.io/podcast-gradle-plugin/index.html)  
 Gradle plugin to generate a Podcast RSS feed.
 
