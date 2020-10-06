@@ -5,13 +5,13 @@ speakerdeck: https://speakerdeck.com/sdelamo/apachecon-2020-micronaut-plus-groov
 description: Slides from my talk at ApacheCon 2020 about Micronaut and Groovy
 ---
 
-# [%%title]
+# [%title]
 
-[%%date]
+[%date]
 
 Tags: #micronaut #groovylang
 
-[%%description]
+[%description]
 
 Talk at ApacheCon 2020 about Micronaut and Groovy. The team behind Micronaut is the same team behind [Grails](https://grails.org). Thus, there is a deep care and appreciation for Groovy in the core Micronaut development team. 
 
