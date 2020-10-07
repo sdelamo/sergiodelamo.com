@@ -24,3 +24,5 @@ The deck covers:
 - Micronaut + Geb
 - GORM for Hibernate
 - Micronaut GORM Multi-tenancy
+
+<script async class="speakerdeck-embed" data-id="0372abab3ced44dbbd2a880339aab1f0" data-ratio="1.77469670710572" src="//speakerdeck.com/assets/embed.js"></script>
