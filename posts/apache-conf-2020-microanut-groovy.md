@@ -1,6 +1,6 @@
 ---
 title:  ApacheCon 2020 - Micronaut + Groovy
-date: Oct 6, 2020
+date: Oct 6, 2020 10:30
 speakerdeck: https://speakerdeck.com/sdelamo/apachecon-2020-micronaut-plus-groovy
 description: Slides from my talk at ApacheCon 2020 about Micronaut and Groovy
 ---

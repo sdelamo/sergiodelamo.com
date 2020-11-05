@@ -1,5 +1,6 @@
 package io.micronaut.gradle
 
+import groovy.json.JsonOutput
 import groovy.time.TimeCategory
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
@@ -14,6 +15,9 @@ import io.micronaut.rss.DefaultRssFeedRenderer
 import io.micronaut.rss.RssChannel
 import io.micronaut.rss.RssFeedRenderer
 import io.micronaut.rss.RssItem
+import io.micronaut.rss.jsonfeed.JsonFeed
+import io.micronaut.rss.jsonfeed.JsonFeedAuthor
+import io.micronaut.rss.jsonfeed.JsonFeedItem
 import io.micronaut.tags.Tag
 import io.micronaut.tags.TagCloud
 import org.gradle.api.Action
@@ -26,22 +30,34 @@ import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
+import org.gradle.internal.impldep.com.google.api.client.json.Json
 
 import javax.annotation.Nonnull
+import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
+import java.time.DateTimeException
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
 import java.util.stream.Collectors
+import groovy.json.JsonBuilder
 
 @CompileStatic
 class BlogTask extends DefaultTask {
+
+    static DateFormat JSON_FEED_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mmZ")
+    static {
+        TimeZone tz = TimeZone.getTimeZone("Europe/Madrid")
+        JSON_FEED_FORMAT.setTimeZone(tz)
+    }
     static final SimpleDateFormat MMM_D_YYYY_HHMM = new SimpleDateFormat("MMM d, yyyy HH:mm")
     static final SimpleDateFormat MMM_D_YYYY = new SimpleDateFormat("MMM d, yyyy")
     static final SimpleDateFormat MMMM_D_YYYY = new SimpleDateFormat("MMMM d, yyyy")
     public static final String RSS_FILE = 'rss.xml'
+    public static final String JSONFEED_FILE = 'feed.json'
     public static final String IMAGES = 'images'
     final static String HASHTAG_SPAN = "<span class=\"hashtag\">#"
     final static String SPAN_CLOSE = "</span>"
@@ -280,6 +296,7 @@ class BlogTask extends DefaultTask {
                             File outputDir,
                             final String templateText) {
         List<RssItem> rssItems = []
+        List<JsonFeedItem> feedItems = []
         Map<String, List<String>> tagPosts = [:]
         Map<String, Integer> tagsMap = [:]
 
@@ -298,12 +315,20 @@ class BlogTask extends DefaultTask {
                 tagPosts[postTag] << htmlPost.path
             }
             String postLink = postLink(htmlPost)
+            String uuid = htmlPost.path.replace(".html", "")
             rssItems.add(rssItemWithPage(htmlPost.metadata.title,
                     parseDate(htmlPost.metadata.date),
                     postLink,
-                    htmlPost.path.replace(".html", ""),
+                    uuid,
                     htmlPost.html,
                     htmlPost.metadata.author))
+            feedItems.add(JsonFeedItem.builder()
+                    .title(htmlPost.metadata.title as String)
+                    .datePublished(JSON_FEED_FORMAT.format(parseDate(htmlPost.metadata.date)))
+                    .url(postLink)
+                    .id(uuid)
+                    .contentHtml(htmlPost.html)
+                    .build())
         }
         Set<Tag> tags = tagsMap.collect { k, v -> new Tag(title: k, ocurrence: v) } as Set<Tag>
         for (String tag : tagsMap.keySet()) {
@@ -318,6 +343,7 @@ class BlogTask extends DefaultTask {
             renderArchive(tagFile, postsTagged, templateText, globalMetadata, "Tag: $tag")
         }
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
+        renderJsonFeed(globalMetadata, feedItems, new File(outputDir.absolutePath + "/../" + JSONFEED_FILE))
         renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
     }
 
@@ -357,7 +383,25 @@ class BlogTask extends DefaultTask {
         post.metadata.url + '/' + BLOG + '/' + post.path
     }
 
-      private static void renderRss(Map<String, String> sitemeta, List<RssItem> rssItems, File outputFile) {
+    private static void renderJsonFeed(Map<String, String> sitemeta, List<JsonFeedItem> items, File outputFile) {
+        JsonFeed jsonFeed = JsonFeed.builder()
+                .version(JsonFeed.VERSION_JSON_FEED_1_1)
+                .title("Sergio del Amo's Blog")
+                .description(sitemeta.description)
+                .author(JsonFeedAuthor.builder()
+                        .url(sitemeta.url)
+                        .name("Sergio del Amo")
+                        .build())
+                .language("en")
+                .homePageUrl(sitemeta.url)
+                .feedUrl("${sitemeta.url}/feed.json")
+                .items(items)
+                .build()
+        outputFile.createNewFile()
+        outputFile.text = new JsonBuilder(jsonFeed.toMap()).toPrettyString()
+    }
+
+    private static void renderRss(Map<String, String> sitemeta, List<RssItem> rssItems, File outputFile) {
         RssChannel.Builder builder = RssChannel.builder(sitemeta['title'], sitemeta['url'], sitemeta['description'])
         builder.pubDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
         builder.lastBuildDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
