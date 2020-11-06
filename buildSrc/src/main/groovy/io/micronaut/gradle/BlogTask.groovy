@@ -48,7 +48,7 @@ import groovy.json.JsonBuilder
 @CompileStatic
 class BlogTask extends DefaultTask {
 
-    static DateFormat JSON_FEED_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mmZ")
+    static DateFormat JSON_FEED_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX")
     static {
         TimeZone tz = TimeZone.getTimeZone("Europe/Madrid")
         JSON_FEED_FORMAT.setTimeZone(tz)
@@ -324,7 +324,7 @@ class BlogTask extends DefaultTask {
                     htmlPost.metadata.author))
             feedItems.add(JsonFeedItem.builder()
                     .title(htmlPost.metadata.title as String)
-                    .datePublished(JSON_FEED_FORMAT.format(parseDate(htmlPost.metadata.date)))
+                    .datePublished(toRFC3339(parseDate(htmlPost.metadata.date)))
                     .url(postLink)
                     .id(uuid)
                     .contentHtml(htmlPost.html)
@@ -345,6 +345,10 @@ class BlogTask extends DefaultTask {
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
         renderJsonFeed(globalMetadata, feedItems, new File(outputDir.absolutePath + "/../" + JSONFEED_FILE))
         renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
+    }
+
+    static String toRFC3339(Date d) {
+        JSON_FEED_FORMAT.format(d)
     }
 
     static void renderArchive(File output,
