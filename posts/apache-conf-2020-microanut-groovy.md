@@ -9,7 +9,7 @@ description: Slides from my talk at ApacheCon 2020 about Micronaut and Groovy
 
 [%date]
 
-Tags: #micronaut #groovylang
+Tags: #micronaut #groovylang #slides
 
 [%description]
 
