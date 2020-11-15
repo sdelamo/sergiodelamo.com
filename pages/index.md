@@ -7,7 +7,7 @@ Read my [blog](https://sergiodelamo.com/blog/index.html) or subscribe to the [RS
 
 ## 📨 Newsletter
 
-I write [Groovy Calamari](http://groovycalamari.com). A curated email publication full of interesting, relevant links about Microservices, Micronaut and Groovy Ecosystem (Grails, Gradle, ...). 
+I write [Groovy Calamari](https://groovycalamari.com). A curated email publication full of interesting, relevant links about Microservices, Micronaut and Groovy Ecosystem (Grails, Gradle, ...). 
 
 ## 👨🏼‍🏫 Greach Conf
 
