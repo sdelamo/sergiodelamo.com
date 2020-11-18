@@ -189,7 +189,7 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 
 .header .logo {
     background-size: 100%;
-    background-image: url(../images/sergiodelamo.png);
+    background-image: url(https://images.sergiodelamo.com/sergiodelamo.png);
     background-repeat: no-repeat;
     background-position: center center;
     text-indent: -999em;

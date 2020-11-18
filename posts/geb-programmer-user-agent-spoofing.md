@@ -8,7 +8,7 @@ date: Jul 27, 2016 14:52
  
 As often happens on the internet there is already a website to answer your question. If you would like to know what’s your user agent just visit whatsmyuseragent.com
 
-![](Screenshot_27_07_16_15_40.png)
+![](https://images.sergiodelamo.com/Screenshot_27_07_16_15_40.png)
 
 If you run Geb with [PhantomJs](http://phantomjs.org/) your user agent will identify you as running PhantomJs. You may be blocked because of that. Fortunately it is easy to change the user agent of PhantomJs driver as illustrated in the next GebConfig.groovy file:
 

@@ -15,7 +15,7 @@ Tags: #video #wordpress #android #groovy #slides
 
 [%description]
 
-[![](How_to_create_conference_Android_App_with_Groovy_and_Wordpress____SkillsCast___14th_December_2015.png)](https://skillsmatter.com/skillscasts/6919-how-to-create-conference-android-app-with-groovy-and-wordpress)
+[![](https://images.sergiodelamo.com/How_to_create_conference_Android_App_with_Groovy_and_Wordpress____SkillsCast___14th_December_2015.png)](https://skillsmatter.com/skillscasts/6919-how-to-create-conference-android-app-with-groovy-and-wordpress)
 
 Talk description
 

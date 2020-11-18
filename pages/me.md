@@ -3,7 +3,7 @@ title:  Sergio del Amo
 description: Sergio del Amo's short bio and skills. 
 ---
 
-<a href="[%url]/blog/avatar.png"><img src="[%url]/blog/avatar.png" 
+<a href="https://images.sergiodelamo.com/avatar.png"><img src="https://images.sergiodelamo.com/avatar.png" 
      alt="Sergio del Amo" 
      style="width: 300px !important; padding: 20px;"
      class="align-right"/></a>

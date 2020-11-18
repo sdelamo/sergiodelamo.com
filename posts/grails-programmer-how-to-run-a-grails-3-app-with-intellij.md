@@ -21,10 +21,10 @@ Please, make sure you [turn off bytecode verification](http://sergiodelamo.es/ru
 
 You can open a Terminal within IntelliJ and run the gradle task `bootRun`. Reloading agent will work using the Gradle wrapper.
 
-![](/Fullscreen_25_10_2016__08_22-1024x822.png)
+![](https://images.sergiodelamo.com/Fullscreen_25_10_2016__08_22-1024x822.png)
 
 ### Run with Grails Run-app
 
 You can execute `grails run-app` directly from a terminal you open within IntelliJ.
 
-![](/Fullscreen_25_10_2016__08_27.png)
+![](https://images.sergiodelamo.com/Fullscreen_25_10_2016__08_27.png)

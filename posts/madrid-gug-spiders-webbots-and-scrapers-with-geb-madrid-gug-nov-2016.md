@@ -23,6 +23,6 @@ Additional slides which show how to deploy a groovy micro service to AWS Lambda 
 
 <script async class="speakerdeck-embed" data-id="68e00b847f274adfaa91a4fa54213efa" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-![](Cwwm-YuWgAAOTIq.jpg-large.jpeg)
+![](https://images.sergiodelamo.com/Cwwm-YuWgAAOTIq.jpg-large.jpeg)
 
-![](highres_455897537.jpeg)
+![](https://images.sergiodelamo.com/highres_455897537.jpeg)

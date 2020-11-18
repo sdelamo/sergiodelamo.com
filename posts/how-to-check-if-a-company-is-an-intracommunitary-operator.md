@@ -9,6 +9,6 @@ date: Jan 11, 2017 08:01
 The European Commision offers a web application to validate a VAT Number
 
 
-![](/Napkin-8-11-01-17-8.03.31-AM.png)
+![](https://images.sergiodelamo.com/Napkin-8-11-01-17-8.03.31-AM.png)
 
 
