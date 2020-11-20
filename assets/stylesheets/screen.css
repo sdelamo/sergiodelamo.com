@@ -224,7 +224,7 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .wrapper article img {
-    width: 100%;
+    max-width: 864px;
 }
 
 .container {
