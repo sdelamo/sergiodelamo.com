@@ -3,7 +3,7 @@ title: List of Sergio del Amo projects
 description: Links to Sergio del Amo's projects
 ---
 
-Read my [blog](https://sergiodelamo.com/blog/index.html) or subscribe to the [RSS feed](https://sergiodelamo.com/blog/index.html).
+Read my [blog](https://sergiodelamo.com/blog/index.html) or subscribe to the feed [RSS](https://sergiodelamo.com/rss.xml) or [JSON](https://sergiodelamo.com/feed.json).
 
 ## 📨 Newsletter
 
