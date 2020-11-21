@@ -1,7 +1,7 @@
 ---
 title: Run a Gradle build with Nova editor
 date: Sep 22, 2020
-description: How to run a Gradle build with Nova custom tasks
+summary: How to run a Gradle build with Nova custom tasks
 ---
 
 # [%title]

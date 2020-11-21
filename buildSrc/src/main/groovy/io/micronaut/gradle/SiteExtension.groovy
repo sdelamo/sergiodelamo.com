@@ -24,7 +24,7 @@ class SiteExtension {
 
     final Property<String> url
 
-    final Property<String> description
+    final Property<String> summary
 
     final ListProperty<String> keywords
 
@@ -39,7 +39,7 @@ class SiteExtension {
         output = objects.property(File)
         title = objects.property(String)
         url = objects.property(String)
-        description = objects.property(String)
+        summary = objects.property(String)
         keywords = objects.listProperty(String)
         robots = objects.property(String)
     }

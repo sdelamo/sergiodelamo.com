@@ -1,7 +1,7 @@
 title: Madrid GUG - Spiders, Webbots and Scrappers with Geb
 date: Nov 08, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/spiders-webbots-and-scrapers-with-geb-madrid-gug-nov-2016
-description: Slides from my talk at Madrid Groovy User Group.
+summary: Slides from my talk at Madrid Groovy User Group.
 video: https://www.youtube.com/watch?v=19JeVKS0NTU
 eventName: Madrid GUG
 eventDate: Nov 08, 2016
@@ -15,7 +15,7 @@ eventLanguage: Spanish
 
 Tags: #slides #geb #video
 
-[%description]
+[%summary]
 
 <script async class="speakerdeck-embed" data-id="d4abae3769af4d72bb5c44268af750f8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 

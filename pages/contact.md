@@ -1,5 +1,5 @@
 title: Contact
-description: Link to Sergio del Amo social media accounts ( twitter, Linked In), email and phone.
+summary: Link to Sergio del Amo social media accounts ( twitter, Linked In), email and phone.
 ---
 
 # [%title]

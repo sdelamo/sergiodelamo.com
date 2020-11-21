@@ -1,7 +1,7 @@
 ---
 title: MacBook Air M1
 date: Nov 19, 2020 07:02
-description: It does not get hot. It is quiet. It is fast. It is the future. It is now. 
+summary: It does not get hot. It is quiet. It is fast. It is the future. It is now. 
 ---
 
 # [%title]
@@ -68,4 +68,4 @@ Instant wake is nice. If you used an iPad, you know the appeal. Having the same 
 
 This computer is fast. Really fast!. I have used it for a day but I have the same feeling I got when I purchased my iMac Pro. This is how computing should be. Web browsing is blazing fast. 
 
-[%description]
+[%summary]

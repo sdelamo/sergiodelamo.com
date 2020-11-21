@@ -11,7 +11,7 @@ interface Content {
      */
     @Nullable String getBody();
     @Nullable String getDate();
-    @Nullable String getDescription();
+    @Nullable String getSummary();
     @Nullable List<String> getKeywords();
     @Nullable String getRobots();
 }

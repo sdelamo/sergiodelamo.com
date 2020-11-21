@@ -1,7 +1,7 @@
 ---
 title: Micronaut Java libray to consume the Curated API
 date: Aug 27, 2020
-description: Today, I published a Java library to consume the Curated API. It is built with Micronaut and you can use it in a Micronaut app or as a standalone library.
+summary: Today, I published a Java library to consume the Curated API. It is built with Micronaut and you can use it in a Micronaut app or as a standalone library.
 ---
 
 # [%title]
@@ -12,7 +12,7 @@ Tags: #micronaut
 
 I have used [Curated](https://curated.co) to publish my newsletter [Groovy Calamari](http://groovycalamari.com) since I started it. 
 
-[%description]
+[%summary]
 
 This Java library is built with [Micronaut](https://micronaut.io) and it will allow you to consume the [Curated API](http://support.curated.co/integrations/getting-started-with-the-curated-api/).
 

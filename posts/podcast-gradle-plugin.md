@@ -1,7 +1,7 @@
 ---
 title:  Gradle Podcast plugin
 date: Sep 21, 2020
-description: Gradle podcast plugin allows you to create a Podcast RSS feed with a  Gradle plugin extension and a set of markdown files for your show episodes. 
+summary: Gradle podcast plugin allows you to create a Podcast RSS feed with a  Gradle plugin extension and a set of markdown files for your show episodes. 
 ---
 
 # [%title]

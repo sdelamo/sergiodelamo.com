@@ -1,6 +1,6 @@
 title: Northem Quality - Control your browser with Geb
 date:July 11, 2019
-description: Video of my talk at Northem Quality user group
+summary: Video of my talk at Northem Quality user group
 ---
 
 # [%title] 

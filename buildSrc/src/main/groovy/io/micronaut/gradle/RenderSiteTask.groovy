@@ -77,7 +77,7 @@ class RenderSiteTask extends DefaultTask {
                                         String robots) {
         [
                 title: title,
-                description: about,
+                summary: about,
                 url: url,
                 keywords: keywords.join(','),
                 robots: robots,
@@ -139,8 +139,8 @@ class RenderSiteTask extends DefaultTask {
         if (!resolvedMetadata.containsKey("keywords")) {
             resolvedMetadata.put('keywords', "")
         }
-        if (!resolvedMetadata.containsKey("description")) {
-            resolvedMetadata.put('description', "")
+        if (!resolvedMetadata.containsKey("summary")) {
+            resolvedMetadata.put('summary', "")
         }
         if (!resolvedMetadata.containsKey("date")) {
             resolvedMetadata.put('date', BlogTask.MMM_D_YYYY_HHMM.format(new Date()))

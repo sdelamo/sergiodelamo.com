@@ -1,6 +1,6 @@
 ---
 title:  Sergio del Amo
-description: Sergio del Amo's short bio and skills. 
+summary: Sergio del Amo's short bio and skills. 
 ---
 
 <a href="https://images.sergiodelamo.com/avatar.png"><img src="https://images.sergiodelamo.com/avatar.png" 

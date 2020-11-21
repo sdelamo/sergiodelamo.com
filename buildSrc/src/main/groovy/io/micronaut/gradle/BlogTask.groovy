@@ -359,7 +359,7 @@ class BlogTask extends DefaultTask {
         String html = "<h1>${title}</h1>"
 
         html += posts.collect { post ->
-            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}. ${post.metadata['description']}</p></article>"
+            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}. ${post.metadata['summary']}</p></article>"
         }.join("\n")
 
         Map<String, String> m = new HashMap<>(metadata)
@@ -391,7 +391,7 @@ class BlogTask extends DefaultTask {
         JsonFeed jsonFeed = JsonFeed.builder()
                 .version(JsonFeed.VERSION_JSON_FEED_1_1)
                 .title("Sergio del Amo's Blog")
-                .description(sitemeta.description)
+                .description(sitemeta.summary)
                 .author(JsonFeedAuthor.builder()
                         .url(sitemeta.url)
                         .name("Sergio del Amo")
@@ -406,7 +406,7 @@ class BlogTask extends DefaultTask {
     }
 
     private static void renderRss(Map<String, String> sitemeta, List<RssItem> rssItems, File outputFile) {
-        RssChannel.Builder builder = RssChannel.builder(sitemeta['title'], sitemeta['url'], sitemeta['description'])
+        RssChannel.Builder builder = RssChannel.builder(sitemeta['title'], sitemeta['url'], sitemeta['summary'])
         builder.pubDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
         builder.lastBuildDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
                 .docs("http://blogs.law.harvard.edu/tech/rss")

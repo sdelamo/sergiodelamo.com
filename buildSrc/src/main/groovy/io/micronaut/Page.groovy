@@ -29,8 +29,8 @@ class Page implements Content {
     }
 
     @Override
-    String getDescription() {
-        metadata && metadata.containsKey('description') ? metadata['description'] : null
+    String getSummary() {
+        metadata && metadata.containsKey('summary') ? metadata['summary'] : null
     }
 
     @Override

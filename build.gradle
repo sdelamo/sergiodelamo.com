@@ -10,7 +10,7 @@ micronaut {
     output = project.buildDir
     title = 'Sergio del Amo Blog'
     url = System.getenv('GITHUB_RUN_ID') != null ? 'https://sergiodelamo.com' : 'http://localhost/' + rootProject.name
-    description = 'Personal blog of Sergio del Amo'
+    summary = 'Personal blog of Sergio del Amo'
     keywords = ['gradle', 'spock', 'geb', 'grails', 'groovy','java', 'wordpress', 'woocommerce', 'micronaut']
     robots = 'all'
 }
