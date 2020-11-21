@@ -322,13 +322,17 @@ class BlogTask extends DefaultTask {
                     uuid,
                     htmlPost.html,
                     htmlPost.metadata.author))
-            feedItems.add(JsonFeedItem.builder()
+                    
+            JsonFeedItem.Builder jsonFeedItemBuilder = JsonFeedItem.builder()
                     .title(htmlPost.metadata.title as String)
                     .datePublished(toRFC3339(parseDate(htmlPost.metadata.date)))
                     .url(postLink)
                     .id(uuid)
                     .contentHtml(htmlPost.html)
-                    .build())
+            postTags.each { tag -> 
+                jsonFeedItemBuilder = jsonFeedItemBuilder.tag(tag)
+            } 
+            feedItems.add(jsonFeedItemBuilder.build())
         }
         Set<Tag> tags = tagsMap.collect { k, v -> new Tag(title: k, ocurrence: v) } as Set<Tag>
         for (String tag : tagsMap.keySet()) {
