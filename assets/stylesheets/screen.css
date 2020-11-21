@@ -248,3 +248,7 @@ h1 {
 .wrapper p {
     margin-bottom: 20px;
 }
+.wrapper pre,
+.wrapper table {
+    margin-bottom: 20px;
+}
