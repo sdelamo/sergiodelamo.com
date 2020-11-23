@@ -1,3 +1,4 @@
+---
 title: Read a property from gradle.properties with a bash script
 date: May 16, 2017 11:07
 ---

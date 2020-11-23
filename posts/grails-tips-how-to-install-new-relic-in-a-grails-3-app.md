@@ -1,3 +1,4 @@
+---
 title: Grails Programmer : How to install new Relic in a Grails 3 app?
 date: Feb 20, 2016 17:40
 ---

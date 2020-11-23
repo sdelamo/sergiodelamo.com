@@ -1,3 +1,4 @@
+---
 title: Ignore a Spock test if running in Travis CI
 date: Apr 27, 2017, 08:24
 ---

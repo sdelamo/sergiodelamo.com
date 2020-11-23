@@ -1,3 +1,4 @@
+---
 title: GR8Conf EU 2016 - Scraping with Geb
 date: Jun 02, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/scraping-with-geb

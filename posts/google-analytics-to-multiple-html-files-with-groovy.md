@@ -1,3 +1,4 @@
+---
 title: Add Google Analytics snippet to multiple .html files recursively with a Groovy Script
 date: Jan 29, 2018 09:27
 ---

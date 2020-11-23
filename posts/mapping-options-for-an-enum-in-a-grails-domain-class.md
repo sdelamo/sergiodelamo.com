@@ -1,3 +1,4 @@
+---
 title: Mapping options for an Enum in a Grails Domain class
 date: Sep 18, 2017 11:39
 ---

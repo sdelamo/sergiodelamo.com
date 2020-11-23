@@ -1,3 +1,4 @@
+---
 title: GR8Day - Scraping with Geb
 date: June 02, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/scraping-with-geb

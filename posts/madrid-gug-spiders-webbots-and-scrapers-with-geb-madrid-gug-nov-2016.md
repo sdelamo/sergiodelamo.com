@@ -1,3 +1,4 @@
+---
 title: Madrid GUG - Spiders, Webbots and Scrappers with Geb
 date: Nov 08, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/spiders-webbots-and-scrapers-with-geb-madrid-gug-nov-2016
