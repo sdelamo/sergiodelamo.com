@@ -1,6 +1,7 @@
 ---
 title: Madrid GUG - Build an Android app with Groovy and consume a Wordpress JSON API
-date: Jun 14, 2016
+date_published: 2016-06-14T08:13:00+01:00
+date_modified: 2016-06-14T08:13:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/construye-un-app-con-groovy-en-android-que-consume-un-api-json-generado-en-con-wordpress
 summary: Slides from my talk at Madrid Groovy User Group
 video: https://www.youtube.com/watch?v=OLduuM_QV7I

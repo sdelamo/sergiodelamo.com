@@ -1,5 +1,6 @@
 title: GR8Conf 2017 - tvOS app development with TVMLKit and Grails
-date: Jun 01, 2017
+date_published: 2017-06-01T10:00:00+01:00
+date_modified: 2017-06-01T10:00:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/tvos-app-development-using-tvmlkit-and-grails-1
 summary: Slides from my talk at GR8Conf 2017.
 video: https://www.youtube.com/watch?v=-g2pppnWAEA

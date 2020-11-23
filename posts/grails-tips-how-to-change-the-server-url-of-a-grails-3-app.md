@@ -1,6 +1,7 @@
 ---
 title: Grails Programmer : How to change the server url of a Grails 3 App?
-date: Mar 02, 2016 09:00
+date_published: 2016-03-02T09:00:00+01:00
+date_modified: 2016-03-02T09:00:00+01:00
 ---
 
 # [%title]

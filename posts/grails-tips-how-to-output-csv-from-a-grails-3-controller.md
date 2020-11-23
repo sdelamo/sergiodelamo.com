@@ -1,6 +1,7 @@
 ---
 title: Grails Programmer : How to output CSV from a Grails 3  Controller
-date: Sep 20, 2019 06:46
+date_published: 2019-09-20T06:46:00+01:00
+date_modified: 2019-09-20T06:46:00+01:00
 ---
 
 # [%title]

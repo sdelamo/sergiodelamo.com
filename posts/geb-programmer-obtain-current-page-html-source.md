@@ -1,6 +1,7 @@
 ---
 title: Geb Programmer : Obtain current page html source?
-date: Oct 2, 2016 17:54
+date_published: 2016-10-02T17:54:00+01:00
+date_modified: 2016-10-02T17:54:00+01:00
 ---
 
 # [%title]

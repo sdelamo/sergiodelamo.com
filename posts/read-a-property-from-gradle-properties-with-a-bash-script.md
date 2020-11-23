@@ -1,6 +1,7 @@
 ---
 title: Read a property from gradle.properties with a bash script
-date: May 16, 2017 11:07
+date_published: 2017-05-16T11:07:00+01:00
+date_modified: 2017-05-16T11:07:00+01:00
 ---
 
 # [%title]

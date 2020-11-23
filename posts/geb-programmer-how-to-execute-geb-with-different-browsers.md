@@ -1,6 +1,7 @@
 ---
 title: Geb Programmer : How to execute Geb with different browsers
-date: Oct 10, 2016 06:33
+date_published: 2016-10-10T06:33:00+01:00
+date_modified: 2016-10-10T06:33:00+01:00
 ---
 
 # [%title]

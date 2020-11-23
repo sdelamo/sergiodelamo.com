@@ -1,6 +1,7 @@
 ---
 title: Gradle Programmer - Ensure source and target compatibility to a specific version of Java
-date: Jun 17, 2016 06:27
+date_published: 2016-06-17T06:27:00+01:00
+date_modified: 2016-06-17T06:27:00+01:00
 ---
 
 # [%title]

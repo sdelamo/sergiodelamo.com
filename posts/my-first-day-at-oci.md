@@ -1,6 +1,7 @@
 ---
 title: My first day at OCI
-date: Jan 10, 2017 14:10
+date_published: 2017-01-10T14:10:00+01:00
+date_modified: 2017-01-10T14:10:00+01:00
 ---
 
 # [%title]

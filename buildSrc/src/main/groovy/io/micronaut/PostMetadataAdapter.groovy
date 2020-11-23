@@ -32,8 +32,8 @@ class PostMetadataAdapter implements PostMetadata {
     }
 
     @Override
-    String getDate() {
-        get('date')
+    String getDatePublished() {
+        get('date_published')
     }
 
     @Override

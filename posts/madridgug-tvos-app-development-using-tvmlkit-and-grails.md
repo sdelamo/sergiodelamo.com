@@ -1,6 +1,7 @@
 ---
 title: Madrid GUG - tvOS app development using TVMLKit and Grails
-date: Mar 07, 2017
+date_published: 2017-03-07T09:32:00+01:00
+date_modified: 2017-03-07T09:32:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/tvos-app-development-using-tvmlkit-and-grails
 summary: Slides from my talk at Madrid Groovy User Group
 ---

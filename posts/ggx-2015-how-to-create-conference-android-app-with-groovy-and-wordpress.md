@@ -1,5 +1,6 @@
 title: GGX London 2015 - How to create conference Android App with Groovy and WordPress?
-date: Dec 14, 2015
+date_published: 2015-12-14T06:07:00+01:00
+date_modified: 2015-12-14T06:07:00+01:00
 summary:  Link to my talk at GGX London 2015 hosted at Skillsmatter.
 eventName: GGX 2015
 eventDate: Dec 14, 2015
