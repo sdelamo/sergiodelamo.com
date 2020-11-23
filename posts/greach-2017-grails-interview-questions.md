@@ -1,6 +1,7 @@
 ---
 title: Greach - Grails Interview Questions
-date: Mar 31, 2017
+date_published: 2017-03-31T07:07:00+01:00
+date_modified: 2017-03-31T07:07:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/grails-interview-questions
 summary: Slides from my talk about Greach 2017.
 ---

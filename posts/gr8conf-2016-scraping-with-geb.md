@@ -1,6 +1,7 @@
 ---
 title: GR8Conf EU 2016 - Scraping with Geb
-date: Jun 02, 2016
+date_published: 2016-06-02T06:24:00+01:00
+date_modified: 2016-06-02T06:24:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/scraping-with-geb
 summary: Slides from my talk at GR8Conf.
 eventCity: Copenhagen

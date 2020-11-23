@@ -1,6 +1,7 @@
 ---
 title: How to log SQL statements in a Grails 3 app
-date: Feb 24, 2016 10:20
+date_published: 2016-02-24T10:20:00+01:00
+date_modified: 2016-02-24T10:20:00+01:00
 ---
 
 # [%title]

@@ -1,6 +1,7 @@
 ---
 title: Pass system property in a Gradle Task
-date: March 25, 2019 10:00
+date_published: 2019-03-25T10:00:00+01:00
+date_modified: 2019-03-25T10:00:00+01:00
 ---
 
 # [%title]

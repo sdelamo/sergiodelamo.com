@@ -1,6 +1,7 @@
 ---
 title: Groovy Programmer : How to use Groovy default parameter values to implement retry functionality
-date: Nov 16, 2016 17:16
+date_published: 2016-11-16T17:16:00+01:00
+date_modified: 2016-11-16T17:16:00+01:00
 ---
 
 # [%title]

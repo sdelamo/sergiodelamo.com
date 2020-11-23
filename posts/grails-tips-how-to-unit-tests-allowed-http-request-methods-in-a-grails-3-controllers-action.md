@@ -1,6 +1,7 @@
 ---
 title: Grails Programmer : How to unit tests allowed HTTP request methods in a Grails 3 Controller's action?
-date: Sep 28, 2016 07:55
+date_published: 2016-09-28T07:55:00+01:00
+date_modified: 2016-09-28T07:55:00+01:00
 ---
 
 # [%title]

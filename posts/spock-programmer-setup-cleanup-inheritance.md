@@ -1,6 +1,7 @@
 ---
 title: Spock Programmer : Setup / Cleanup Inheritance
-date: Aug 21, 2016 06:24
+date_published: 2016-08-21T06:24:00+01:00
+date_modified: 2016-08-21T06:24:00+01:00
 ---
 
 # [%title]

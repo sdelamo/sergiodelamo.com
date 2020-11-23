@@ -1,6 +1,7 @@
 ---
 title: Micronaut Euro Rates Library
-date: Sep 3, 2020
+date_published: 2020-09-03T06:07:00+01:00
+date_modified: 2020-09-03T06:07:00+01:00
 speakerdeck: 
 summary:  Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
 ---

@@ -1,6 +1,7 @@
 ---
 title: Geb Programmer: User Agent Spoofing
-date: Jul 27, 2016 14:52
+date_published: 2016-07-27T14:52:00+01:00
+date_modified: 2016-07-27T14:52:00+01:00
 ---
 
 # [%title] 

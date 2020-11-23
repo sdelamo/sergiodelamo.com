@@ -1,6 +1,7 @@
 ---
 title: Grails War is a runnable JAR
-date: Jul 28, 2017 14:39
+date_published: 2017-07-28T14:39:00+01:00
+date_modified: 2017-07-28T14:39:00+01:00
 ---
 
 # [%title]

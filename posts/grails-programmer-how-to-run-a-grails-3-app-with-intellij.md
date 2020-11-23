@@ -1,6 +1,7 @@
 ---
 title: Grails Programmer: How to run a Grails 3 App with IntelliJ
-date: Oct 28, 2016
+date_published: 2016-10-28T07:49:00+01:00
+date_modified: 2016-10-28T07:49:00+01:00
 ---
 
 # [%title]

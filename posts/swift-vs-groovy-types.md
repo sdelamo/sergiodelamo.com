@@ -1,6 +1,7 @@
 ---
 title: Swift vs Groovy - Types
-date: Oct 11, 2016 06:05
+date_published: 2016-10-11T06:05:00+01:00
+date_modified: 2016-10-11T06:05:00+01:00
 ---
 
 # [%title]

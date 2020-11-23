@@ -1,6 +1,7 @@
 ---
 title: Geb Programmer : How to run Geb with PhantomJS Driver in desktop size
-date: Jun 17, 2016 07:07
+date_published: 2016-06-17T07:07:00+01:00
+date_modified: 2016-06-17T07:07:00+01:00
 ---
 
 # [%title]

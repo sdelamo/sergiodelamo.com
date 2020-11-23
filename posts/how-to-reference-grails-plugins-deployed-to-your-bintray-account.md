@@ -1,6 +1,7 @@
 ---
 title: How to reference  Grails Plugins deployed to your bintray account
-date: Aug 06, 2017 07:04
+date_published: 2017-08-06T07:04:00+01:00
+date_modified: 2017-08-06T07:04:00+01:00
 ---
 
 # [%title]

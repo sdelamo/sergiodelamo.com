@@ -1,6 +1,7 @@
 ---
 title: Madrid GUG - Upload Groovy code to AWS Lambda function and API Gateway
-date: Nov 09, 2016
+date_published: 2016-11-09T07:49:00+01:00
+date_modified: 2016-11-09T07:49:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/upload-a-groovy-microservice-to-aws-lambda-and-api-gateway
 summary: Slides from my talk at Madrid Groovy User Group
 ---

@@ -1,6 +1,7 @@
 ---
 title: MacBook Air M1
-date: Nov 19, 2020 07:02
+date_published: 2020-11-19T07:02:00+01:00
+date_modified: 2020-11-19T07:02:00+01:00
 summary: It does not get hot. It is quiet. It is fast. It is the future. It is now. 
 ---
 

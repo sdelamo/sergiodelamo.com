@@ -1,6 +1,7 @@
 ---
 title: How to check if a company is an intracommunitary operator?
-date: Jan 11, 2017 08:01
+date_published: 2017-01-11T08:01:00+01:00
+date_modified: 2017-01-11T08:01:00+01:00
 ---
 
 # [%title]

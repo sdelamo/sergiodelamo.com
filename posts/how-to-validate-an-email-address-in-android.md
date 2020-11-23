@@ -1,6 +1,7 @@
 ---
 title: How to validate an email address in Android
-date: Feb 06, 2017 08:39
+date_published: 2017-02-06T08:39:00+01:00
+date_modified: 2017-02-06T08:39:00+01:00
 ---
 
 # [%title]

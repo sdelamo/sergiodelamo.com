@@ -1,6 +1,7 @@
 ---
 title: How to ignore a Spock feature method in Grails 3 while running on Jenkins
-date: May 02, 2016 09:32
+date_published: 2016-05-02T09:32:00+01:00
+date_modified: 2016-05-02T09:32:00+01:00
 ---
 
 # [%title]

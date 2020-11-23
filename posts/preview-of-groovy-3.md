@@ -1,6 +1,7 @@
 ---
 title: Preview of Groovy 3
-date: Apr 24, 2017 09:34
+date_published: 2017-04-24T09:34:00+01:00
+date_modified: 2017-04-24T09:34:00+01:00
 ---
 
 # [%title]

@@ -1,6 +1,7 @@
 ---
 title: Grails Programmer : How to log from a none Grails Artifact
-date: Sep 23, 2016 08:13
+date_published: 2016-09-23T08:13:00+01:00
+date_modified: 2016-09-23T08:13:00+01:00
 ---
 
 # [%title]

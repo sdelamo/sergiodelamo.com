@@ -1,6 +1,7 @@
 ---
 title: Debug Grails Plugins load order
-date: Jul 05, 2017 14:40
+date_published: 2017-07-05T14:40:00+01:00
+date_modified: 2017-07-05T14:40:00+01:00
 ---
 
 # [%title]

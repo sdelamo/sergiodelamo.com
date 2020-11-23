@@ -1,6 +1,7 @@
 ---
 title: GR8Day - Scraping with Geb
-date: June 02, 2016
+date_published: 2016-06-02T06:46:00+01:00
+date_modified: 2016-06-02T06:46:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/scraping-with-geb
 summary: Slides from my talk at GR8Day Warsaw 2016
 ---

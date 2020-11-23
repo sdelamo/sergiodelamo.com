@@ -1,6 +1,7 @@
 ---
 title: GR8Conf 2019 - What's new with Grails 4
-date: May 27, 2019
+date_published: 2019-05-27T06:07:00+01:00
+date_modified: 2019-05-27T06:07:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/whats-new-with-grails-4
 summary: Slides from my presentation at GR8Conf 2019 about Grails 4
 ---

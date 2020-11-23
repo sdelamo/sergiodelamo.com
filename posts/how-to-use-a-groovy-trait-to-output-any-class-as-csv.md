@@ -1,6 +1,7 @@
 ---
 title: How to use a Groovy trait to output any class as csv?
-date: Mar 15, 2016 10:30
+date_published: 2016-03-15T10:30:00+01:00
+date_modified: 2016-03-15T10:30:00+01:00
 ---
 
 # [%title]
