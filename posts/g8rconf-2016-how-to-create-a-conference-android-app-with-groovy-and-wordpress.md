@@ -1,3 +1,4 @@
+---
 title: GR8Conf 2016 - How to create a conference android app with Groovy and Wordpres
 date: Jun 03, 2016
 speakerdeck: https://speakerdeck.com/sdelamo/how-to-create-a-conference-android-app-with-groovy-and-wordpress-1

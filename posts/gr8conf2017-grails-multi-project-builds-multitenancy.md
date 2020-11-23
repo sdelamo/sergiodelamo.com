@@ -1,3 +1,4 @@
+---
 title: GR8Conf 2017 - Grails Multi-Project Builds & Multi tenancy
 date: Jun 1, 2017
 video: https://www.youtube.com/watch?v=Dkdmdw2ZE3E

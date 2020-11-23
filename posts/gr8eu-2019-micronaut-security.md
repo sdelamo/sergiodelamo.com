@@ -1,3 +1,4 @@
+---
 title: GR8Conf 2019 - Micronaut Security
 date: May 28, 2019
 speakerdeck: https://speakerdeck.com/sdelamo/gr8eu-2019-micronaut-security

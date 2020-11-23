@@ -1,3 +1,4 @@
+---
 title: How to use a Trait to encapsulate Spring Security Core functionality in a Grails 3 App?
 date: Feb 27, 2016 09:00
 ---

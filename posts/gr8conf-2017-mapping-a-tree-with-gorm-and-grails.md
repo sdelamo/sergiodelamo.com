@@ -1,3 +1,4 @@
+---
 title: GR8Conf 2017 - Mapping a Tree with GORM and Grails
 date: Jun 01, 2017
 speakerdeck: https://speakerdeck.com/sdelamo/mapping-a-tree-with-gorm-and-grails

@@ -1,3 +1,4 @@
+---
 title: Grails Programmer : How to log from a none Grails Artifact
 date: Sep 23, 2016 08:13
 ---

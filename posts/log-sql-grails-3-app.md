@@ -1,3 +1,4 @@
+---
 title: How to log SQL statements in a Grails 3 app
 date: Feb 24, 2016 10:20
 ---

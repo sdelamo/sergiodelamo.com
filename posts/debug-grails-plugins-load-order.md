@@ -1,3 +1,4 @@
+---
 title: Debug Grails Plugins load order
 date: Jul 05, 2017 14:40
 ---

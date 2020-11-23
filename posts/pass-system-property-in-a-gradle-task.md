@@ -1,3 +1,4 @@
+---
 title: Pass system property in a Gradle Task
 date: March 25, 2019 10:00
 ---

@@ -1,3 +1,4 @@
+---
 title: How to validate an email address in Android
 date: Feb 06, 2017 08:39
 ---
