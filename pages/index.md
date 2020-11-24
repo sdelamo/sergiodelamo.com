@@ -1,6 +1,8 @@
 ---
 title: List of Sergio del Amo projects
 summary: Links to Sergio del Amo's projects
+date_published: 2020-11-20T10:24:00+01:00
+date_modified: 2020-11-20T10:24:00+01:00
 ---
 
 Read my [blog](https://sergiodelamo.com/blog/index.html) or subscribe to the feed [RSS](https://sergiodelamo.com/rss.xml) or [JSON](https://sergiodelamo.com/feed.json).

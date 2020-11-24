@@ -6,7 +6,7 @@ date_modified: 2020-02-20T17:40:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #grails
 

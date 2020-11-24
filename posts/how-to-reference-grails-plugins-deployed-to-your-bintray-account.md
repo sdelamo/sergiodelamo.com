@@ -6,7 +6,7 @@ date_modified: 2017-08-06T07:04:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #grails #gradle
 

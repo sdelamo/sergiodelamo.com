@@ -24,8 +24,8 @@ class Page implements Content {
     }
 
     @Override
-    String getDate() {
-        metadata && metadata.containsKey('date') ? metadata['date'] : null
+    String getDatePublished() {
+        metadata && metadata.containsKey('date_published') ? metadata['date_published'] : null
     }
 
     @Override

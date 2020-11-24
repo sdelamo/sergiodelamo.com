@@ -6,7 +6,7 @@ date_modified: 2016-08-21T06:24:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #spock
 

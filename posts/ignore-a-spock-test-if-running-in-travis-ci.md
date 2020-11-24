@@ -6,7 +6,7 @@ date_modified: 2017-04-27T08:24:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #ci #travis #spock
 

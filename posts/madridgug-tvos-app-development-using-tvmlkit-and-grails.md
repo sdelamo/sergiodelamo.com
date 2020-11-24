@@ -8,7 +8,7 @@ summary: Slides from my talk at Madrid Groovy User Group
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #tvml #tvos #grails #slides
 

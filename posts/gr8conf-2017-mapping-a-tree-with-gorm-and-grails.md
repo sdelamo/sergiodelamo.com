@@ -14,7 +14,7 @@ eventLanguage: 2017
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #gr8conf #slides #grails #video
 

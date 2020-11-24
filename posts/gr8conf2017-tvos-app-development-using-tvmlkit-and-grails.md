@@ -1,3 +1,4 @@
+---
 title: GR8Conf 2017 - tvOS app development with TVMLKit and Grails
 date_published: 2017-06-01T10:00:00+01:00
 date_modified: 2017-06-01T10:00:00+01:00
@@ -8,12 +9,11 @@ eventName: GR8Conf EU
 eventCity: Copenhagen
 eventDate: Jun 01, 2017
 eventLanguage: English
-
 ---
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #tvml #grails #video
 

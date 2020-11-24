@@ -1,6 +1,7 @@
 ---
 title: (Public Speaking) Codemotion 2020: Building Chatbots with Micronaut
-date: Aug 28, 2020
+date_published: 2020-08-28T10:30:00+01:00
+date_modified: 2020-08-28T10:30:00+01:00
 description: Talks at Codemotion 2020 - Building Chatbots with Micronaut.
 eventName: Codemotion
 eventDate: Nov 3, 2020
@@ -9,7 +10,7 @@ eventLocation: online
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #speaking #micronaut #chatbots
 

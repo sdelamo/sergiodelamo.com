@@ -7,7 +7,7 @@ summary: How to run a Gradle build with Nova custom tasks
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #nova #gradle
 

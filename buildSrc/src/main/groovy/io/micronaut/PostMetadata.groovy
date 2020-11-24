@@ -16,7 +16,7 @@ interface PostMetadata {
     String getAuthor()
 
     @Nullable
-    String getDate()
+    String getDatePublished()
 
     Map<String, String> toMap()
 }

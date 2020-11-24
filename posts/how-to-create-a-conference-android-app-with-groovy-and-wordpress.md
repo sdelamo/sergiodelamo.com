@@ -14,7 +14,7 @@ eventName: GR8Day - Warsaw
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #groovy #wordpress #slides
 

@@ -1,10 +1,12 @@
+---
 title: Geb Talk at Northem Quality
-date: June 19, 2019
+date_published: 2019-06-19T10:30:00+01:00
+date_modified: 2019-06-19T10:30:00+01:00
 ---
 
 # [%title]
 
-[%date]
+[%date_published]
 
 #geb
 

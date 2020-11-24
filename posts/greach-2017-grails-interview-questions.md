@@ -8,7 +8,7 @@ summary: Slides from my talk about Greach 2017.
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #grails #greach #slides
 

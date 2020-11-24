@@ -28,6 +28,7 @@ class RenderSiteTask extends DefaultTask {
     public static final int TWITTER_CARD_PLAYER_WIDTH = 560
     public static final int TWITTER_CARD_PLAYER_HEIGHT = 315
     public static final String TEMP = "temp"
+    public static final String ROBOTS = "robots"
 
     @InputDirectory
     final Property<File> pages = project.objects.property(File)
@@ -142,10 +143,13 @@ class RenderSiteTask extends DefaultTask {
         if (!resolvedMetadata.containsKey("summary")) {
             resolvedMetadata.put('summary', "")
         }
-        if (!resolvedMetadata.containsKey("date")) {
-            resolvedMetadata.put('date', BlogTask.MMM_D_YYYY_HHMM.format(new Date()))
+        if (!resolvedMetadata.containsKey("date_published")) {
+            resolvedMetadata.put('date_published', BlogTask.JSON_FEED_FORMAT.format(new Date()))
         }
-        if (!resolvedMetadata.containsKey("robots")) {
+        if (!resolvedMetadata.containsKey("date_modified")) {
+            resolvedMetadata.put('date_modified', BlogTask.JSON_FEED_FORMAT.format(new Date()))
+        }
+        if (!resolvedMetadata.containsKey(ROBOTS)) {
             resolvedMetadata.put('robots', "all")
         }
         resolvedMetadata.put('twittercard', twitterCard('summary_large_image'))
@@ -251,13 +255,20 @@ class RenderSiteTask extends DefaultTask {
     }
 
     static String formatDate(String date) {
-        BlogTask.MMMM_D_YYYY.format(BlogTask.parseDate(date))
+        BlogTask.JSON_FEED_FORMAT.format(BlogTask.parseDate(date))
+    }
+
+    static String toGMTString(String date) {
+        BlogTask.GMT_FORMAT.format(BlogTask.parseDate(date))
     }
 
     static String replaceLineWithMetadata(String line, Map<String, String> metadata) {
         Map<String, String> m = new HashMap<>(metadata)
-        if (m.containsKey('date')) {
-            m['date'] = formatDate(m['date'])
+        if (m.containsKey('date_published')) {
+            m['date_published'] = toGMTString(m['date_published'])
+        }
+        if (m.containsKey('date_modified')) {
+            m['date_modified'] = toGMTString(m['date_modified'])
         }
         for (String metadataKey : m.keySet()) {
             if (line.contains("[%${metadataKey}]".toString())) {
@@ -267,7 +278,7 @@ class RenderSiteTask extends DefaultTask {
                     value = '<span class="author">By ' + authors.join("<br/>") + '</span>'
                     line = line.replaceAll("\\[%${metadataKey}\\]".toString(), value)
 
-                } else if ("[%${metadataKey}]".toString() == '[%date]') {
+                } else if ("[%${metadataKey}]".toString() == '[%date_published]') {
                     if (line.contains('<meta')) {
                         line = line.replaceAll("\\[%${metadataKey}\\]".toString(), value)
                     } else {

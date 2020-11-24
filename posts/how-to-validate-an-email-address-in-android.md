@@ -6,7 +6,7 @@ date_modified: 2017-02-06T08:39:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #android
 

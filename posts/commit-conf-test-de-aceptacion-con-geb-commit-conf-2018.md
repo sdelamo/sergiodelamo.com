@@ -8,7 +8,7 @@ summary: Slides from my talk at Commit Conf 2018
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #geb #commitconf #slides
 
