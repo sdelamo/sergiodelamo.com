@@ -6,7 +6,7 @@ date_modified: 2018-01-29T09:27:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #groovy
 

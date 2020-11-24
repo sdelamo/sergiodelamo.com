@@ -10,7 +10,7 @@ interface Content {
      * @return Body class
      */
     @Nullable String getBody();
-    @Nullable String getDate();
+    @Nullable String getDatePublished();
     @Nullable String getSummary();
     @Nullable List<String> getKeywords();
     @Nullable String getRobots();

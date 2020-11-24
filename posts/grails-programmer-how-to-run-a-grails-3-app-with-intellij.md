@@ -6,7 +6,9 @@ date_modified: 2016-10-28T07:49:00+01:00
 
 # [%title]
 
-[%date] #grails #gradle #idea
+[%date_published] 
+
+Tags: #grails #gradle #idea
 
 This post explains how to run a Grails 3 App with IntelliJ as described in the [Grails 3 IntelliJ Quickcast](https://player.vimeo.com/video/186362455#t=3m17s) by [Jeff Scott Brown](https://twitter.com/jeffscottbrown)
 

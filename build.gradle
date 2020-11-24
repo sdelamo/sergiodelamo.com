@@ -12,5 +12,5 @@ micronaut {
     url = System.getenv('GITHUB_RUN_ID') != null ? 'https://sergiodelamo.com' : 'http://localhost/' + rootProject.name
     summary = 'Personal blog of Sergio del Amo'
     keywords = ['gradle', 'spock', 'geb', 'grails', 'groovy','java', 'wordpress', 'woocommerce', 'micronaut']
-    robots = 'all'
+    robots = 'index, follow'
 }

@@ -1,6 +1,7 @@
 ---
 title: (Public Speaking) ApacheCon: Micronaut + Groovy and Taming your browser with Geb
-date: Aug 27, 2020
+date_published: 2020-08-27T10:30:00+01:00
+date_modified: 2020-08-27T10:30:00+01:00
 description: Talks, Micronaut + Groovy and Taming your browser with Geb, at ApacheCon
 eventName: ApacheCon
 eventDate: Sep 29, 2020
@@ -9,7 +10,7 @@ eventLocation: online
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #speaking #micronaut #groovy #geb
 

@@ -6,7 +6,7 @@ date_modified: 2016-05-02T09:32:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #grails #spock
 

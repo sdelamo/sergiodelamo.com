@@ -8,7 +8,7 @@ summary: Slides from my presentation at GR8Conf 2019 about Grails 4
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #gr8conf #grails #slides
 

@@ -8,7 +8,7 @@ banner_image: https://images.sergiodelamo.com/macbook-air-m1-gradle-java-build.p
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #java #applesilicon #mac
 

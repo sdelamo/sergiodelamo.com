@@ -13,7 +13,7 @@ eventLanguage: Spanish
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #geb #video
 

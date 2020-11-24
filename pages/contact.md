@@ -1,6 +1,8 @@
 ---
 title: Contact
 summary: Link to Sergio del Amo social media accounts ( twitter, Linked In), email and phone.
+date_published: 2020-11-20T10:24:00+01:00
+date_modified: 2020-11-20T10:24:00+01:00
 ---
 
 # [%title]

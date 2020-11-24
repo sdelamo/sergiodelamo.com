@@ -8,7 +8,7 @@ summary: Slides from my talk at GR8Day Warsaw 2016
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #geb
 

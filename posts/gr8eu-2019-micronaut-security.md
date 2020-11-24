@@ -8,7 +8,7 @@ summary: Slides from my talk at GR8Conf
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #gr8conf #micronaut #slides
 

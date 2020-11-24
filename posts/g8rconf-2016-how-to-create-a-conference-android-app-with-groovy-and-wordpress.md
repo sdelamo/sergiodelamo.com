@@ -12,7 +12,7 @@ eventCity: Copenhagen
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #wordpress #groovy #android
 

@@ -1,5 +1,7 @@
 ---
 title: Sergio del Amo CV
+date_published: 2020-11-20T10:24:00+01:00
+date_modified: 2020-11-20T10:24:00+01:00
 ----
 
 # [%title]

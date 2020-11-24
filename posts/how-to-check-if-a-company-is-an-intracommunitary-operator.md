@@ -6,7 +6,7 @@ date_modified: 2017-01-11T08:01:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 The European Commision offers a web application to validate a VAT Number
 

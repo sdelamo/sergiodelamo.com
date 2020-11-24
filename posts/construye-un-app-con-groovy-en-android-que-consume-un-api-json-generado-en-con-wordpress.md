@@ -13,7 +13,7 @@ eventLanguage: English
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #groovy #wordpress #android #video
 

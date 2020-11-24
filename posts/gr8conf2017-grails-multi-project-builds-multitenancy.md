@@ -13,7 +13,7 @@ eventLanguage: English
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #grail #gradle #multitenancy #video
 

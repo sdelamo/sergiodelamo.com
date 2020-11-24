@@ -6,7 +6,7 @@ date_modified: 2017-01-10T14:10:00+01:00
 
 # [%title]
 
-[%date]
+[%date_published]
 
 **Yesterday I joined OCI Grails team**. I am thrilled!. What better place to continue developing my Grails career. But let me reflect how I got here.
 

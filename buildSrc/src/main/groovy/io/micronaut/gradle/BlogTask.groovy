@@ -1,6 +1,5 @@
 package io.micronaut.gradle
 
-import groovy.json.JsonOutput
 import groovy.time.TimeCategory
 import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
@@ -19,7 +18,6 @@ import io.micronaut.rss.jsonfeed.JsonFeed
 import io.micronaut.rss.jsonfeed.JsonFeedAuthor
 import io.micronaut.rss.jsonfeed.JsonFeedItem
 import io.micronaut.tags.Tag
-import io.micronaut.tags.TagCloud
 import org.gradle.api.Action
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
@@ -30,32 +28,29 @@ import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
-import org.gradle.internal.impldep.com.google.api.client.json.Json
-
 import javax.annotation.Nonnull
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
-import java.time.DateTimeException
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.util.stream.Collectors
 import groovy.json.JsonBuilder
 
 @CompileStatic
 class BlogTask extends DefaultTask {
 
+    static DateFormat YYYY_MM_DD_FORMAT = new SimpleDateFormat("MMM yyyy, dd")
     static DateFormat JSON_FEED_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX")
+    static DateFormat GMT_FORMAT = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss 'GMT'");
     static {
         TimeZone tz = TimeZone.getTimeZone("Europe/Madrid")
+        YYYY_MM_DD_FORMAT.setTimeZone(tz)
         JSON_FEED_FORMAT.setTimeZone(tz)
+        GMT_FORMAT.setTimeZone(tz)
     }
-    static final SimpleDateFormat MMM_D_YYYY_HHMM = new SimpleDateFormat("MMM d, yyyy HH:mm")
-    static final SimpleDateFormat MMM_D_YYYY = new SimpleDateFormat("MMM d, yyyy")
-    static final SimpleDateFormat MMMM_D_YYYY = new SimpleDateFormat("MMMM d, yyyy")
     public static final String RSS_FILE = 'rss.xml'
     public static final String JSONFEED_FILE = 'feed.json'
     public static final String IMAGES = 'images'
@@ -67,6 +62,10 @@ class BlogTask extends DefaultTask {
     public static final String INDEX = 'index.html'
 
     public static List<String> ALLOWED_TAG_PREFIXES = new ArrayList<>()
+    public static final String ROBOTS = 'robots'
+    public static final String ROBOTS_INDEX = 'index'
+    public static final String ROBOTS_NOINDEX = 'noindex'
+    public static final String ROBOTS_FOLLOW = 'follow'
     static {
         List<String> characters = 'A'..'Z'
         List<Integer> digits = [0,1,2,3,4,5,6,7,8,9]
@@ -123,7 +122,7 @@ class BlogTask extends DefaultTask {
         List<MarkdownPost> listOfPosts = parsePosts(posts.get())
         listOfPosts = filterOutFuturePosts(listOfPosts)
         listOfPosts = listOfPosts.sort { a, b ->
-            parseDate(a.date).after(parseDate(b.date)) ? -1 : 1
+            parseDate(a.datePublished).after(parseDate(b.datePublished)) ? -1 : 1
         }
         List<HtmlPost> htmlPosts = processPosts(m, listOfPosts)
         File blog = new File(o.absolutePath + '/' + BLOG)
@@ -138,19 +137,22 @@ class BlogTask extends DefaultTask {
         use(TimeCategory) {
             d += 1.day
         }
-        posts.findAll { post -> !parseDate(post.date).after(d) }
+        posts.each { post ->
+            if (post.datePublished == null) {
+                throw new GradleException("date is null for ${post.path}")
+            }
+        }
+        posts.findAll { post -> !parseDate(post.datePublished).after(d) }
     }
 
     static Date parseDate(String date) throws ParseException {
-
+        if (!date) {
+            throw new GradleException("Could not parse date $date")
+        }
         try {
-            return MMM_D_YYYY_HHMM.parse(date)
+            return JSON_FEED_FORMAT.parse(date)
         } catch(ParseException e) {
-            try {
-                return MMM_D_YYYY.parse(date)
-            } catch(ParseException ex) {
-                throw new GradleException("Could not parse date $date")
-            }
+            throw new GradleException("Could not parse date $date")
         }
     }
 
@@ -266,7 +268,7 @@ class BlogTask extends DefaultTask {
             }
         }
         relatedPosts.subList(0, MAX_RELATED_POSTS).sort { a, b ->
-            parseDate(a.metadata.date).after(parseDate(b.metadata.date)) ? -1 : 1
+            parseDate(a.metadata.datePublished).after(parseDate(b.metadata.datePublished)) ? -1 : 1
         }
     }
 
@@ -317,7 +319,7 @@ class BlogTask extends DefaultTask {
             String postLink = postLink(htmlPost)
             String uuid = htmlPost.path.replace(".html", "")
             rssItems.add(rssItemWithPage(htmlPost.metadata.title,
-                    parseDate(htmlPost.metadata.date),
+                    parseDate(htmlPost.metadata.datePublished),
                     postLink,
                     uuid,
                     htmlPost.html,
@@ -325,7 +327,7 @@ class BlogTask extends DefaultTask {
                     
             JsonFeedItem.Builder jsonFeedItemBuilder = JsonFeedItem.builder()
                     .title(htmlPost.metadata.title as String)
-                    .datePublished(toRFC3339(parseDate(htmlPost.metadata.date)))
+                    .datePublished(toRFC3339(parseDate(htmlPost.metadata.datePublished)))
                     .url(postLink)
                     .id(uuid)
                     .contentHtml(htmlPost.html)
@@ -363,11 +365,12 @@ class BlogTask extends DefaultTask {
         String html = "<h1>${title}</h1>"
 
         html += posts.collect { post ->
-            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${post.metadata['date']}. ${post.metadata['summary']}</p></article>"
+            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
         }.join("\n")
 
         Map<String, String> m = new HashMap<>(metadata)
         m = RenderSiteTask.processMetadata(m)
+        m[ROBOTS] = [ROBOTS_NOINDEX, ROBOTS_FOLLOW].join(', ')
         String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
         output.createNewFile()
         output.text = renderedHtml

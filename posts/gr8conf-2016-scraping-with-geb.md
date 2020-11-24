@@ -12,7 +12,7 @@ eventLanguage: English
 
 # [%title]
 
-[%date]
+[%date_published]
 
 Tags: #slides #gr8conf #geb
 
