@@ -19,10 +19,10 @@ I set some custom tasks to build my website.
 
 > Run Tasks provide a highly-configurable interface for running external operations from inside Nova. You can create your own Run Tasks, or they may be provided by Extensions you have installed.
 
-![Build Gradle build with Nova](https://sergiodelamo.com/blog/nova-app-gradle-build.png)
+![Build Gradle build with Nova](https://images.sergiodelamo.com/nova-app-gradle-build.png)
 
-![Clean Gradle build with Nova](https://sergiodelamo.com/blog/nova-app-gradle-clean.png)
+![Clean Gradle build with Nova](https://images.sergiodelamo.com/blog/nova-app-gradle-clean.png)
 
 I wrote this blog post in Nova, build the site locally, commit the changes and push directly from the editor. 
 
-![Clean and Build with Gradle and Nova](https://sergiodelamo.com/blog/NovaGradle.gif)
+![Clean and Build with Gradle and Nova](https://images.sergiodelamo.com/blog/NovaGradle.gif)
