@@ -331,6 +331,25 @@ class BlogTask extends DefaultTask {
                     .url(postLink)
                     .id(uuid)
                     .contentHtml(htmlPost.html)
+            if (htmlPost.metadata['author.name'] || htmlPost.metadata['author.url'] || htmlPost.metadata['author.avatar']) {
+                JsonFeedAuthor.Builder authorBuilder = JsonFeedAuthor.builder()
+                if (htmlPost.metadata['author.name']) {
+                    authorBuilder = authorBuilder.name(htmlPost.metadata['author.name'] as String)
+                }
+                if (htmlPost.metadata['author.url']) {
+                    authorBuilder = authorBuilder.url(htmlPost.metadata['author.url'] as String)
+                }
+                if (htmlPost.metadata['author.avatar']) {
+                    authorBuilder = authorBuilder.avatar(htmlPost.metadata['author.avatar'] as String)
+                }
+                jsonFeedItemBuilder.author(authorBuilder.build())
+            }
+            if (htmlPost.metadata['banner_image']) {
+                jsonFeedItemBuilder = jsonFeedItemBuilder.bannerImage(htmlPost.metadata['banner_image'] as String)
+            }
+            if (htmlPost.metadata['external_url']) {
+                jsonFeedItemBuilder = jsonFeedItemBuilder.externalUrl(htmlPost.metadata['external_url'] as String)
+            }
             postTags.each { tag -> 
                 jsonFeedItemBuilder = jsonFeedItemBuilder.tag(tag)
             } 

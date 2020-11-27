@@ -1,5 +1,8 @@
 ---
 title: Commit Conf - Acceptance Tests with Geb
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2018-12-19T15:44:00+01:00
 date_modified: 2018-12-19T15:44:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/test-de-aceptacion-con-geb-commit-conf-2018

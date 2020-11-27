@@ -1,5 +1,8 @@
 ---
 title: Debug Grails Plugins load order
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-07-05T14:40:00+01:00
 date_modified: 2017-07-05T14:40:00+01:00
 ---

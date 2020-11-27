@@ -1,5 +1,8 @@
 ---
 title: GR8Conf 2017 - tvOS app development with TVMLKit and Grails
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-06-01T10:00:00+01:00
 date_modified: 2017-06-01T10:00:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/tvos-app-development-using-tvmlkit-and-grails-1

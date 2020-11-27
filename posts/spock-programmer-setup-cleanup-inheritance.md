@@ -1,5 +1,8 @@
 ---
 title: Spock Programmer : Setup / Cleanup Inheritance
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-08-21T06:24:00+01:00
 date_modified: 2016-08-21T06:24:00+01:00
 ---

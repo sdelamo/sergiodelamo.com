@@ -1,5 +1,8 @@
 ---
 title: Geb Programmer : How to execute Geb with different browsers
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-10-10T06:33:00+01:00
 date_modified: 2016-10-10T06:33:00+01:00
 ---

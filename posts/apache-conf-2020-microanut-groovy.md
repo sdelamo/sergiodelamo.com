@@ -1,5 +1,8 @@
 ---
 title:  ApacheCon 2020 - Micronaut + Groovy
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-10-06T10:30:00+01:00
 date_modified: 2020-10-06T10:30:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/apachecon-2020-micronaut-plus-groovy

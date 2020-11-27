@@ -1,5 +1,8 @@
 ---
 title: How to find the different Java SDK installed in your MacOS installation
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-12-23T12:57:00+01:00
 date_modified: 2016-12-23T12:57:00+01:00
 ---

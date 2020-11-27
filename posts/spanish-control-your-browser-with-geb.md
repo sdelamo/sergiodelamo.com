@@ -1,5 +1,8 @@
 ---
 title: Northem Quality - Control your browser with Geb
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-07-11T06:46:00+01:00
 date_modified: 2019-07-11T06:46:00+01:00
 summary: Video of my talk at Northem Quality user group

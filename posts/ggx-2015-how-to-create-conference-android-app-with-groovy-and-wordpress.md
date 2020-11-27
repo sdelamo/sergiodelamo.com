@@ -1,4 +1,7 @@
 title: GGX London 2015 - How to create conference Android App with Groovy and WordPress?
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2015-12-14T06:07:00+01:00
 date_modified: 2015-12-14T06:07:00+01:00
 summary:  Link to my talk at GGX London 2015 hosted at Skillsmatter.

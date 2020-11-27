@@ -1,5 +1,8 @@
 ---
 title: How to check if a company is an intracommunitary operator?
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-01-11T08:01:00+01:00
 date_modified: 2017-01-11T08:01:00+01:00
 ---

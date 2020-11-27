@@ -1,5 +1,8 @@
 ---
 title: Grails Programmer : How to install new Relic in a Grails 3 app?
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-02-20T17:40:00+01:00
 date_modified: 2020-02-20T17:40:00+01:00
 ---

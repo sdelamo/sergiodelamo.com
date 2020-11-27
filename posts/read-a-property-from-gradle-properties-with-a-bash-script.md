@@ -1,5 +1,8 @@
 ---
 title: Read a property from gradle.properties with a bash script
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-05-16T11:07:00+01:00
 date_modified: 2017-05-16T11:07:00+01:00
 ---

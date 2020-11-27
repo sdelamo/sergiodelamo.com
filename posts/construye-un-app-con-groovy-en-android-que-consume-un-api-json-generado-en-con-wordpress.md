@@ -1,5 +1,8 @@
 ---
 title: Madrid GUG - Build an Android app with Groovy and consume a Wordpress JSON API
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-06-14T08:13:00+01:00
 date_modified: 2016-06-14T08:13:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/construye-un-app-con-groovy-en-android-que-consume-un-api-json-generado-en-con-wordpress

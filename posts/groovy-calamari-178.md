@@ -1,8 +1,10 @@
 ---
 title:  Groovy Calamari 178 🔗
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-09-30T10:30:00+01:00
-date_modified: 2020-09-30T10:30:00+01:00
-description: 
+date_modified: 2020-09-30T10:30:00+01:00 
 ---
 
 # [%title]

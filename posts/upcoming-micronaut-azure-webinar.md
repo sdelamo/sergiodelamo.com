@@ -1,8 +1,11 @@
 ---
 title: Micronaut + Azure online webinar
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-09-24T10:30:00+01:00
 date_modified: 2020-09-24T10:30:00+01:00
-description: October 2nd, I will be doing an online Micronaut + Azure Webinar together with Julien Dubois.
+summary: October 2nd, I will be doing an online Micronaut + Azure Webinar together with Julien Dubois.
 ---
 
 # [%title]

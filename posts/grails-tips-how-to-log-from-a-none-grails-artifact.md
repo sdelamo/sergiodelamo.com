@@ -1,5 +1,8 @@
 ---
 title: Grails Programmer : How to log from a none Grails Artifact
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-09-23T08:13:00+01:00
 date_modified: 2016-09-23T08:13:00+01:00
 ---

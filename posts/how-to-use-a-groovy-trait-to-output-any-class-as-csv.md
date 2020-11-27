@@ -1,5 +1,8 @@
 ---
 title: How to use a Groovy trait to output any class as csv?
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-03-15T10:30:00+01:00
 date_modified: 2016-03-15T10:30:00+01:00
 ---

@@ -1,5 +1,8 @@
 ---
 title: GR8Conf 2019 - Micronaut Security
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-05-28T10:30:00+01:00
 date_modified: 2019-05-28T10:30:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/gr8eu-2019-micronaut-security

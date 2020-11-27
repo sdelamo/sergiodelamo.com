@@ -1,5 +1,8 @@
 ---
 title: Add Google Analytics snippet to multiple .html files recursively with a Groovy Script
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2018-01-29T09:27:00+01:00
 date_modified: 2018-01-29T09:27:00+01:00
 ---

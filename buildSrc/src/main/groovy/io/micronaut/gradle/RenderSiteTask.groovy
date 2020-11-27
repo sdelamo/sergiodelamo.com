@@ -21,7 +21,7 @@ import javax.validation.constraints.NotNull
 class RenderSiteTask extends DefaultTask {
 
     public static final String YOUTUBE_WATCH = 'https://www.youtube.com/watch?v='
-
+    static final String TWITER_HANDLE = '@sdelamo'
     static final String COLON = ":"
     static final String SEPARATOR = "---"
     public static final String DIST = "dist"
@@ -152,19 +152,25 @@ class RenderSiteTask extends DefaultTask {
         if (!resolvedMetadata.containsKey(ROBOTS)) {
             resolvedMetadata.put('robots', "all")
         }
-        resolvedMetadata.put('twittercard', twitterCard('summary_large_image'))
+        String twittercard = ""
         if (resolvedMetadata.containsKey('video')) {
             String videoId = parseVideoId(resolvedMetadata)
             if (videoId) {
-                resolvedMetadata.put('twittercard', twitterCard('player') + twitterPlayerHtml(videoId, TWITTER_CARD_PLAYER_WIDTH, TWITTER_CARD_PLAYER_HEIGHT))
+                twittercard = metaTwitter('card', 'player') + twitterPlayerHtml(videoId, TWITTER_CARD_PLAYER_WIDTH, TWITTER_CARD_PLAYER_HEIGHT)
             }
+        } else if (resolvedMetadata.containsKey("banner_image")) {
+            twittercard += metaTwitter('card','summary_large_image')
+            twittercard += "<meta name=\"twitter:image\" content=\"${resolvedMetadata['banner_image']}\">"
         }
-        if (resolvedMetadata.containsKey('video') && parseVideoId(resolvedMetadata)) {
+        twittercard += "<meta name=\"twitter:creator\" content=\"${TWITER_HANDLE}\">"
+        twittercard += "<meta name=\"twitter:site\" content=\"${TWITER_HANDLE}\">"
+        twittercard += metaTwitter('title',resolvedMetadata['title'])
+        twittercard += metaTwitter('description',resolvedMetadata['summary'])
+        resolvedMetadata['twittercard'] = twittercard
 
-        } else {
-
+        if (!resolvedMetadata["author.name"]) {
+            resolvedMetadata["author.name"] = "Sergio del Amo"
         }
-
         resolvedMetadata
     }
 
@@ -187,8 +193,8 @@ class RenderSiteTask extends DefaultTask {
 """
     }
 
-    static String twitterCard(String cardType) {
-        "<meta name='twitter:card' content='${cardType}'/>"
+    static String metaTwitter(String attribute, String cardType) {
+        "<meta name='twitter:${attribute}' content='${cardType}'/>"
     }
 
     static String highlightMenu(String html, Map<String, String> sitemeta, String path) {

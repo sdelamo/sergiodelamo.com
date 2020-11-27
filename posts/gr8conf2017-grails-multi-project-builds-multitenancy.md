@@ -1,5 +1,8 @@
 ---
 title: GR8Conf 2017 - Grails Multi-Project Builds & Multi tenancy
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-06-01T09:32:00+01:00
 date_modified: 2017-06-01T09:32:00+01:00
 video: https://www.youtube.com/watch?v=Dkdmdw2ZE3E

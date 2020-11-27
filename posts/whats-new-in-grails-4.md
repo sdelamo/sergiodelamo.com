@@ -1,9 +1,12 @@
 ---
 title: Madrid GUG - What's new with Grails 4 🎥 👨🏼‍🏫
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-09-17T10:30:00+01:00
 date_modified: 2020-09-17T10:30:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/whats-new-in-grails-4
-description: Slides from my talk at Madrid Groovy User Group
+summary: Slides from my talk at Madrid Groovy User Group
 video: https://www.youtube.com/watch?v=LrFMeG9uKb4
 ---
 

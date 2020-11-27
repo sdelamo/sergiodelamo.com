@@ -1,5 +1,8 @@
 ---
 title: Pass system property in a Gradle Task
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-03-25T10:00:00+01:00
 date_modified: 2019-03-25T10:00:00+01:00
 ---
