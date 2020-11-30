@@ -51,6 +51,9 @@ class BlogTask extends DefaultTask {
         JSON_FEED_FORMAT.setTimeZone(tz)
         GMT_FORMAT.setTimeZone(tz)
     }
+    static final String H1_OPEN = '<h1>'
+    static final String H1_CLOSE = '</h1>'    
+    static final String SPAN_DATE_OPEN = '<span class="date">'
     public static final String RSS_FILE = 'rss.xml'
     public static final String JSONFEED_FILE = 'feed.json'
     public static final String IMAGES = 'images'
@@ -184,17 +187,31 @@ class BlogTask extends DefaultTask {
         })
     }
 
+    static String htmlWithoutTitleAndDate(String html) {        
+        String result = removeElement(html, H1_OPEN, H1_CLOSE) 
+        result = removeElement(result, '<p>By <span class="author">', SPAN_CLOSE + ' - ')        
+        result = removeElement(result, SPAN_DATE_OPEN, SPAN_CLOSE + '</p>')        
+        result
+    }
+    
+    static String removeElement(String html, String opening, String close) {
+        int start = html.indexOf(opening)
+        int end = html.indexOf(close)        
+        if (start == -1 || end == -1) {
+            return html
+        }
+        String result = html.substring(0, start)
+        //result += html.substring(start + opening.length(), end)
+        result += html.substring(end + close.length())
+        result
+    }
+
     static RssItem rssItemWithPage(String title,
                                    Date pubDate,
                                    String link,
                                    String guid,
                                    String html,
                                    String author) {
-        String htmlWithoutTitleAndDate = html
-        if (htmlWithoutTitleAndDate.contains('<span class="date">')) {
-            htmlWithoutTitleAndDate = htmlWithoutTitleAndDate.substring(htmlWithoutTitleAndDate.indexOf('<span class="date">'))
-            htmlWithoutTitleAndDate = htmlWithoutTitleAndDate.substring(htmlWithoutTitleAndDate.indexOf('</span>') + '</span>'.length())
-        }
         RssItem.Builder builder = RssItem.builder()
                 .title(title)
                 .pubDate(ZonedDateTime.of(Instant.ofEpochMilli(pubDate.time)
@@ -202,7 +219,7 @@ class BlogTask extends DefaultTask {
                         .toLocalDateTime(), ZoneId.of("GMT")))
                 .link(link)
                 .guid(guid)
-                .description(htmlWithoutTitleAndDate)
+                .description(html)
         if (author) {
             builder = builder.author(parseAuthorName(author))
         }
@@ -318,11 +335,14 @@ class BlogTask extends DefaultTask {
             }
             String postLink = postLink(htmlPost)
             String uuid = htmlPost.path.replace(".html", "")
+            String cleanupHtml = htmlWithoutTitleAndDate(htmlPost.html)
+            cleanupHtml = cleanupHtml.replace('\n','')
+
             rssItems.add(rssItemWithPage(htmlPost.metadata.title,
                     parseDate(htmlPost.metadata.datePublished),
                     postLink,
                     uuid,
-                    htmlPost.html,
+                    cleanupHtml,
                     htmlPost.metadata.author))
                     
             JsonFeedItem.Builder jsonFeedItemBuilder = JsonFeedItem.builder()
@@ -330,7 +350,7 @@ class BlogTask extends DefaultTask {
                     .datePublished(toRFC3339(parseDate(htmlPost.metadata.datePublished)))
                     .url(postLink)
                     .id(uuid)
-                    .contentHtml(htmlPost.html)
+                    .contentHtml(cleanupHtml)
             if (htmlPost.metadata['author.name'] || htmlPost.metadata['author.url'] || htmlPost.metadata['author.avatar']) {
                 JsonFeedAuthor.Builder authorBuilder = JsonFeedAuthor.builder()
                 if (htmlPost.metadata['author.name']) {
@@ -421,7 +441,10 @@ class BlogTask extends DefaultTask {
                 .author(JsonFeedAuthor.builder()
                         .url(sitemeta.url)
                         .name("Sergio del Amo")
+                        .avatar('https://images.sergiodelamo.com/smallavatar.png') 
                         .build())
+                .icon('https://images.sergiodelamo.com/smallavatar.png')
+                .favicon('https://images.sergiodelamo.com/favicon.jpg')
                 .language("en")
                 .homePageUrl(sitemeta.url)
                 .feedUrl("${sitemeta.url}/feed.json")

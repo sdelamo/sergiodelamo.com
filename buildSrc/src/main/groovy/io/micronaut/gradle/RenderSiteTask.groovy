@@ -119,7 +119,7 @@ class RenderSiteTask extends DefaultTask {
             }
         }
         pageOutput.createNewFile()
-        pageOutput.text = html
+        pageOutput.text = html.replace('\n','')
     }
 
     static Map<String, String> processMetadata(Map<String, String> sitemeta) {
@@ -170,6 +170,9 @@ class RenderSiteTask extends DefaultTask {
 
         if (!resolvedMetadata["author.name"]) {
             resolvedMetadata["author.name"] = "Sergio del Amo"
+        }
+        if (!resolvedMetadata["meta.author"]) {
+            resolvedMetadata["meta.author"] = resolvedMetadata["author.name"]
         }
         resolvedMetadata
     }
@@ -283,7 +286,9 @@ class RenderSiteTask extends DefaultTask {
                     List<String> authors = value.split(",") as List<String>
                     value = '<span class="author">By ' + authors.join("<br/>") + '</span>'
                     line = line.replaceAll("\\[%${metadataKey}\\]".toString(), value)
-
+                } else if ("[%${metadataKey}]".toString() == '[%author.name]') {
+                    value = '<span class="author">' + value + '</span>'
+                    line = line.replaceAll("\\[%${metadataKey}\\]".toString(), value)
                 } else if ("[%${metadataKey}]".toString() == '[%date_published]') {
                     if (line.contains('<meta')) {
                         line = line.replaceAll("\\[%${metadataKey}\\]".toString(), value)
