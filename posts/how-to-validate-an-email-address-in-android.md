@@ -9,7 +9,7 @@ date_modified: 2017-02-06T08:39:00+01:00
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #android
 

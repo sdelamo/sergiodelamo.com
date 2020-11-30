@@ -10,7 +10,7 @@ summary: Gradle podcast plugin allows you to create a Podcast RSS feed with a  G
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #gradle #rss
 

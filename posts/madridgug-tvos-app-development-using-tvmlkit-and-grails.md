@@ -11,7 +11,7 @@ summary: Slides from my talk at Madrid Groovy User Group
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #tvml #tvos #grails #slides
 

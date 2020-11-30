@@ -16,7 +16,7 @@ eventLanguage: English
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #slides #tvml #grails #video
 

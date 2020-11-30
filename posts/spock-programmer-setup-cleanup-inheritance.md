@@ -9,7 +9,7 @@ date_modified: 2016-08-21T06:24:00+01:00
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #spock
 

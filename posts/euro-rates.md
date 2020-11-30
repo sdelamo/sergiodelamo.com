@@ -11,7 +11,7 @@ summary:  Java library to consume Euro foreign exchange rates XML feed published
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #micronaut
 

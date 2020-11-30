@@ -9,7 +9,7 @@ date_modified: 2016-02-27T09:00:00+01:00
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 ```
 grails --version

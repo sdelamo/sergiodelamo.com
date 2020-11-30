@@ -13,7 +13,7 @@ eventCity: London
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #video #wordpress #android #groovy #slides
 

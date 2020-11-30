@@ -10,7 +10,7 @@ summary: Today, I published a Java library to consume the Curated API. It is bui
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #micronaut
 

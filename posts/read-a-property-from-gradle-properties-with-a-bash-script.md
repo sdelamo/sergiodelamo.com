@@ -9,7 +9,7 @@ date_modified: 2017-05-16T11:07:00+01:00
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #gradle #bash
 

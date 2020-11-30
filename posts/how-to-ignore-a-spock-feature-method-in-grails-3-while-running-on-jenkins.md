@@ -9,7 +9,7 @@ date_modified: 2016-05-02T09:32:00+01:00
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #grails #spock
 

@@ -11,7 +11,7 @@ summary: Slides from my talk at ApacheCon 2020 about Micronaut and Groovy
 
 # [%title]
 
-[%date_published]
+By [%author.name] - [%date_published]
 
 Tags: #micronaut #groovylang #slides
 
