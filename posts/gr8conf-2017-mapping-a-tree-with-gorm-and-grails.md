@@ -19,7 +19,7 @@ eventLanguage: 2017
 
 By [%author.name] - [%date_published]
 
-Tags: #gr8conf #slides #grails #video
+Tags: #gr8conf #slides #grails #video #talk
 
 [%summary]
 

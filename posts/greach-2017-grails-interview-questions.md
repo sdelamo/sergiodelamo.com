@@ -13,7 +13,7 @@ summary: Slides from my talk about Greach 2017.
 
 By [%author.name] - [%date_published]
 
-Tags: #grails #greach #slides
+Tags: #grails #greach #slides #talk
 
 [%summary]
 

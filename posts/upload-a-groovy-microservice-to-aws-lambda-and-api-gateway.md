@@ -13,7 +13,7 @@ summary: Slides from my talk at Madrid Groovy User Group
 
 By [%author.name] - [%date_published]
 
-Tags: #aws #lambda #groovy #slides
+Tags: #aws #lambda #groovy #slides #talk
 
 [%summary]
 

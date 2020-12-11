@@ -15,7 +15,7 @@ eventCity: London
 
 By [%author.name] - [%date_published]
 
-Tags: #video #wordpress #android #groovy #slides
+Tags: #video #wordpress #android #groovy #slides #talk
 
 [%summary]
 

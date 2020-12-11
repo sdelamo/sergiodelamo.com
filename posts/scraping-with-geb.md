@@ -13,7 +13,7 @@ summary: Slides from my talk at GR8Day Warsaw 2016
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #geb
+Tags: #slides #geb #talk
 
 [%summary]
 

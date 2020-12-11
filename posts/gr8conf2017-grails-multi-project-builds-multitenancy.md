@@ -18,7 +18,7 @@ eventLanguage: English
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #grail #gradle #multitenancy #video
+Tags: #slides #grails #gradle #multitenancy #video #talk
 
 [%summary]
 

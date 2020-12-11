@@ -18,7 +18,7 @@ eventLanguage: English
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #groovy #wordpress #android #video
+Tags: #slides #groovy #wordpress #android #video #talk
 
 [%summary]
 

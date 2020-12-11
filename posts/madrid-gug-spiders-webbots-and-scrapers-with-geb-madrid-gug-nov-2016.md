@@ -18,7 +18,7 @@ eventLanguage: Spanish
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #geb #video
+Tags: #slides #geb #video #talk
 
 [%summary]
 

@@ -18,7 +18,7 @@ eventLanguage: English
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #tvml #grails #video
+Tags: #slides #tvml #grails #video #talk
 
 [%summary]
 

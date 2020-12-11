@@ -13,7 +13,7 @@ summary: Slides from my talk at GR8Conf
 
 By [%author.name] - [%date_published]
 
-Tags: #gr8conf #micronaut #slides
+Tags: #gr8conf #micronaut #slides #talk
 
 [%summary]
 

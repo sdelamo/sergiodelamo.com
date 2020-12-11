@@ -13,7 +13,7 @@ summary: Slides from my talk at Commit Conf 2018
 
 By [%author.name] - [%date_published]
 
-Tags: #geb #commitconf #slides
+Tags: #geb #commitconf #slides #talk
 
 [%summary]
 

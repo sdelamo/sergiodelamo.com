@@ -17,7 +17,7 @@ eventLanguage: English
 
 By [%author.name] - [%date_published]
 
-Tags: #slides #gr8conf #geb
+Tags: #slides #gr8conf #geb #talk
 
 [%summary]
 
