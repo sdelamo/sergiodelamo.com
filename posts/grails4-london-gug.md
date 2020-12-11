@@ -21,7 +21,7 @@ event.location: Online
 
 By [%author.name] - [%date_published]
 
-Tags: #grails #talk
+Tags: #grails #agenda
 
 [%summary]
 

@@ -17,7 +17,7 @@ event.location: Online
 
 By [%author.name] - [%date_published]
 
-Tags: #micronaut #talk
+Tags: #micronaut #agenda
 
 I will join [Carlos Barragan](https://twitter.com/barraganc), [Silvio D'Alessandro](https://twitter.com/sda2392) from [Novatec](https://twitter.com/novatecgmbh) to talk about their experience with Micronaut developing a production application (learning curve, memory consumption, startup ...). 
   
