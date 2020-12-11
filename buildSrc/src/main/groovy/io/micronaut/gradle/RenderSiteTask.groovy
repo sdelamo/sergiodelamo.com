@@ -153,7 +153,7 @@ class RenderSiteTask extends DefaultTask {
             resolvedMetadata.put('robots', "all")
         }
         String twittercard = ""
-        if (resolvedMetadata.containsKey('video')) {
+        if (resolvedMetadata.containsKey('video') || resolvedMetadata.containsKey('external_url')) {
             String videoId = parseVideoId(resolvedMetadata)
             if (videoId) {
                 twittercard = metaTwitter('card', 'player') + twitterPlayerHtml(videoId, TWITTER_CARD_PLAYER_WIDTH, TWITTER_CARD_PLAYER_HEIGHT)
@@ -179,6 +179,11 @@ class RenderSiteTask extends DefaultTask {
 
     @Nullable
     static String parseVideoId(Map<String, String> metadata) {
+        String videoId = metadata.containsKey('external_url') && metadata['external_url'].startsWith(YOUTUBE_WATCH) ? metadata['external_url'].substring(YOUTUBE_WATCH.length()) : null
+        if (videoId) {
+            return videoId
+        }    
+    
         metadata.containsKey('video') && metadata['video'].startsWith(YOUTUBE_WATCH) ? metadata['video'].substring(YOUTUBE_WATCH.length()) : null
     }
 
