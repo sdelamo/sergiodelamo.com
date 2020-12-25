@@ -1,19 +1,20 @@
 ---
-title:  ApacheCon 2020 - Micronaut + Groovy
+title:  📼 ApacheCon 2020: Micronaut + Groovy
 author.name: Sergio del Amo
+external_url: https://www.youtube.com/watch?v=g6CjmRG0vCs
 author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-10-06T10:30:00+01:00
-date_modified: 2020-10-06T10:30:00+01:00
+date_modified: 2020-12-26T08:41:55+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/apachecon-2020-micronaut-plus-groovy
-summary: Slides from my talk at ApacheCon 2020 about Micronaut and Groovy
+summary: Slides and videos from my talk at ApacheCon 2020 about Micronaut and Groovy
 ---
 
 # [%title]
 
 By [%author.name] - [%date_published]
 
-Tags: #micronaut #groovylang #slides #talk
+Tags: #micronaut #groovylang #slides #talk #video
 
 [%summary]
 
