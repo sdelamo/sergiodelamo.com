@@ -21,7 +21,7 @@ Moreover, I have worked a lot with [Grails Framework](https://grails.org). I hav
 
 ## Work 
 
-I work as a Senior Software Engineer at [Object Computing](https://objectcomputing.com). OCI is the company behind both, frameworks Micronaut and Grails. I am fortunate to have a job contributing to open source.
+I work as a Principal Software Engineer at [Object Computing](https://objectcomputing.com). OCI is the company behind both, frameworks Micronaut and Grails. I am fortunate to have a job contributing to open source.
 
 Moreover, I often support Object Computing's clients with both frameworks, Micronaut and Grails. 
 
