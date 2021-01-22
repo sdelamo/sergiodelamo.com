@@ -1,5 +1,5 @@
 ---
-title: Micronaut Java libray to consume the Curated API
+title: Micronaut Java library to consume the Curated API
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
