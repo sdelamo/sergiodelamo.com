@@ -10,6 +10,10 @@ date_modified: 2020-11-20T10:24:00+01:00
 
 Read my [blog]([%url]/blog/index.html) or subscribe to the feed [RSS]([%url]/rss.xml) or [JSON]([%url]/feed.json).
 
+## 🎙Podcast
+
+[Código Bot](https://codigobot.com/index.html) - A podcast in Spanish where I talk with [Kini](https://kinisoftware.com) about Programming, Voice assistants, Chat Bots, Productivity, Open Source, Community ...
+
 ## 📨 Newsletter
 
 I write [Groovy Calamari](https://groovycalamari.com). A curated email publication full of interesting, relevant links about Microservices, Micronaut and Groovy Ecosystem (Grails, Gradle, ...). 

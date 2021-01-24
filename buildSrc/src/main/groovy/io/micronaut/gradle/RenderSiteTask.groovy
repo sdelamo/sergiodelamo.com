@@ -152,6 +152,9 @@ class RenderSiteTask extends DefaultTask {
         if (!resolvedMetadata.containsKey(ROBOTS)) {
             resolvedMetadata.put('robots', "all")
         }
+        if (!resolvedMetadata.containsKey("lang")) {
+            resolvedMetadata.put('lang', "en")
+        }
         String twittercard = ""
         if (resolvedMetadata.containsKey('video') || resolvedMetadata.containsKey('external_url')) {
             String videoId = parseVideoId(resolvedMetadata)
