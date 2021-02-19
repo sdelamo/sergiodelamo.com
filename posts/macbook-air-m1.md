@@ -10,7 +10,7 @@ summary: It does not get hot. It is quiet. It is fast. It is the future. It is n
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #macos #applesilicon
 

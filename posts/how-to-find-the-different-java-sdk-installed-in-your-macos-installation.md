@@ -9,7 +9,7 @@ date_modified: 2016-12-23T12:57:00+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #devops
 

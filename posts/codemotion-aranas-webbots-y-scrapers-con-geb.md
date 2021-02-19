@@ -15,7 +15,7 @@ eventCity: Madrid
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #slides #geb #talk
 

@@ -11,7 +11,7 @@ summary: Slides from my presentation at GR8Conf 2019 about Grails 4
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #gr8conf #grails #slides #talk
 

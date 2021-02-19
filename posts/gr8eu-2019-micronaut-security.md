@@ -11,7 +11,7 @@ summary: Slides from my talk at GR8Conf
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #gr8conf #micronaut #slides #talk
 

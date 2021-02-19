@@ -10,7 +10,7 @@ date_modified: 2020-11-30T12:40:21+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #gradle #intellijidea #automation
 

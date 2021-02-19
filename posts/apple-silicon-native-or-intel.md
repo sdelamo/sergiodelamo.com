@@ -10,7 +10,7 @@ summary: A way to check wether an app you installed is native or intel is to rig
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #macos #applesilicon
 

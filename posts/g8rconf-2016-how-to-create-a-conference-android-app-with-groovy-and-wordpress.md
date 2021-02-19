@@ -15,7 +15,7 @@ eventCity: Copenhagen
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #slides #wordpress #groovy #android #talk
 

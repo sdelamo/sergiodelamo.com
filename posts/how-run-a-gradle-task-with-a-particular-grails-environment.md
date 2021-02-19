@@ -9,7 +9,7 @@ date_modified: 2016-03-14T07:44:00+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #grails
 ```

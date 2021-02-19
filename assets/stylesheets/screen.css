@@ -252,3 +252,7 @@ h1 {
 .wrapper table {
     margin-bottom: 20px;
 }
+
+.author, .date {
+   color: darkgrey;
+}

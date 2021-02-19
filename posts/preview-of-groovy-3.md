@@ -9,7 +9,7 @@ date_modified: 2017-04-24T09:34:00+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #groovy
 

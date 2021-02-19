@@ -11,7 +11,7 @@ summary: Slides from my talk about Greach 2017.
 
 # [%title]
 
-By [%author.name] - [%date_published]
+[%author.name] [%date_published]
 
 Tags: #grails #greach #slides #talk
 
