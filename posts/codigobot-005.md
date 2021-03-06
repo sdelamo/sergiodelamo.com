@@ -15,8 +15,8 @@ date_modified: 2021-03-06T07:06:36+01:00
     
 Por [%author.name] - [%date_published]
 
-Tags: #codigobot #podcast #telegram #chatbot
+Tags: #codigobot #podcast
 
-Hablo con [Kini](https://kinisoftware.com/) sobre la Telegram Chatbots.  El futuro del circuito de conferencias. Conferencias online vs conferencias offline.
+Hablo con [Kini](https://kinisoftware.com/) sobre conferencias. El futuro del circuito de conferencias. Conferencias online vs conferencias offline.
 
 [Ir a la Página del Podcast]([%external_url])
