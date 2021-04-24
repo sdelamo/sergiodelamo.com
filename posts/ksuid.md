@@ -18,7 +18,7 @@ Tags: #java #ksuid
 
 > KSUID is for K-Sortable Unique IDentifier. It is a kind of globally unique identifier similar to a RFC 4122 UUID, built from the ground-up to be "naturally" sorted by generation timestamp without any special type-aware logic.
 
-It was originally open-sourced as a Go Library by [Segment](https://segment.com). \
+It was originally open-sourced as a Go Library by [Segment](https://segment.com).
 
 A sorteable unique identifier is useful in scenarios where you need your primary keys to be sorteable. For example, if you need to generate keys for your items in [DynamoDB](https://aws.amazon.com/dynamodb/). In fact, I learned about KSUID while reading [DynamoDB Book](https://www.dynamodbbook.com)
 
@@ -98,7 +98,7 @@ public class Contact implements Comparable<Contact> {
 
 You can sort it via the primary key:
 
-```
+```java
 Contact tim = new Contact("Tim Cook", "CEO");
 Contact katherine = new Contact("Katherine Adams", "Senior Vice President and General Counsel");
 Contact eddy = new Contact("Eddy Cue", "Senior Vice President Internet Software and Services");
@@ -117,7 +117,7 @@ System.out.println(tim.toString());
 
 The primary key contains the timestamp. The previous code prints: 
 
-```
+```java
 Contact{id='DRIvC0YHDXBuGawemfYsenzBN84 Time: 2021-04-24T20:18:19Z[UTC]
 Timestamp: 1619295499
 Payload: [70, 7, 13, 112, 110, 25, -84, 30, -103, -10, 44, 122, 124, -63, 55, -50]', name='Tim Cook', title='CEO'}
