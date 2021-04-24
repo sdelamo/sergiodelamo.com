@@ -42,4 +42,4 @@ Micronaut Java library to consume Euro foreign exchange rates XML feed published
 
 - [Telegram @ForeignExchangeRatesBot](https://exchangeratesbot.com). A telegram bot to help you obtain foreign exchange rates published by the European Central Bank.
 
-- [@PodcastCodigoBot](https://exchangeratesbot.com). A telegram bot about [Código Bot podcast](https://codigobot.com/004.html)
+- [@PodcastCodigoBot](https://t.me/PodcastCodigoBot). A telegram bot about [Código Bot podcast](https://codigobot.com/004.html)
