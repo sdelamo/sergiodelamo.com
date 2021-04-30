@@ -19,4 +19,5 @@ Tags: #codigobot #podcast
 
 Hablo con [Kini](https://kinisoftware.com/) sobre su experiencia en Codemotion 2021 spanish edition, la resaca de aparecer en la newsletter de Alexa ...
 
-[Ir a la Página del Podcast]([%external
+
+[Ir a la Página del Podcast]([%external_url])
