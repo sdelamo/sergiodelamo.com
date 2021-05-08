@@ -14,7 +14,7 @@ summary:  I will be talking at Cloud Conference Rio de Janerio about how to writ
 
 Tags: #micronaut #aws #lambda
 
-[%description]
+[%summary]
 
 🗓 17 October  
 [Registration](https://cloudconferenceday.com/)!

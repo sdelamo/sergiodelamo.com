@@ -13,7 +13,7 @@ date_modified: 2020-09-30T10:30:00+01:00
 
 Tags: #groovycalamari
 
-[%description]
+[%summary]
 
 I wrote a new issue of my newsletter:
 
