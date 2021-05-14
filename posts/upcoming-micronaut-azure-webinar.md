@@ -14,7 +14,7 @@ summary: October 2nd, I will be doing an online Micronaut + Azure Webinar togeth
 
 Tags: #micronaut #azure
 
-[%description]
+[%summary]
 
 [Julien Dubois](https://twitter.com/juliendubois) is the Java developer advocacy team manager at Microsoft, lead developer of the JHipster project and a Java Champion. What an honor to share screen with him!
 

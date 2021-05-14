@@ -14,6 +14,6 @@ summary: Since 2020.2, IntelliJ IDEA Ultimate adds the possibility to create new
 
 Tags: #micronaut #idea
 
-[%description]
+[%summary]
 
 [Continue reading at Micronaut Blog](https://micronaut.io/blog/2020-07-30-intellij-idea-new-project-micronaut.html)

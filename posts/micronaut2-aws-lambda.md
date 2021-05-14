@@ -14,7 +14,7 @@ summary: Micronaut 2 brings improvements to the way you write AWS Lambda functio
 
 Tags: #micronaut #aws #lambda
 
-[%description]
+[%summary]
 
 [Continue reading on Micronaut Blog](https://micronaut.io/blog/2020-08-31-micronaut-2-aws-lambda.html)
 
