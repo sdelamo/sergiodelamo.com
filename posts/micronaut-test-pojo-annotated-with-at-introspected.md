@@ -21,7 +21,7 @@ By [%author.name] - [%date_published]
 Tags: #micronaut #spock #test 
 
 
-I always annotate my model classes with `@Introspected. It is easy to test you don't forget the annotation.
+I always annotate my model classes with `@Introspected`. It is easy to test you don't forget the annotation.
 
 Given a [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object): 
 
