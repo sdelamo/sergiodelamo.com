@@ -1,17 +1,11 @@
 ---
 title: Test Micronaut POJOs are annotated with @Introspected
 summary: I always annotate my model classes with @Introspected. It is easy to test that you don't forget the annotation.
-banner_image: (optional) is the URL of an image to use as a banner. 
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-17T15:48:21+01:00
 date_modified: 2021-05-17T15:48:21+01:00
-event.name: What's new in Grails 4
-event.start: 2020-12-01 19:00
-event.end: 2020-12-01 20:00
-event.summary: Grails at the London Groovy User Group
-event.location: Online
 ---
 
 # [%title]
