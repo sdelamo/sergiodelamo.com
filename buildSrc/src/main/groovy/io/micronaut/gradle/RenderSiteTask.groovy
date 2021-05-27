@@ -309,6 +309,7 @@ class RenderSiteTask extends DefaultTask {
                 }
             }
         }
-        line.replaceAll('\\$', '&#36;')
+        //line.replaceAll('\\$', '&#36;')
+        line
     }
 }
