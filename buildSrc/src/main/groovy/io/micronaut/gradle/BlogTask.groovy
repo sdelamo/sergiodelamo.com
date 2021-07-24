@@ -243,6 +243,7 @@ class BlogTask extends DefaultTask {
         }
         String html = writer.toString()
         Map<String, String> metadata = htmlPost.metadata.toMap()
+        metadata['keywords'] = htmlPost.tags.join(',')
         html = RenderSiteTask.renderHtmlWithTemplateContent(html, metadata, templateText)
         html = RenderSiteTask.highlightMenu(html, metadata, htmlPost.path)
         metadata['body'] = metadata['body'] ? metadata['body'] : 'post'
