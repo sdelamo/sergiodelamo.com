@@ -216,7 +216,7 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 .wrapper {
     max-width: 864px;
-    width: 100%;
+    width: 90%;
     padding-left: 1em;
     padding-right: 1em;
     margin-right: auto;
