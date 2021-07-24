@@ -20,7 +20,7 @@ However, Youtube is such a huge distribution platform that you may want to distr
 
 I have struggled with this decision. YouTube is a closed platform with a lot of issues. Moreover, I don't want YouTube to replace the open Podcast ecosystem. 
 
-However, we were already distributing [Código Bot](https.//codigobot.com) to [Spotify](https://www.spotify.com/), which one may argue is the biggest threat to the open Podcast ecosystem. 
+However, we were already distributing [Código Bot](https://codigobot.com) to [Spotify](https://open.spotify.com/show/4KcAbjtZZEC5UnVVAGUovW), which one may argue is the biggest threat to the open Podcast ecosystem. 
 
 > [Joe Rogan's full library, dating back 11 years, is to hit the service Sept. 1, and become exclusive to Spotify after that, before the end of the year](https://www.wsj.com/articles/spotify-strikes-exclusive-podcast-deal-with-joe-rogan-11589913814)
 
