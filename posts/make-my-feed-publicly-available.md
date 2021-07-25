@@ -14,7 +14,7 @@ date_modified: 2021-05-06T17:32:10+01:00
 
 By [%author.name] - [%date_published]
 
-Tags: #rss #podcast
+Tags: #rss #podcast #applepodcast
 
 If you host a podcast, you probably have an [Apple Podcast Connect](https://podcastsconnect.apple.com) account.
 
