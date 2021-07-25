@@ -310,6 +310,10 @@ class RenderSiteTask extends DefaultTask {
             }
         }
         //line.replaceAll('\\$', '&#36;')
+
+        if (line.endsWith('mp4') && line.startsWith('https')) {
+            return "<video controls src='${line}'/>"
+        }
         line
     }
 }
