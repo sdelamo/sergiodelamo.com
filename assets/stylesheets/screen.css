@@ -250,7 +250,8 @@ h1 {
 }
 
 .wrapper ol,
-.wrapper ul {
+.wrapper ul,
+.wrapper figure {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 20px !important;
