@@ -12,7 +12,7 @@ summary: It does not get hot. It is quiet. It is fast. It is the future. It is n
 
 [%author.name] [%date_published]
 
-Tags: #macos #applesilicon #mac
+Tags: #macos #m1 #mac
 
 I am an iPad Pro user since 2018. iPad Pro is a hardware wonder. I use the iPad Pro a lot. However, I am a developer. Because of that MacOS caters more to my needs. For years, there has been rumours about Apple transitioning Mac to ARM. I have experienced the power of an iPad Pro first hand and I was excited what could it mean for the Mac and MacOS.
 
