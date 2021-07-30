@@ -1,7 +1,6 @@
 ---
 title: Automatically generate a PDF from a Screenshot 
 summary: Combine Hazel and Automator to do it. 
-banner_image: (optional) is the URL of an image to use as a banner. 
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
