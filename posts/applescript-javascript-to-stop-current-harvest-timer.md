@@ -44,12 +44,12 @@ Thus, I resort to browser automation. The following AppleScript:
  
 ```applescript
 set website to "https://softamo.harvestapp.com/time"
-set theScript to "document.getElementsByClassName('pds-button pds-button-lg pds-button-running js-stop-timer')[0].click();"
+set theScript to "document.getElementsByClassName('js-stop-timer')[0].click();"
 tell application "Safari"
     tell window 1
         set current tab to (make new tab with properties {URL:website})
     end tell
-    delay 3
+    delay 5
     do JavaScript theScript in current tab of first window
 end tell
 ```
