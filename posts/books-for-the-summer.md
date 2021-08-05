@@ -4,8 +4,8 @@ summary: Daemon, the Phonenix project, the Goal
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
-date_published: 2021-08-06T08:17:39+01:00
-date_modified: 2021-08-06T08:17:39+01:00
+date_published: 2021-08-08T08:17:39+01:00
+date_modified: 2021-08-08T08:17:39+01:00
 ---
 
 # [%title]
