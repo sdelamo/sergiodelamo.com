@@ -14,7 +14,7 @@ By [%author.name] - [%date_published]
 
 Tags: #aws #s3 #cloudfront #route53 #certificate-manager
 
-I host this website on [AWS](https://aws.amazon.com). It is a static website which I generate with a [Gradle](https://gradle.org) build.
+I host this website with [AWS](https://aws.amazon.com). It is a static website which I generate with a [Gradle](https://gradle.org) build.
 
 This is the architecture diagram:
 
