@@ -237,13 +237,38 @@ class BlogTask extends DefaultTask {
 
         StringWriter writer = new StringWriter()
         MarkupBuilder mb = new MarkupBuilder(writer)
-
-        mb.div(class: 'content container') {
+        mb.div {
             mkp.yieldUnescaped(htmlPost.html)
+        }
+        mb.p {
+            if (htmlPost.metadata['keywords']) {
+                mkp.yield('Tags: ')
+                for (String tag : htmlPost.metadata['keywords'].split(',')) {
+                    a(href: "./tag/${tag}.html") {
+                        mkp.yield("#${tag}")
+                    }
+                }
+            }
+            br {
+
+            }
+            if (htmlPost.metadata['date_published']) {
+                span(class: "date") {
+                    mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(htmlPost.metadata['date_published'] as String)))
+                }
+            }
+            if (htmlPost.metadata['author.name']) {
+                mkp.yield(' by ')
+                span(class: "author") {
+                    mkp.yield(htmlPost.metadata['author.name'])
+                }
+            }
         }
         String html = writer.toString()
         Map<String, String> metadata = htmlPost.metadata.toMap()
-        metadata['keywords'] = htmlPost.tags.join(',')
+        if (!metadata['keywords']) {
+            metadata['keywords'] = htmlPost.tags.join(',')
+        }
         html = RenderSiteTask.renderHtmlWithTemplateContent(html, metadata, templateText)
         html = RenderSiteTask.highlightMenu(html, metadata, htmlPost.path)
         metadata['body'] = metadata['body'] ? metadata['body'] : 'post'
@@ -301,11 +326,15 @@ class BlogTask extends DefaultTask {
             if (metadata.containsKey('code')) {
                 markdown = markdown + "\n\n[Code](${metadata['code']})\n\n"
             }
+            if (metadata.containsKey('external_url')) {
+                markdown = markdown + "\n\n[Go to the linked site](${metadata['external_url']})\n\n"
+            }
             String contentHtml = wrapTags(metadata, MarkdownUtil.htmlFromMarkdown(markdown))
             String iframe = RenderSiteTask.parseVideoIframe(metadata)
             if (iframe) {
                 contentHtml = contentHtml + iframe
             }
+
             Set<String> postTags = parseTags(contentHtml)
             new HtmlPost(metadata: postMetadata, html: contentHtml, path: mdPost.path, tags: postTags)
         }
