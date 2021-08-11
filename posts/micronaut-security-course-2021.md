@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-03-12T17:46:31+01:00
 date_modified: 2021-03-12T17:46:31+01:00
+keywords:micronaut,traning 
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #traning 
 
 I will be teaching a [Micronaut Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html) 12 hour course next week. I am confident that after the course you will understand how to build secured Micronaut applications and how to test them. You don't need to be a Micronaut security expert. We will start from zero but we will go to more complex topics; JWT, JWKS or integration with OAuth 2.0 servers. 
 

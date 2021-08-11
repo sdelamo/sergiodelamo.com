@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-25T10:28:04+01:00
 date_modified: 2021-04-25T10:28:04+01:00
+keywords:micronaut,aws,elasticbeanstalk,elasticloadbalancing
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #aws #elasticbeanstalk #elasticloadbalancing
 
 When you run your application behind a [Elastic Load Balancer](https://aws.amazon.com/elasticloadbalancing), a [Classic Load Balancer](https://aws.amazon.com/elasticloadbalancing/classic-load-balancer/) or an [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/), AWS decorates your request with [X-Forward HTTP Headers](https://en.wikipedia.org/wiki/X-Forwarded-For). 
 

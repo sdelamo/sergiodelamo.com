@@ -12,13 +12,10 @@ eventName: GR8Conf EU
 eventCity: Copenhagen
 eventDate: Jun 01, 2017
 eventLanguage: English
+keywords:slides,grails,gradle,multitenancy,video,talk
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #slides #grails #gradle #multitenancy #video #talk
 
 [%summary]
 

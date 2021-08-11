@@ -6,16 +6,12 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-22T07:44:34+01:00
 date_modified: 2021-05-22T07:44:34+01:00
+keywords:telegram,chatbot
 ---
 
 # [%title]
 
-By [%author.name] - [%date_published]
-
-
 [%summary]
-
-Tags: #telegram #chatbot
 
 ```
 curl -X "POST" "https://api.telegram.org/xxx/setWebhook" 

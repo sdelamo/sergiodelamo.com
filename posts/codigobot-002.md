@@ -10,13 +10,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-01-22T17:07:16+01:00
 date_modified: 2021-01-22T17:07:16+01:00
+keywords:codigobot,podcast
 ---
 
 # [%title]
-	
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast
 
 > [Kini](https://kinisoftware.com) y  [Sergio](https://sergiodelamo.com) hablan del [Alexa Skill - Informativo de Ángel Martín](https://www.amazon.es/Informativo-de-Ángel-Mart%C3%ADn-Oficial/dp/B08LHJYMY3/ref=cm_cr_arp_d_product_top?ie=UTF8). Tratan la historia del Skill y los servicios de AWS usados para desarrollarla
 

@@ -8,13 +8,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-06T17:32:10+01:00
 date_modified: 2021-05-06T17:32:10+01:00
+keywords:rss,podcast,applepodcast
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #rss #podcast #applepodcast
 
 If you host a podcast, you probably have an [Apple Podcast Connect](https://podcastsconnect.apple.com) account.
 

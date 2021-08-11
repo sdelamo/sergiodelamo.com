@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-08-06T07:04:00+01:00
 date_modified: 2017-08-06T07:04:00+01:00
+keywords:grails,gradle
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails #gradle
 
 Add a new Maven Url entry to your dependencies block:
 

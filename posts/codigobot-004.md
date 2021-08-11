@@ -9,13 +9,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-02-19T07:20:25+01:00
 date_modified: 2021-02-19T07:20:25+01:00
+keywords:codigobot,podcast,telegram,chatbot
 ---
 
 # [%title]
-    
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast #telegram #chatbot
 
 Hablo con [Kini](https://kinisoftware.com/) sobre la Telegram Chatbots. 
 

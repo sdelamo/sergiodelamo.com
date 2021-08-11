@@ -7,13 +7,10 @@ date_published: 2019-05-28T10:30:00+01:00
 date_modified: 2019-05-28T10:30:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/gr8eu-2019-micronaut-security
 summary: Slides from my talk at GR8Conf
+keywords:gr8conf,micronaut,slides,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #gr8conf #micronaut #slides #talk
 
 [%summary]
 

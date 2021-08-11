@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-02-20T17:24:00+01:00
 date_modified: 2016-02-20T17:24:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 ```
 $ grails --version

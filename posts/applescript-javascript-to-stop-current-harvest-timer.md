@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-01T07:17:24+01:00
 date_modified: 2021-08-01T07:17:24+01:00
+keywords:automation,applescript,harvest,bunch,javascript
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #applescript #harvest #bunch #javascript
 
 I use [Harvest](https://harvestapp.com) for time tracking. 
 

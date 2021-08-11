@@ -6,14 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-29T21:24:32+01:00
 date_modified: 2021-04-29T21:24:32+01:00
+keywords:test,gradle,jacoco
 ---
 
 # [%title]
-
-
-By [%author.name] - [%date_published]
-
-Tags: #test #gradle #jacoco
 
 With [Jacoco Gradle Plugin](https://docs.gradle.org/current/userguide/jacoco_plugin.html)
  it is easy to setup your project to enforce a coverage percentage.

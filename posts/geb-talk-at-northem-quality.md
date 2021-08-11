@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-06-19T10:30:00+01:00
 date_modified: 2019-06-19T10:30:00+01:00
+keywords:geb
 ---
 
 # [%title]
-
-[%date_published]
-
-#geb
 
 I will be doing a Youtube live [Geb](https://gebish.org) talk from the [Northem Quality](https://northemquality.github.io">) online community. A community dedicated to testing and engineering.
 

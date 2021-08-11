@@ -7,14 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-12-11T07:41:40+01:00
 date_modified: 2020-12-11T07:41:40+01:00
+keywords:grails,talk,video
 ---
 
 # [%title]
-
-
-By [%author.name] - [%date_published]
-
-Tags: #grails #talk #video
 
 [%summary]
 

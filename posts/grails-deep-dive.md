@@ -12,13 +12,10 @@ event.start: 2020-12-7 08:00
 event.end: 2020-12-10 12:00
 event.summary: Grails Deep Dive
 event.location: Online
+keywords:grails,teaching
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #grails #teaching
 
 [%summary]
 

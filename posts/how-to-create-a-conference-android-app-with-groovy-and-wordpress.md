@@ -10,13 +10,10 @@ eventCity: Warsaw
 eventDate: Mar 19, 2016
 eventLanguage: English
 eventName: GR8Day - Warsaw
+keywords:groovy,wordpress,slides,talk,video
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #groovy #wordpress #slides #talk #video
 
 [%summary]
 

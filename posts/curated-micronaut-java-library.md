@@ -6,13 +6,10 @@ author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2020-08-27T11:07:00+01:00
 date_modified: 2020-08-27T11:07:00+01:00
 summary: Today, I published a Java library to consume the Curated API. It is built with Micronaut and you can use it in a Micronaut app or as a standalone library.
+keywords:micronaut
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #micronaut
 
 I have used [Curated](https://curated.co) to publish my newsletter [Groovy Calamari](http://groovycalamari.com) since I started it. 
 

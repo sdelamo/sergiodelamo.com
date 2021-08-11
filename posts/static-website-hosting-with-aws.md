@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-06T07:53:06+01:00
 date_modified: 2021-08-06T07:53:06+01:00
+keywords:aws,s3,cloudfront,route53,certificate-manager
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #aws #s3 #cloudfront #route53 #certificate-manager
 
 I host this website with [AWS](https://aws.amazon.com). It is a static website which I generate with a [Gradle](https://gradle.org) build.
 

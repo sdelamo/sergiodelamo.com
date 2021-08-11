@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-07T16:44:51+01:00
 date_modified: 2021-05-07T16:44:51+01:00
+keywords:micronaut,spock,jackson,test
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #spock #jackson #test
 
 The following enum uses [Jackson](https://github.com/FasterXML/jackson)'s `@JsonValue` annotation to render as lowercase string when serialized as JSON.
 

@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2018-01-29T09:27:00+01:00
 date_modified: 2018-01-29T09:27:00+01:00
+keywords:groovy
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #groovy
 
 Scenario: You have a static HTML website. With many .html files. You want to add the Google Analytics tracking snippet to every file. It is easy to create a Groovy script do it. Let me show you.
 

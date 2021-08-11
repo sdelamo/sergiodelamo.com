@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-03-02T09:00:00+01:00
 date_modified: 2016-03-02T09:00:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 Sometimes you need to configure the exact server url (via domain name or ip address) of your Grails app. It is easy do it with a small configuration in your `grails-app/conf/application.yml`
 

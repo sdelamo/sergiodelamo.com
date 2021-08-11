@@ -5,14 +5,11 @@ author.url: https://sergiodelamo.com
 author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-09-01T10:30:00+01:00
 date_modified: 2020-09-01T10:30:00+01:00
-summary: Micronaut 2 brings improvements to the way you write AWS Lambda functions. There are several things to consider (what's is your Lambda trigger, are you able to write a GraalVM Native Image of the function) which define what dependencies do you need, what is your handler, how to mitigate cold startup. 
+summary: Micronaut 2 brings improvements to the way you write AWS Lambda functions. There are several things to consider (what's is your Lambda trigger, are you able to write a GraalVM Native Image of the function) which define what dependencies do you need, what is your handler, how to mitigate cold startup.
+keywords:micronaut,aws,lambda
 ---
 
 # [%title]
-
-[%date_published]
-
-Tags: #micronaut #aws #lambda
 
 [%summary]
 

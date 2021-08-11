@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-06T07:05:17+01:00
 date_modified: 2021-05-06T07:05:17+01:00
+keywords:micronaut,test,spock
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #test #spock 
 
 [Micronaut management](https://docs.micronaut.io/latest/guide/#management) dependency adds support for monitoring of your application via endpoints. For example, the [health endpoint](https://docs.micronaut.io/latest/guide/#healthEndpoint) exposes the state of your application.
 

@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-02T08:06:46+01:00
 date_modified: 2021-08-02T08:06:46+01:00
+keywords:automation,applescript
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #applescript
 
 I have recently committed to send every Friday an update email to someone at work. Few lines need change from week to week. I have written a simple AppleScript script to help me do it. 
 

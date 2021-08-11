@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-02-20T17:40:00+01:00
 date_modified: 2020-02-20T17:40:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 Recently I wanted to install [new relic](http://newrelic.com/) in a Grails 3 app which I distribute through Elastic Beanstalk.
 

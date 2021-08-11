@@ -9,13 +9,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-30T10:12:42+01:00
 date_modified: 2021-04-30T10:12:42+01:00
+keywords:codigobot,podcast
 ---
 
 # [%title]
-    
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast
 
 Hablo con [Kini](https://kinisoftware.com/) sobre su experiencia en Codemotion 2021 spanish edition, la resaca de aparecer en la newsletter de Alexa ...
 

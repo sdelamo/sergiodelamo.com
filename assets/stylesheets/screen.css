@@ -229,6 +229,9 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
     margin-left: auto;
 }
 
+.wrapper article div {
+    margin-bottom: 50px;
+}
 .wrapper article img {
     max-width: 864px;
 }
@@ -266,8 +269,4 @@ h1 {
 .wrapper pre,
 .wrapper table {
     margin-bottom: 20px;
-}
-
-.author, .date {
-   color: darkgrey;
 }

@@ -11,13 +11,10 @@ eventCity: Copenhagen
 eventName: GR8Conf EU
 eventDate: Jun 02, 2016
 eventLanguage: English
+keywords:slides,gr8conf,geb,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #slides #gr8conf #geb #talk
 
 [%summary]
 

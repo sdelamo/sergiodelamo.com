@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-11-30T12:40:21+01:00
 date_modified: 2020-11-30T12:40:21+01:00
+keywords:gradle,intellijidea,automation
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #gradle #intellijidea #automation
 
 Most of my projects are Gradle Builds. For such projects, I use in IntelliJ IDEA. However, I delegate Build and Run and tests to Gradle. You can do that at `Settings/Preferences | Build, Execution, Deployment |Build Tools | Gradle`.
 

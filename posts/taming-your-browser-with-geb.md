@@ -7,13 +7,8 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-12-26T08:41:55+01:00
 date_modified: 2020-12-26T08:41:55+01:00
+keywords:geb,talk,groovy,video
 ---
-
 # [%title]
 
-By [%author.name] - [%date_published]
-
-Tags: #geb #talk #groovy #video
-
 [%summary]
-

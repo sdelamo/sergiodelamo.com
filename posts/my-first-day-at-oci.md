@@ -9,8 +9,6 @@ date_modified: 2017-01-10T14:10:00+01:00
 
 # [%title]
 
-[%author.name] [%date_published]
-
 **Yesterday I joined OCI Grails team**. I am thrilled!. What better place to continue developing my Grails career. But let me reflect how I got here.
 
 **6th of July, 2011**. This was the first time I heard about Grails. I was organizing a local meetup called Iniciador Guadalajara. We had the pleasure to be joined by Ángel María. The event's talk followed by networking in the nearest bar. While drinking some beers I met Mamen González. She struck me as a great programmer.

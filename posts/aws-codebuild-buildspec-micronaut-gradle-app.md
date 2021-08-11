@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-24T18:05:34+01:00
 date_modified: 2021-05-24T18:05:34+01:00
+keywords:micronaut,aws,codebuild
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #aws #codebuild
 
 I use [Gradle](https://gradle.org) as my build tool of choice for my [Micronaut](https://micronaut.io) applications. 
 

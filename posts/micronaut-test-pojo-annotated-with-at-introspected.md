@@ -6,14 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-17T15:48:21+01:00
 date_modified: 2021-05-17T15:48:21+01:00
+keywords:micronaut,spock,test
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #spock #test 
-
 
 I always annotate my model classes with `@Introspected`. It is easy to test you don't forget the annotation.
 

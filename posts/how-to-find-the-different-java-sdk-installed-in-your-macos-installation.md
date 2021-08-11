@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-12-23T12:57:00+01:00
 date_modified: 2016-12-23T12:57:00+01:00
+keywords:devops
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #devops
 
 ```
 $ /usr/libexec/java_home -V

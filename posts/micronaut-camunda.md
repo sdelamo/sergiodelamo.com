@@ -13,13 +13,10 @@ event.start: 2021-02-25 10:00
 event.end: 2021-02-25 11:00
 event.summary: Integrating Micronaut and Camunda
 event.location: Online
+keywords:micronaut,camunda,agenda
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #micronaut #camunda #agenda
 
 I will be talking with [Tobias Schäfer](https://twitter.com/toschaef) and [Bernd Rücker](https://twitter.com/berndruecker) about integrating [Micronaut](https://micronaut.io) and [Camunda](https://camunda.com).
 

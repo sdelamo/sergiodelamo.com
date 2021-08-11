@@ -12,13 +12,10 @@ eventName: Madrid GUG
 eventDate: Nov 08, 2016
 eventCity: Madrid
 eventLanguage: Spanish
+keywords:slides,geb,video,talk
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #slides #geb #video #talk
 
 [%summary]
 

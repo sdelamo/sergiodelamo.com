@@ -11,13 +11,9 @@ event.name: Micronaut Case Study: Novatec
 event.start: 2020-12-11 10:00
 event.end: 2020-12-11 11:30
 event.location: Online
+keywords:micronaut,agenda
 ---
-
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #agenda
 
 I will join [Carlos Barragan](https://twitter.com/barraganc), [Silvio D'Alessandro](https://twitter.com/sda2392) from [Novatec](https://twitter.com/novatecgmbh) to talk about their experience with Micronaut developing a production application (learning curve, memory consumption, startup ...). 
   

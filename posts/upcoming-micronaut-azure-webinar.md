@@ -6,13 +6,10 @@ author:avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2020-09-24T10:30:00+01:00
 date_modified: 2020-09-24T10:30:00+01:00
 summary: October 2nd, I will be doing an online Micronaut + Azure Webinar together with Julien Dubois.
+keywords:micronaut,azure
 ---
 
 # [%title]
-
-[%date_published]
-
-Tags: #micronaut #azure
 
 [%summary]
 

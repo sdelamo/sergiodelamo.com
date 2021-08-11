@@ -11,9 +11,7 @@ date_modified: 2021-07-20T09:51:47+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
-
-Tags: #idea
+keywords:idea
 
 
 [IntelliJ IDEA Documentation]([%external_url]):

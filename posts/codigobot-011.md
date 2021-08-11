@@ -9,14 +9,11 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-29T15:02:42+01:00
 date_modified: 2021-05-29T15:02:42+01:00
+keywords:codigobot,podcast
 ---
 
 # [%title]
     
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast
-
 Segunda parte de mi conversación con [Kini](https://kinisoftware.com) sobre los cambios en Basecamp.
 
 Hemos dividido en dos partes:

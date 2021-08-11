@@ -6,13 +6,9 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-26T20:02:12+01:00
 date_modified: 2021-07-26T20:02:12+01:00
+keywords:macos,photos
 ---
-
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #macos #photos
 
 You can create multiple [Photos for macOS
 ](https://www.apple.com/macos/photos/) libraries. 

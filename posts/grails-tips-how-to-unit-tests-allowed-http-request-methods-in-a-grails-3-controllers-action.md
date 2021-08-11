@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-09-28T07:55:00+01:00
 date_modified: 2016-09-28T07:55:00+01:00
+keywords:spock,grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #spock #grails
 
 I am fan of restricting my Grails 3 Controller's actions to certain HTTP methods.
 

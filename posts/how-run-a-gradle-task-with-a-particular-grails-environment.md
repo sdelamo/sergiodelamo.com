@@ -5,13 +5,11 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-03-14T07:44:00+01:00
 date_modified: 2016-03-14T07:44:00+01:00
+keywords:grails
 ---
 
 # [%title]
 
-[%author.name] [%date_published]
-
-Tags: #grails
 ```
 gradle -Dgrails.env=prod clean
 ```

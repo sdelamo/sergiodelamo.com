@@ -11,13 +11,10 @@ eventName: GR8Conf EU
 eventDate: Jun 03, 2016
 eventLanguage: English
 eventCity: Copenhagen
+keywords:slides,wordpress,groovy,android,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #slides #wordpress #groovy #android #talk
 
 [%summary]
 

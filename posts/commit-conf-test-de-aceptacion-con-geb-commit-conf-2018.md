@@ -7,13 +7,10 @@ date_published: 2018-12-19T15:44:00+01:00
 date_modified: 2018-12-19T15:44:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/test-de-aceptacion-con-geb-commit-conf-2018
 summary: Slides from my talk at Commit Conf 2018
+keywords:geb,commitconf,slides,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #geb #commitconf #slides #talk
 
 [%summary]
 

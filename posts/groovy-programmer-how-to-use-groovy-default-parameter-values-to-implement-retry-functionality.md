@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2016-11-16T17:16:00+01:00
 date_modified: 2016-11-16T17:16:00+01:00
+keywords:groovy
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #groovy
 
 Lets say you have a class which depends on another component. The component ( for example a remote call ) sometimes fails. You want to execute a method with a number of retries. Groovy supports parameters with default values and we are going to leverage that capability and recursion to achieve a retry functionality.
 

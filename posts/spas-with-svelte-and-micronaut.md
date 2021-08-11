@@ -7,14 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-12-25T08:52:19+01:00
 date_modified: 2020-12-25T08:52:19+01:00
+keywords:talk,video,svelte,micronaut
 ---
 
 # [%title]
-
-
-By [%author.name] - [%date_published]
-
-Tags: #talk #video #svelte #micronaut
 
 [%summary]
 

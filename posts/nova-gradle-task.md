@@ -6,13 +6,10 @@ author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2020-09-22T11:07:00+01:00
 date_modified: 2020-09-22T11:07:00+01:00
 summary: How to run a Gradle build with Nova custom tasks
+keywords:nova,gradle
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #nova #gradle
 
 I build this website with [Gradle](https://gradle.org). Posts are written in Markdown. When I run `./gradlew build`, I build a statically generated site, a collection of HTML, CSS, images, PDFs and javascript files.  I am trying [Nova](https://nova.app), the code editor recently announced by [Panic](https://panic.com). I've been a long time customer of Panic products [Coda 2](https://panic.com/coda/), [Transmit](https://panic.com/transmit/). Thus, I was been eagearly waiting for Nova. So far, I can tell you two things. It feels Mac native and it feels fast. 
 

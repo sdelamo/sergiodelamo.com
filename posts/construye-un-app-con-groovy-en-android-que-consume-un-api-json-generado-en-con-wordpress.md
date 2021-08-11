@@ -11,14 +11,11 @@ external_url: https://www.youtube.com/watch?v=OLduuM_QV7I
 eventCity: Madrid
 eventDate: Jun 14, 2016
 eventName: Madrid GUG
-eventLanguage: English 
+eventLanguage: English
+keywords:slides,groovy,wordpress,android,video,talk
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #slides #groovy #wordpress #android #video #talk
 
 [%summary]
 

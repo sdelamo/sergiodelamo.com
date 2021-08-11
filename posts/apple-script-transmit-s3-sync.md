@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-07T17:48:09+01:00
 date_modified: 2021-08-07T17:48:09+01:00
+keywords:automation,applescript,transmit
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #applescript #transmit
 
 I [host this website's media in a S3 bucket](https://sergiodelamo.com/blog/static-website-hosting-with-aws.html). 
 Transmit handles FTP, SFTP, WebDAV but also cloud services such as S3, Google Drive, Dropbox, Microsoft Azure...

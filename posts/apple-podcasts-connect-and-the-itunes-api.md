@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-25T10:27:22+01:00
 date_modified: 2021-07-25T10:27:22+01:00
+keywords:podcast,applepodcast
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #podcast #applepodcast
 
 [%summary]
 

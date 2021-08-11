@@ -7,13 +7,10 @@ date_published: 2020-09-03T06:07:00+01:00
 date_modified: 2020-09-03T06:07:00+01:00
 speakerdeck: 
 summary:  Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
+keywords:micronaut
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #micronaut
 
 I have published a [Micronaut](https://micronaut.io) Java library to consume the [Euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) XML feed published by the European Central bank. 
 

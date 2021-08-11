@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-07-28T14:39:00+01:00
 date_modified: 2017-07-28T14:39:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 Do you know you can run a Grails generated WAR with `gradle assemble` with `java -jar`?. Let me show you:
 

@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-30T10:17:09+01:00
 date_modified: 2021-07-30T10:17:09+01:00
+keywords:hazel,macos,automator,automation
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #hazel #macos #automator #automation
 
 It is easy to [take a screenshot on your Mac](https://support.apple.com/en-us/HT201361). Everyday, I use `Shift + Command + 4`.
 

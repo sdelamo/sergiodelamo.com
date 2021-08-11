@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-05-16T11:07:00+01:00
 date_modified: 2017-05-16T11:07:00+01:00
+keywords:gradle,bash
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #gradle #bash
 
 ```
 #!/usr/bin/env bash

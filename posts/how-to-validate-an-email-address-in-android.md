@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-02-06T08:39:00+01:00
 date_modified: 2017-02-06T08:39:00+01:00
+keywords:android
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #android
 
 ```java
 String email = "me@email.com";

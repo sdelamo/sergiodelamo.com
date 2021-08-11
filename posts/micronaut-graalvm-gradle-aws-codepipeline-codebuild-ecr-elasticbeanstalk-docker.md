@@ -11,14 +11,10 @@ event.start: 2020-12-01 19:00
 event.end: 2020-12-01 20:00
 event.summary: Grails at the London Groovy User Group
 event.location: Online
+keywords:micronaut,aws,ecr,codebuild,elasticbeanstalk,graalvm,codebuild,codepipeline,docker
 ---
 
 # [%title]
-
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #aws #ecr #codebuild #elasticbeanstalk #graalvm #codebuild #codepipeline #docker
 
 [%summary]
 

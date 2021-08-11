@@ -11,13 +11,10 @@ eventLanguage: Spanish
 eventName: Codemotin
 eventDate: Nov 18, 2016
 eventCity: Madrid
+keywords:slides,geb,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #slides #geb #talk
 
 [%summary]
 

@@ -8,13 +8,10 @@ date_published: 2020-10-06T10:30:00+01:00
 date_modified: 2020-12-26T08:41:55+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/apachecon-2020-micronaut-plus-groovy
 summary: Slides and videos from my talk at ApacheCon 2020 about Micronaut and Groovy
+keywords:micronaut,groovylang,slides,talk,video
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #groovylang #slides #talk #video
 
 [%summary]
 

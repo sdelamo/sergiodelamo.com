@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-24T07:21:25+01:00
 date_modified: 2021-07-24T07:21:25+01:00
+keywords:youtube,podcast,fusioncast,macos
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #youtube #podcast #fusioncast #macos
 
 The best way to enjoy a Podcast is to listen to it in a Podcast player - [Overcast](https://overcast.fm), [Castro](https://castro.fm), [Pocket Casts](https://www.pocketcasts.com). You enjoy features such as audio boost, clip sharing, illustrated MP3 chapters, show notes with links etc.
 

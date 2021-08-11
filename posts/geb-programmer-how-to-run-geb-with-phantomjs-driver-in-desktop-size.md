@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-06-17T07:07:00+01:00
 date_modified: 2016-06-17T07:07:00+01:00
+keywords:geb
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #geb
 
 If you are developing your Geb programms with Firefox or Chrome driver, they will probably be running in a traditional desktop resolution. You may be puzzled when your tests fail in PhantomJS driver.
 

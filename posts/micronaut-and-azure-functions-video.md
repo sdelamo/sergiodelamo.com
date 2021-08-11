@@ -7,13 +7,10 @@ author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2020-10-05T17:42:25+01:00
 date_modified: 2020-10-05T17:42:25+01:00
 summary: "Micronaut + Azure Functions" webinar video
+keywords:micronaut,azure,talk,video
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #azure #talk #video
 
 Webinar recording about integrating [Micronaut](https://micronaut.io) and [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/). I joined [Julien Dubois](https://twitter.com/juliendubois).
 

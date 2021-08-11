@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-06-17T06:27:00+01:00
 date_modified: 2016-06-17T06:27:00+01:00
+keywords:gradle
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #gradle
 
 I originally saw this tip in an [Andrés Almiray](https://twitter.com/aalmiray)'s talk. There is a [Gradle forum thread](https://discuss.gradle.org/t/enforcing-targetcompatibility-when-compiling-java-code-with-the-groovy-plugin/5065/1) where it is discussed too.
 

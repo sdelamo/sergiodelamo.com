@@ -6,17 +6,12 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-17T16:09:09+01:00
 date_modified: 2021-05-17T16:09:09+01:00
+keywords:micronaut,test,spock
 ---
 
 # [%title]
 
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #test #spock
-
 The following POJO's fields are annotated with `javax.validation.constraints.NotNull` to indicate they are required. 
-
 
 ```java
 import io.micronaut.core.annotation.Introspected;

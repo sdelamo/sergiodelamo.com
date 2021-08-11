@@ -9,13 +9,10 @@ summary: Talks, Micronaut + Groovy and Taming your browser with Geb, at ApacheCo
 eventName: ApacheCon
 eventDate: Sep 29, 2020
 eventLocation: online
+keywords:speaking,micronaut,groovy,geb
 ---
 
 # [%title]
-
-[%date_published]
-
-Tags: #speaking #micronaut #groovy #geb
 
 I will be talking at the [Groovy Track](https://www.apachecon.com/acah2020/tracks/groovy.html) in the online conference [ApacheCon](https://www.apachecon.com/acah2020/). 
 

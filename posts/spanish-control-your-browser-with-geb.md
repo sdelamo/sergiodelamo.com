@@ -7,11 +7,10 @@ author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2019-07-11T06:46:00+01:00
 date_modified: 2019-07-11T06:46:00+01:00
 summary: Video of my talk at Northem Quality user group
+keywords:geb,talk,video
 ---
 
-# [%title] 
-
-Tags: #geb #talk #video
+# [%title]
  
 [Northem Quality Community](https://northemquality.github.io/eventos_pasados.html), an online testing community, invited me to talk about Geb on June 20th.  This is a video of the talk. 
 

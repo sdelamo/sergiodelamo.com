@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-03T07:44:54+01:00
 date_modified: 2021-08-03T07:44:54+01:00
+keywords:automation,shortcuts,javascript,tweetbot,safari
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #shortcuts #javascript #tweetbot #safari
 
 The following Javascript snippet composes a Tweet. 
 

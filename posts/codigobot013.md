@@ -9,13 +9,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-09T17:22:46+01:00
 date_modified: 2021-07-09T17:22:46+01:00
+keywords:codigobot,podcast
 ---
 
 # [%title]
-
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast
 
 ![](https://media.codigobot.com/artwork-864.png)
 

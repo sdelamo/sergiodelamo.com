@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-24T21:39:04+01:00
 date_modified: 2021-04-24T21:39:04+01:00
+keywords:java,ksuid
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #java #ksuid
 
 [KSUID](https://github.com/segmentio/ksuid):
 

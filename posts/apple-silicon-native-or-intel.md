@@ -6,13 +6,10 @@ author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2020-11-20T07:49:00+01:00
 date_modified: 2020-11-20T07:49:00+01:00
 summary: A way to check wether an app you installed is native or intel is to right click "Get Info" in an application.
+keywords:macos,m1
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #macos #applesilicon
 
 When you first install an Intel app, MacOS prompts you to install Rosetta. However, after the first installation, Rosetta is transparent. Thus, it is difficult to know if an app you installed is a Universal or Intel App. 
 

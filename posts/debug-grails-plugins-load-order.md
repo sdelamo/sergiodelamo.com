@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-07-05T14:40:00+01:00
 date_modified: 2017-07-05T14:40:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 Grails documentation talks about Understanding Plugin Load Order and controlling it with the use of loadBefore and loadAfter properties.
 

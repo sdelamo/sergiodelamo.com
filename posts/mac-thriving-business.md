@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-29T08:58:35+01:00
 date_modified: 2021-07-29T08:58:35+01:00
+keywords:mac,apple
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #mac #apple
 
 [Apple Financial Results - Q3 2021 - July 27, 2021]([%external_url]):
 

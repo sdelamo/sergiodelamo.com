@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png
 date_published: 2016-02-27T06:07:00+01:00
 date_modified: 2016-02-27T06:07:00+01:00
+keywords:grails
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails
 
 By default a Grails 3 app will start in the port 8080. It is easy however to configure a different port. Edit `grails-app/conf/application.yml` and add the next snippet at the bottom of the file.
 

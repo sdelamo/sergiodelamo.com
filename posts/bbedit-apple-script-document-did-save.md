@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-28T10:47:51+01:00
 date_modified: 2021-07-28T10:47:51+01:00
+keywords:automation,bbedit,gradle,applescript
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #bbedit #gradle #applescript
 
 My blog is a static website which I generate with a [Gradle](http://gradle.org) build. Gradle builds the website if I run:
 

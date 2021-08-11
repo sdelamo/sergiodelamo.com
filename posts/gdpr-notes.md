@@ -11,9 +11,7 @@ date_modified: 2021-03-26T07:29:57+01:00
 
 # [%title]
 
-By [%author.name] - [%date_published]
-
-Tags: #gdpr
+keywords:gdpr
 
 I have watched [Andrew Norcross's GDPR for Developers]([%external_url]) talks.
 

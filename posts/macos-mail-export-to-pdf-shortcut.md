@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-31T06:08:35+01:00
 date_modified: 2021-07-31T06:08:35+01:00
+keywords:automation,bettertouchtool
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #bettertouchtool
 
 [%summary].
 

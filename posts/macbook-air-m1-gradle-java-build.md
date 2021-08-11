@@ -7,13 +7,10 @@ date_published: 2020-11-21T12:15:00+01:00
 date_modified: 2020-11-21T12:15:00+01:00
 summary: I compare an iMac Pro, Macbook Pro, Macbook Air M1 for a common Gradle Java build.
 banner_image: https://images.sergiodelamo.com/macbook-air-m1-gradle-java-build.png
+keywords:java,applesilicon,mac
 ---
 
 # [%title]
-
-[%date_published]
-
-Tags: #java #applesilicon #mac
 
 I compare an iMac Pro, Macbook Pro, [Macbook Air 2020 M1](https://sergiodelamo.com/blog/macbook-air-m1.html) for a common Gradle Java build.
 

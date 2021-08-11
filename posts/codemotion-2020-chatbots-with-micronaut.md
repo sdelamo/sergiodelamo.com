@@ -9,13 +9,10 @@ summary: Talks at Codemotion 2020 - Building Chatbots with Micronaut.
 eventName: Codemotion
 eventDate: Nov 3, 2020
 eventLocation: online
+keywords:speaking,micronaut,chatbots
 ---
 
 # [%title]
-
-[%date_published]
-
-Tags: #speaking #micronaut #chatbots
 
 I will be talking at the [Codemotion 2020](https://events.codemotion.com/conferences/online/2020/online-tech-conference-spanish-edition/). It will be an online conference.
 

@@ -12,13 +12,10 @@ eventName: GR8Conf EU
 eventCity: Copenhagen
 eventDate: Jun 01, 2017
 eventLanguage: English
+keywords:slides,tvml,grails,video,talk
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #slides #tvml #grails #video #talk
 
 [%summary]
 

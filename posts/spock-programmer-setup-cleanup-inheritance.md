@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-08-21T06:24:00+01:00
 date_modified: 2016-08-21T06:24:00+01:00
+keywords:spock
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #spock
 
 Craig Atkinson's talk at GR8Conf US Intro to Spock and Geb claimed the next about Spock Cleanup / Inheritance.
 

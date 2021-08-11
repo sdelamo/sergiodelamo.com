@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-04T21:13:15+01:00
 date_modified: 2021-08-04T21:13:15+01:00
+keywords:ios,focus
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #ios #focus
 
 I first heard about Infinity Pools in the [Focused Podcast](https://www.relay.fm/focused). I think that it comes from the book [Make Time: A Friendly Approach to Focus and Energy](https://maketime.blog)
 

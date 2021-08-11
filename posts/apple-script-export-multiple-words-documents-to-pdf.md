@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-21T16:23:19+01:00
 date_modified: 2021-07-21T16:23:19+01:00
+keywords:automation,pdf,word,applescript
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #pdf #word #applescript
 
 I was recently asked to review a Book which was shared with me as a series of Word documents. However, I would like them as PDF. I would like to read and annotate them with an iPad and [PDF Expert](https://pdfexpert.com). 
 

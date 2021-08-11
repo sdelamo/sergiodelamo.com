@@ -7,13 +7,10 @@ date_published: 2017-03-31T07:07:00+01:00
 date_modified: 2017-03-31T07:07:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/grails-interview-questions
 summary: Slides from my talk about Greach 2017.
+keywords:grails,greach,slides,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #grails #greach #slides #talk
 
 [%summary]
 

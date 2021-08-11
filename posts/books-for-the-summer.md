@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-12T08:17:39+01:00
 date_modified: 2021-08-12T08:17:39+01:00
+keywords:books
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #books
 
 # [Daemon](http://daniel-suarez.com/daemon10thsynopsis.html)
 

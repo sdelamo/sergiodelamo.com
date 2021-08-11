@@ -7,13 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-05T10:41:50+01:00
 date_modified: 2021-08-05T10:41:50+01:00
+keywords:automation,textexpander
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #automation #textexpander
 
 We produce HTML pages for each [Micronaut Guide](https://guides.micronaut.io). However, we write them as plain text files (more precisely Asciidoc files). We have custom macros to include common snippets. For example, to generate a callout about an `@Introspected` annotation we write: 
 

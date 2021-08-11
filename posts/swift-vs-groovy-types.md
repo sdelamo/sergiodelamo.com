@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-10-11T06:05:00+01:00
 date_modified: 2016-10-11T06:05:00+01:00
+keywords:groovy,swift
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #groovy #swift
 
 ## Getting started Swift types
 

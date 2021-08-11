@@ -5,13 +5,10 @@ author.url: https://sergiodelamo.com
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-04-24T09:34:00+01:00
 date_modified: 2017-04-24T09:34:00+01:00
+keywords:groovy
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #groovy
 
 This blog post is a translation of [@daniel_sun](https://twitter.com/daniel_sun)'s post, originally [posted in Chinesse](http://blog.sunlan.me/2017/04/15/Groovy-3之新特性预览/).
 

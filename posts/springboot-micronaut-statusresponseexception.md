@@ -6,13 +6,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-28T08:05:01+01:00
 date_modified: 2021-04-28T08:05:01+01:00
+keywords:micronaut,springboot
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #springboot
 
 In SpringBoot you can annotate your exceptions with `@ResponseStatus`, Micronaut's `HttpStatusException` achieves a similar behaviour
 

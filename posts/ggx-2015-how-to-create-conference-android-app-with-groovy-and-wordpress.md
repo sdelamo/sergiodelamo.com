@@ -1,3 +1,4 @@
+---
 title: GGX London 2015 - How to create conference Android App with Groovy and WordPress?
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com
@@ -9,13 +10,10 @@ eventName: GGX 2015
 eventDate: Dec 14, 2015
 eventLanguage: English
 eventCity: London
+keywords:video,wordpress,android,groovy,slides,talk
 ---
 
 # [%title]
-
-[%author.name] [%date_published]
-
-Tags: #video #wordpress #android #groovy #slides #talk
 
 [%summary]
 

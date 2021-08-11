@@ -8,13 +8,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-26T16:53:01+01:00
 date_modified: 2021-07-26T16:53:01+01:00
+keywords:macos,21appsfor2021,amphetamine
 ---
 
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #macos #21appsfor2021 #amphetamine
 
 My favourite podcast of 2020 was [20 Macs for 2020](https://sixcolors.com/post/2020/08/20-macs-for-2020-an-introduction/)
 

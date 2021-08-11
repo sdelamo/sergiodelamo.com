@@ -9,13 +9,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-16T10:12:42+01:00
 date_modified: 2021-04-16T10:12:42+01:00
+keywords:codigobot,podcast
 ---
 
 # [%title]
-    
-Por [%author.name] - [%date_published]
-
-Tags: #codigobot #podcast
 
 Hablo con [Kini](https://kinisoftware.com/) sobre como compartir conocimiento dentro de la empresa. Organizar charlas, alojar eventos, conferencias internas...
 

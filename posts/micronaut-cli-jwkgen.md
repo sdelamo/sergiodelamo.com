@@ -7,12 +7,10 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-06-12T17:05:02+01:00
 date_modified: 2021-06-12T17:05:02+01:00
+keywords:micronaut,guide,picocli,nimbus,cli
 ---
+
 # [%title]
-
-By [%author.name] - [%date_published]
-
-Tags: #micronaut #guide #picocli #nimbus #cli
 
 I wrote a tutorial which shows how to write a command line application with [Picocli](https://picocli.info/) and [Micronaut](https://micronaut.io) to generate a [JWK (Json Web Key)](https://datatracker.ietf.org/doc/html/rfc7517). It delegates to [Nimbus Jose + JWT](https://connect2id.com/products/nimbus-jose-jwt). I like JWKs and it is nice to have a command line util to generate them. 
 
