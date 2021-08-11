@@ -258,7 +258,6 @@ class BlogTask extends DefaultTask {
                 }
             }
             if (htmlPost.metadata['author.name']) {
-                mkp.yield(' by ')
                 span(class: "author") {
                     mkp.yield(htmlPost.metadata['author.name'])
                 }
