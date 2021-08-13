@@ -3,7 +3,6 @@ lang: es
 title: 🇪🇸 - 🎙Código Bot 002
 external_url: https://codigobot.com/002.html
 summary: Kini y Sergio hablan del Alexa Skill - Informativo de Ángel Martín. Tratan la historia del Skill y los servicios de AWS usados en su desarrollo.
-image: (optional, string) is the URL of the main image for the item. This image may also appear in the content_html
 banner_image: https://media.codigobot.com/artwork.png
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html

@@ -325,9 +325,18 @@ class BlogTask extends DefaultTask {
             if (metadata.containsKey('code')) {
                 markdown = markdown + "\n\n[Code](${metadata['code']})\n\n"
             }
+            if (metadata.containsKey('image')) {
+                if (metadata.containsKey('external_url')) {
+                    markdown = markdown + "[![](${metadata['image']})](${metadata['external_url']})\n\n"
+                } else {
+            markdown = markdown + "![](${metadata['image']})\n\n"        
+                }
+            
+            }
             if (metadata.containsKey('external_url')) {
                 markdown = markdown + "\n\n[Go to the linked site](${metadata['external_url']})\n\n"
             }
+            
             String contentHtml = wrapTags(metadata, MarkdownUtil.htmlFromMarkdown(markdown))
             String iframe = RenderSiteTask.parseVideoIframe(metadata)
             if (iframe) {
