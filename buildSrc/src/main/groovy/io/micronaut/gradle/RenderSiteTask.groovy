@@ -161,7 +161,8 @@ class RenderSiteTask extends DefaultTask {
             if (videoId) {
                 twittercard = metaTwitter('card', 'player') + twitterPlayerHtml(videoId, TWITTER_CARD_PLAYER_WIDTH, TWITTER_CARD_PLAYER_HEIGHT)
             }
-        } else if (resolvedMetadata.containsKey("banner_image")) {
+        }
+        if (resolvedMetadata.containsKey("banner_image")) {
             twittercard += metaTwitter('card','summary_large_image')
             twittercard += "<meta name=\"twitter:image\" content=\"${resolvedMetadata['banner_image']}\">"
         }
