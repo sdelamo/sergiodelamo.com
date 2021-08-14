@@ -255,6 +255,7 @@ class BlogTask extends DefaultTask {
             if (htmlPost.metadata['date_published']) {
                 span(class: "date") {
                     mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(htmlPost.metadata['date_published'] as String)))
+                    mkp.yield('.')
                 }
             }
             if (htmlPost.metadata['author.name']) {
