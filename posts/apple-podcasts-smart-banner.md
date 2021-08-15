@@ -1,6 +1,7 @@
 ---
 title: Apple Podcast Smart Banner
 summary: Add a HTML <meta> to your HTML
+banner_image: https://images.sergiodelamo.com/apple-podcasts-smart-banner.png
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
