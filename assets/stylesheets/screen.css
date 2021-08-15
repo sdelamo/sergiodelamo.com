@@ -239,6 +239,13 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 .wrapper article img {
    width: 100%;
 }
+@media screen and (min-width: 961px) {
+    .wrapper article img {
+         width: 90%;
+         margin-left: 5%;
+         margin-right: 5%;         
+    }
+}
 .wrapper article video {
      width: 100%;
      height: auto;
