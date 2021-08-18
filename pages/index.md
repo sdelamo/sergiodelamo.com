@@ -27,7 +27,7 @@ I organize [Greach Conf](https://greachconf). A conference around microservices,
 - [Build Info Gradle Plugin](https://sdelamo.github.io/build-info-gradle-plugin/index.html)  
 Gradle plugin to generate a build-info.properties file. To be used in combination with the info endpoint of  a Micronaut app. 
 
-- [Podcast Gradle Plugin](https://sdelamo.github.io/podcast-gradle-plugin/index.html)  
+- [Podcast Gradle Plugin](https://github.com/sdelamo/podcast-gradle-plugin) 
 Gradle plugin to generate a Podcast RSS feed.
 
 ## 🖥 Micronaut Java Libraries
@@ -35,7 +35,7 @@ Gradle plugin to generate a Podcast RSS feed.
 - [Micronaut Curated API](https://sdelamo.github.io/curatedapi/index.html)  
 Micronaut Java library to consume [Curated](https://curated.co) API. 
 
-- [Micronaut Euro Rates](https://sdelamo.github.io/eurorates/index.html).  
+- [Micronaut Euro Rates](https://github.com/sdelamo/eurorates/).  
 Micronaut Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
 
 ## 🤖 💬 Chatbots
