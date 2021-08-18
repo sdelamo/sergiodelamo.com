@@ -10,7 +10,7 @@ date_modified: 2020-11-20T10:24:00+01:00
 
 # [%title]
 
-Email: <a href="mailto:sergio.delamo@hey.com">sergio.delamo@hey.com</a>
+Email: <a href="mailto:sergio.delamo@softamo.com">sergio.delamo@softamo.com</a>
 
 Twitter: [@sdelamo](https://twitter.com/sdelamo)
 
