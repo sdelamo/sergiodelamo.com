@@ -194,16 +194,15 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .header .logo {
-    background-size: 100%;
-    background-image: url(https://images.sergiodelamo.com/sergiodelamo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-indent: -999em;
-    height: 61px;
-    width: 294px;
-    text-align: left;
+    font-family: iAWriterQuattroSRegular, -apple-system, "Helvetica Neue", Helvetica, sans-serif;
     float: left;
-    margin: 0 auto;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 5px;
+    word-spacing: -5px;
+    font-weight: bold;
 }
 
 .header nav li {
