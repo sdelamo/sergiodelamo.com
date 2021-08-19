@@ -344,9 +344,20 @@ class BlogTask extends DefaultTask {
                 contentHtml = contentHtml + iframe
             }
 
-            Set<String> postTags = parseTags(contentHtml)
+            Set<String> postTags = parseTags(contentHtml) + getTags(mdPost)
             new HtmlPost(metadata: postMetadata, html: contentHtml, path: mdPost.path, tags: postTags)
         }
+    }
+
+    static Set<String> getTags(MarkdownPost mdPost) {
+        if (mdPost.metadata.get('keywords')) {
+            if (mdPost.metadata['keywords'] instanceof String) {
+                return (((String) mdPost.metadata['keywords']).replaceAll(" ", "").split(',') as Set<String>)
+            } else if (mdPost.metadata['keywords'] instanceof Collection) {
+                return (mdPost.metadata['keywords'] as Set<String>)
+            }
+        }
+        return [] as Set<String>
     }
 
     static void renderPosts(Map<String, String> globalMetadata,
@@ -365,6 +376,7 @@ class BlogTask extends DefaultTask {
             pageOutput.text = html
 
             Set<String> postTags = parseTags(html)
+            postTags += htmlPost.tags
             for (String postTag : postTags) {
                 tagsMap[postTag] = tagsMap.containsKey(postTag) ? (1 + tagsMap[postTag]) : 1
                 if (!tagPosts.containsKey(postTag)) {
