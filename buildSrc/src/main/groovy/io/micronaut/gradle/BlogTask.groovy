@@ -426,7 +426,6 @@ class BlogTask extends DefaultTask {
             } 
             feedItems.add(jsonFeedItemBuilder.build())
         }
-        Set<Tag> tags = tagsMap.collect { k, v -> new Tag(title: k, ocurrence: v) } as Set<Tag>
         for (String tag : tagsMap.keySet()) {
             List<HtmlPost> postsTagged = listOfPosts.findAll { it.tags.contains(tag) }
             File tagFolder = new File("${outputDir.absolutePath}/tag/")
@@ -441,10 +440,48 @@ class BlogTask extends DefaultTask {
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
         renderJsonFeed(globalMetadata, feedItems, new File(outputDir.absolutePath + "/../" + JSONFEED_FILE))
         renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
+        renderTagIndex(new File(outputDir.getAbsolutePath() + "/tag/index.html"), tagsMap, templateText, globalMetadata, "Tags")
     }
 
     static String toRFC3339(Date d) {
         JSON_FEED_FORMAT.format(d)
+    }
+
+    static void renderTagIndex(File output,
+                               Map<String, Integer> tagsMap,
+                               String templateText,
+                               Map<String, String> metadata,
+                               String title) {
+        String html = "<h1>${title}</h1>"
+
+        Collection<String> popularTags = tagsMap.sort { e1, e2 -> e2.value <=> e1.value }*.key.take(10)
+        html += tagsHtml('Popular', metadata['url'], popularTags )
+        html += tagsHtml('A - Z', metadata['url'], tagsMap.keySet().sort())
+
+        renderIndexPage(output, templateText, metadata, html)
+    }
+
+    static String tagsHtml(String h2, String url, Collection<String> tags) {
+        String html = "<article class='post'>"
+        html += "<h2>${h2}<h2>"
+        html += "<ul>"
+        for (String tag : tags) {
+            html += "<li><a href=\"${url}/blog/tag/${tag}.html\">${tag}</a></li>"
+        }
+        html += "</ul>"
+        html += "</article>"
+    }
+
+    static void renderIndexPage(File output,
+                                String templateText,
+                                Map<String, String> metadata,
+                                String html) {
+        Map<String, String> m = new HashMap<>(metadata)
+        m = RenderSiteTask.processMetadata(m)
+        m[ROBOTS] = [ROBOTS_NOINDEX, ROBOTS_FOLLOW].join(', ')
+        String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
+        output.createNewFile()
+        output.text = renderedHtml
     }
 
     static void renderArchive(File output,
@@ -453,17 +490,11 @@ class BlogTask extends DefaultTask {
                        Map<String, String> metadata,
                        String title) {
         String html = "<h1>${title}</h1>"
-
+        int count = 0
         html += posts.collect { post ->
-            "<article class='post'><h2><a href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
+            "<article class='post'><h2><a ${count++ == 0 ? "accesskey=\"1\"": ""} href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
         }.join("\n")
-
-        Map<String, String> m = new HashMap<>(metadata)
-        m = RenderSiteTask.processMetadata(m)
-        m[ROBOTS] = [ROBOTS_NOINDEX, ROBOTS_FOLLOW].join(', ')
-        String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
-        output.createNewFile()
-        output.text = renderedHtml
+        renderIndexPage(output, templateText, metadata, html)
     }
 
     static Set<String> parseTags(String html) {
