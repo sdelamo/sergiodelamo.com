@@ -8,7 +8,7 @@ author.url: https://sergiodelamo.com/me.html
 author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-03T18:46:04+01:00
 date_modified: 2021-09-03T18:46:04+01:00
-keywords:mac
+keywords:accessibility
 ---
 
 # [%title]
