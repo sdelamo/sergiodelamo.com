@@ -32,11 +32,12 @@ Gradle plugin to generate a Podcast RSS feed.
 
 ## 🖥 Micronaut Java Libraries
 
+- [Micronaut Pushover](https://github.com/sdelamo/pushover). A Micronaut Java library to consume the Pushover API.
+
+- [Micronaut Euro Rates](https://github.com/sdelamo/eurorates/). Micronaut Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
+
 - [Micronaut Curated API](https://sdelamo.github.io/curatedapi/index.html)  
 Micronaut Java library to consume [Curated](https://curated.co) API. 
-
-- [Micronaut Euro Rates](https://github.com/sdelamo/eurorates/).  
-Micronaut Java library to consume Euro foreign exchange rates XML feed published by the European Central bank.
 
 ## 🤖 💬 Chatbots
 
