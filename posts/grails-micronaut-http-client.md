@@ -1,17 +1,17 @@
- ---
- title: Test a Grails Application with Micronaut HTTP Client
- summary: A parent class which I use for the tests which verify a Grails application API
- author.name: Sergio del Amo
- author.url: https://sergiodelamo.com/me.html
- author.avatar: https://images.sergiodelamo.com/smallavatar.png 
- date_published: 2021-09-22T14:45:53+01:00
- date_modified: 2021-09-22T14:45:53+01:00
- keywords:grails,micronaut
- ---
+---
+title: Test a Grails Application with Micronaut HTTP Client
+summary: A parent class which I use for the tests which verify a Grails application API
+author.name: Sergio del Amo
+author.url: https://sergiodelamo.com/me.html
+author.avatar: https://images.sergiodelamo.com/smallavatar.png 
+date_published: 2021-09-22T14:45:53+01:00
+date_modified: 2021-09-22T14:45:53+01:00
+keywords:grails,micronaut
+---
  
  # [%title]
  
-To use a [Micronaut HTTP Client](https://docs.micronaut.io/latest/guide/#httpClient) to the API exposed by your Grails application you can use the following parent class for your integration tests:
+To use a [Micronaut HTTP Client](https://docs.micronaut.io/latest/guide/#httpClient) to test the API exposed by your Grails application you can use the following parent class for your integration tests:
 
 ```groovy
 package example
@@ -51,10 +51,6 @@ abstract class ClientSpec extends Specification {
 
     def cleanupSpec() {
         resetHttpClient()
-    }
-
-    private isSpecStepwise() {
-        this.class.getAnnotation(Stepwise) != null
     }
 
     void resetHttpClient() {
