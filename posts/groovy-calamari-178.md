@@ -1,5 +1,5 @@
 ---
-title:  Groovy Calamari 178 🔗
+title: Groovy Calamari 178 🔗
 date_published: 2020-09-30T10:30:00+01:00 
 keywords:groovycalamari
 ---

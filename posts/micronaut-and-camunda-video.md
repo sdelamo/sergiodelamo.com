@@ -1,5 +1,5 @@
 ---
-title:  📼 Micronaut and Camunda
+title: 📼 Micronaut and Camunda
 external_url: https://www.youtube.com/watch?v=sg1y1J7ao3E
 date_published: 2021-04-22T17:42:25+01:00
 summary: "Automating Processes with Microservices on Micronaut and Camunda" webinar video

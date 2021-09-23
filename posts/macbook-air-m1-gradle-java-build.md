@@ -1,5 +1,5 @@
 ---
-title:  Java Build Benchmarks with Apple M1
+title: Java Build Benchmarks with Apple M1
 date_published: 2020-11-21T12:15:00+01:00
 summary: I compare an iMac Pro, Macbook Pro, Macbook Air M1 for a common Gradle Java build.
 banner_image: https://images.sergiodelamo.com/macbook-air-m1-gradle-java-build.png
