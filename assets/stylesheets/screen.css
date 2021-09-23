@@ -186,12 +186,14 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .header {
-    height: 60px;
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: #fff;
     text-align: right;
     border-bottom: 1px solid #e4e4e4;
+}
+.header .wrapper ul {
+    margin-bottom: 0 !important;
 }
 
 .header .logo {
