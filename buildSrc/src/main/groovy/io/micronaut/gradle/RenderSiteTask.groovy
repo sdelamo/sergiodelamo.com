@@ -146,13 +146,18 @@ class RenderSiteTask extends DefaultTask {
 
     static Map<String, String> processMetadata(Map<String, String> sitemeta) {
         Map<String, String> resolvedMetadata = sitemeta
+
         if (resolvedMetadata.containsKey("CSS")) {
-            resolvedMetadata.put("CSS", "<link rel='stylesheet' href='" + resolvedMetadata['CSS'] + "'/>")
+            for (String css : (resolvedMetadata['CSS'].split(','))) {
+                resolvedMetadata.put("CSS", "<link rel='stylesheet' href='" + css + "'/>")
+            }
         } else {
             resolvedMetadata.put("CSS", "")
         }
         if (resolvedMetadata.containsKey("JAVASCRIPT")) {
-            resolvedMetadata.put("JAVASCRIPT", "<script src='" + resolvedMetadata['JAVASCRIPT'] + "'></script>")
+            for (String js : (resolvedMetadata['JAVASCRIPT'].split(','))) {
+                resolvedMetadata.put("JAVASCRIPT", "<script src='" + js + "'></script>")
+            }
         } else {
             resolvedMetadata.put("JAVASCRIPT", "")
         }
@@ -201,18 +206,24 @@ class RenderSiteTask extends DefaultTask {
 
     @Nullable
     static String parseVideoId(Map<String, String> metadata) {
-        String videoId = metadata.containsKey('external_url') && metadata['external_url'].startsWith(YOUTUBE_WATCH) ? metadata['external_url'].substring(YOUTUBE_WATCH.length()) : null
+        String videoId = metadata.containsKey('external_url') &&
+                metadata['external_url'].startsWith(YOUTUBE_WATCH) ?
+                metadata['external_url'].substring(YOUTUBE_WATCH.length()) : null
         if (videoId) {
             return videoId
-        }    
-    
-        metadata.containsKey('video') && metadata['video'].startsWith(YOUTUBE_WATCH) ? metadata['video'].substring(YOUTUBE_WATCH.length()) : null
+        }
+        metadata.containsKey('video') &&
+                metadata['video'].startsWith(YOUTUBE_WATCH) ?
+                metadata['video'].substring(YOUTUBE_WATCH.length()) : null
     }
 
     @Nullable
     static String parseVideoIframe(Map<String, String> metadata) {
         String videoId = parseVideoId(metadata)
-        videoId ? "<iframe width=\"100%\" height=\"360\" src=\"https://www.youtube-nocookie.com/embed/"+videoId+"\" frameborder=\"0\"></iframe>" : null
+        videoId ? """\
+<iframe width='100%' 
+        height='360' 
+        src='https://www.youtube-nocookie.com/embed/${videoId}' frameborder='0'></iframe>""" : null
     }
 
     static String twitterPlayerHtml(String videoId, int width, int height) {

@@ -318,9 +318,39 @@ class BlogTask extends DefaultTask {
         }
     }
 
+    static String PRISM_CSS = "stylesheets/prism.css"
+    static String PRISM_JS = "javascripts/prism.js"
+
+    static boolean containsCodeSnippet(MarkdownPost mdPost) {
+        mdPost.content.contains('```')
+    }
+
+    static enum Prism {
+        JS,
+        CSS
+    }
+
+    static String linkToPrism(MarkdownPost mdPost, Prism prism) {
+        String prepath = ''
+        mdPost.getPath().split('/').length.times {
+            prepath += '../'
+        }
+        switch (prism) {
+            case Prism.CSS:
+                return "${prepath}$PRISM_CSS".toString()
+            case Prism.JS:
+                return "${prepath}$PRISM_JS".toString()
+        }
+    }
+
     static List<HtmlPost> processPosts(Map<String, String> globalMetadata, List<MarkdownPost> markdownPosts) {
         markdownPosts.collect { MarkdownPost mdPost ->
-                Map<String, String> metadata = RenderSiteTask.processMetadata(globalMetadata + mdPost.metadata)
+            Map<String, String> meta = globalMetadata + mdPost.metadata
+            if (containsCodeSnippet(mdPost)) {
+                meta['JAVASCRIPT'] = meta['JAVASCRIPT'] ? "${meta['JAVASCRIPT']},${linkToPrism(mdPost, Prism.JS)}".toString() : linkToPrism(mdPost, Prism.JS)
+                meta['CSS'] = meta['CSS'] ? "${meta['CSS']},${linkToPrism(mdPost, Prism.JS)}".toString() : linkToPrism(mdPost, Prism.CSS)
+            }
+            Map<String, String> metadata = RenderSiteTask.processMetadata(meta)
             PostMetadata postMetadata = new PostMetadataAdapter(metadata)
             String markdown = mdPost.content
             if (metadata.containsKey('slides')) {
