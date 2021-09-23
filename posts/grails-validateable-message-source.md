@@ -1,5 +1,6 @@
 ---
 title: Localized error message for a Grails Validateable POGO's field
+banner_image: https://images.sergiodelamo.com/grails-validateable-messagesource.png
 summary: I often decorate my Grails controllers with a Trait which uses messageSource.
 date_published: 2021-09-22T14:10:02+01:00
 keywords:grails

@@ -1,6 +1,7 @@
 ---
 title: Extra Grails Naming Conventions
 summary: The Grails framework is a covention over configuration framework. Through the years I have created extra naming conventions.
+banner_image: https://images.sergiodelamo.com/extra-grails-naming-conventions.png
 date_published: 2021-09-22T12:01:10+01:00
 keywords:grails,gorm
 ---
