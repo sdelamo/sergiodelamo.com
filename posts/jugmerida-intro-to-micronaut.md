@@ -1,11 +1,6 @@
 ---
 title: Merida (Mexico) JUG - Introduction to Micronaut 🎥
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author:avatar: https://images.sergiodelamo.com/smallavatar.png 
-date_published: 2020-09-20T10:30:00+01:00
-date_modified: 2020-09-20T10:30:00+01:00
-speakerdeck: 
+date_published: 2020-09-20T10:30:00+01:00 
 summary: Introduction to Micronaut online talk by Sergio del Amo at JUG Merida (Mexico)
 video: https://www.youtube.com/watch?v=qsaI1xzUdLw
 keywords:video

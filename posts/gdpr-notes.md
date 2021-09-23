@@ -2,11 +2,7 @@
 title: GDPR for Developers
 external_url: https://wordpress.tv/speakers/andrew-norcross/
 summary: Notes from Andrew Norcross talks about GDPR for Developers
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-03-26T07:29:57+01:00
-date_modified: 2021-03-26T07:29:57+01:00
 ---
 
 # [%title]

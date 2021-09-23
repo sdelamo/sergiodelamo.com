@@ -2,11 +2,7 @@
 title: Compose an email with AppleScript
 summary: Automate repetitive emails
 banner_image: https://images.sergiodelamo.com/compose-an-email-with-applescript.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-02T08:06:46+01:00
-date_modified: 2021-08-02T08:06:46+01:00
 keywords:automation,applescript
 ---
 

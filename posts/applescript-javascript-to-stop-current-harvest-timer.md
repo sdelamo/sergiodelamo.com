@@ -2,11 +2,7 @@
 title: AppleScript to stop Harvest Timer
 summary: You can execute Javascript from AppleScript
 banner_image: https://images.sergiodelamo.com/stop-harvest-timer-with-applescript.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-01T07:17:24+01:00
-date_modified: 2021-08-01T07:17:24+01:00
 keywords:automation,applescript,harvest,bunch,javascript
 ---
 

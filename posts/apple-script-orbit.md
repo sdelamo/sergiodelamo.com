@@ -2,11 +2,7 @@
 title: Start Orbit Timers with AppleScript
 banner_image: https://images.sergiodelamo.com/start-orbit-timers-with-applescript.png
 summary: Orbit is not Scriptable but you can workaround it
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-11T07:07:21+01:00
-date_modified: 2021-08-11T07:07:21+01:00
 keywords:automation,applescript,orbit
 ---
 

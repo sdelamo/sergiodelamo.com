@@ -1,11 +1,7 @@
 ---
 title: CodePipeline for a Micronaut application Docker image
 summary: Continuous deployment - CodePipeline: Github → CodeBuild → ECR → Elastic Beanstalk  
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-25T11:57:27+01:00
-date_modified: 2021-05-25T11:57:27+01:00
 event.name: What's new in Grails 4
 event.start: 2020-12-01 19:00
 event.end: 2020-12-01 20:00

@@ -2,11 +2,7 @@
 title: Version 2.0.0 of Eurorates Micronaut Library released
 banner_image: https://images.sergiodelamo.com/eurorates-micronaut-library-2.0.0.png
 summary: Micronaut 3 and reactive streams agnostic
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-20T17:06:51+01:00
-date_modified: 2021-08-20T17:06:51+01:00
 keywords:micronaut
 ---
 

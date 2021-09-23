@@ -1,10 +1,6 @@
 ---
 title: Geb Talk at Northem Quality
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-06-19T10:30:00+01:00
-date_modified: 2019-06-19T10:30:00+01:00
 keywords:geb
 ---
 

@@ -24,6 +24,14 @@ class SiteExtension {
 
     final Property<String> url
 
+    final Property<String> email
+
+    final Property<String> authorName
+
+    final Property<String> authorUrl
+
+    final Property<String> authorAvatar
+
     final Property<String> summary
 
     final ListProperty<String> keywords
@@ -38,7 +46,11 @@ class SiteExtension {
         template = objects.property(File)
         output = objects.property(File)
         title = objects.property(String)
+        authorName = objects.property(String)
+        authorAvatar = objects.property(String)
+        authorUrl = objects.property(String)
         url = objects.property(String)
+        email = objects.property(String)
         summary = objects.property(String)
         keywords = objects.listProperty(String)
         robots = objects.property(String)

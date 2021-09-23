@@ -1,11 +1,7 @@
 ---
 title: Test a Grails Application with Micronaut HTTP Client
 summary: A parent class which I use for the tests which verify a Grails application API
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-22T14:45:53+01:00
-date_modified: 2021-09-22T14:45:53+01:00
 keywords:grails,micronaut
 ---
  

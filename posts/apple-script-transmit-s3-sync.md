@@ -2,11 +2,7 @@
 title: AppleScript Transmit File Sync
 summary: Trigger Synchronization a local folder to an S3 bucket with AppleScript
 banner_image: https://images.sergiodelamo.com/applescript-transmit-file-sync.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-07T17:48:09+01:00
-date_modified: 2021-08-07T17:48:09+01:00
 keywords:automation,applescript,transmit
 ---
 

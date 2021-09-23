@@ -1,10 +1,6 @@
 ---
 title: GR8Day - Scraping with Geb
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-06-02T06:46:00+01:00
-date_modified: 2016-06-02T06:46:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/scraping-with-geb
 summary: Slides from my talk at GR8Day Warsaw 2016
 keywords:slides,geb,talk

@@ -1,10 +1,6 @@
 ---
 title: Preview of Groovy 3
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-04-24T09:34:00+01:00
-date_modified: 2017-04-24T09:34:00+01:00
 keywords:groovy
 ---
 

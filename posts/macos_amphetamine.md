@@ -3,11 +3,7 @@ title: 21 Apps for 2021 - Amphetamine
 external_url: https://apps.apple.com/app/amphetamine/id937984704?mt=12
 summary: A keep-awake utility
 banner_image: https://images.sergiodelamo.com/amphetamine.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-26T16:53:01+01:00
-date_modified: 2021-07-26T16:53:01+01:00
 keywords:macos,21appsfor2021,amphetamine
 ---
 

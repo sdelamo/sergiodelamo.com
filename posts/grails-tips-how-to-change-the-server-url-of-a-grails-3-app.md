@@ -1,10 +1,6 @@
 ---
 title: Grails Programmer : How to change the server url of a Grails 3 App?
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-03-02T09:00:00+01:00
-date_modified: 2016-03-02T09:00:00+01:00
 keywords:grails
 ---
 

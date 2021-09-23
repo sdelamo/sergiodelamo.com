@@ -8,15 +8,15 @@ import org.gradle.api.Task
 import org.gradle.api.plugins.BasePlugin
 
 @CompileStatic
-class MicronautWebsitePlugin implements Plugin<Project> {
+class WebsitePlugin implements Plugin<Project> {
 
-    public static final String EXTENSION_NAME = "micronaut"
+    public static final String EXTENSION_NAME = "website"
     public static final String TASK_BUILD = "build"
     public static final String TASK_GEN_SITE = "renderSite"
     public static final String TASK_GEN_SITEMAP = "genSitemap"
     public static final String CLEAN = "clean"
     public static final String TASK_COPY_ASSETS = "copyAssets"
-    public static final String GROUP_MICRONAUT = 'micronaut'
+    public static final String GROUP_MICRONAUT = 'web'
     public static final String TASK_RENDER_BLOG = 'renderBlog'
 
     @Override
@@ -38,6 +38,10 @@ class MicronautWebsitePlugin implements Plugin<Project> {
             Object extension = project.getExtensions().findByName(EXTENSION_NAME)
             if (extension instanceof SiteExtension) {
                 SiteExtension siteExtension = ((SiteExtension) extension)
+                task.setProperty("email", siteExtension.email)
+                task.setProperty("authorName", siteExtension.authorName)
+                task.setProperty("authorAvatar", siteExtension.authorAvatar)
+                task.setProperty("authorUrl", siteExtension.authorUrl)
                 task.setProperty("url", siteExtension.url)
                 task.setProperty("title", siteExtension.title)
                 task.setProperty("about", siteExtension.summary)
@@ -65,6 +69,10 @@ class MicronautWebsitePlugin implements Plugin<Project> {
             Object extension = project.getExtensions().findByName(EXTENSION_NAME)
             if (extension instanceof SiteExtension) {
                 SiteExtension siteExtension = ((SiteExtension) extension)
+                task.setProperty("email", siteExtension.email)
+                task.setProperty("authorName", siteExtension.authorName)
+                task.setProperty("authorAvatar", siteExtension.authorAvatar)
+                task.setProperty("authorUrl", siteExtension.authorUrl)
                 task.setProperty("url", siteExtension.url)
                 task.setProperty("title", siteExtension.title)
                 task.setProperty("about", siteExtension.summary)

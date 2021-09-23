@@ -2,11 +2,7 @@
 title: IntelliJ IDEA - Disable wildcard imports to always import single classes
 external_url: https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html#disable-wildcard-imports
 summary: Go to Editor > Code Style > Java > Imports
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-20T09:51:47+01:00
-date_modified: 2021-07-20T09:51:47+01:00
 ---
 
 # [%title]

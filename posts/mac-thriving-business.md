@@ -1,12 +1,8 @@
 ---
 title: The thriving Mac business
 external_url: https://www.apple.com/investor/earnings-call/
-summary: Last four quarters for Mac have been its best four quarters ever
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
+summary: Last four quarters for Mac have been its best four quarters ever 
 date_published: 2021-07-29T08:58:35+01:00
-date_modified: 2021-07-29T08:58:35+01:00
 keywords:mac,apple
 ---
 

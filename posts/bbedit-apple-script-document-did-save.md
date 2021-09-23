@@ -2,11 +2,7 @@
 title: Run a Gradle build when you save in BBEdit
 summary: Use BBEdit's Attachment Scripts and AppleScript
 banner_image: https://images.sergiodelamo.com/bbedit-attachment-scripts.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-28T10:47:51+01:00
-date_modified: 2021-07-28T10:47:51+01:00
 keywords:automation,bbedit,gradle,applescript
 ---
 

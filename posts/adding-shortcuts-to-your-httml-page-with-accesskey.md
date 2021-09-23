@@ -2,11 +2,7 @@
 title: HTML Keyboard Shortcuts with accesskey
 summary: I added keyboard shortcuts to my website with HTML accesskey attribute.
 banner_image: https://images.sergiodelamo.com/html-keyboard-shortcuts-with-accesskey.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-01T07:41:51+01:00
-date_modified: 2021-09-01T07:41:51+01:00
 keywords:automation,html
 ---
 

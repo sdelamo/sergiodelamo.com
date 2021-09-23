@@ -1,11 +1,7 @@
 ---
 title: Automatically generate a PDF from a Screenshot 
 summary: Combine Hazel and Automator to do it. 
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-30T10:17:09+01:00
-date_modified: 2021-07-30T10:17:09+01:00
 keywords:hazel,macos,automator,automation
 ---
 

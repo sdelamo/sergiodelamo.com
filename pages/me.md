@@ -1,11 +1,7 @@
 ---
 title:  Sergio del Amo
 summary: Sergio del Amo's short bio and skills. 
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-11-20T10:24:00+01:00
-date_modified: 2020-11-20T10:24:00+01:00
 ---
 
 <a href="https://images.sergiodelamo.com/avatar.png"><img src="https://images.sergiodelamo.com/avatar.png" 

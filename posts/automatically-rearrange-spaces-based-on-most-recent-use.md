@@ -2,11 +2,7 @@
 title: Automatically rearrange spaces based on most recent use
 summary: Probably the worst MacOS default
 banner_image: https://images.sergiodelamo.com/automatically-rearrange-spaces.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-18T18:57:45+01:00
-date_modified: 2021-08-18T18:57:45+01:00
 keywords:mac
 ---
 

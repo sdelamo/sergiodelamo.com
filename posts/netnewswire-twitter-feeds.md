@@ -4,10 +4,7 @@ external_url: https://netnewswire.com
 summary: You can now subscribe to Twitter searches or mentions as a feed directly in NetNewsWire.
 image: https://images.sergiodelamo.com/netnewswire-twitter-feed-2.jpg
 banner_image: https://images.sergiodelamo.com/netnewswire-twitter-feed-2.jpg
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-23T08:52:05+01:00
-date_modified: 2021-04-23T08:52:05+01:00
 keywords:rss,netnewswire,macos,ios
 ---
 

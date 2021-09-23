@@ -2,11 +2,7 @@
 title: Command Line JWK generation with Picocli and Micronaut
 external_url: https://guides.micronaut.io/latest/micronaut-cli-jwkgen.html
 summary: I wrote a tutorial which shows how to write a command line application with Picocli and Micronaut to generate a JWK (Json Web Key)
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-06-12T17:05:02+01:00
-date_modified: 2021-06-12T17:05:02+01:00
 keywords:micronaut,guide,picocli,nimbus,cli
 ---
 

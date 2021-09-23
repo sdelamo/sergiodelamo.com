@@ -1,11 +1,7 @@
 ---
 title: KSUID (K-Sortable Unique IDentifier)
 summary: A globally unique identifier similar to UUID, built from the ground-up to be "naturally" sorted by generation timestamp without any special type-aware logic.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-24T21:39:04+01:00
-date_modified: 2021-04-24T21:39:04+01:00
 keywords:java,ksuid
 ---
 

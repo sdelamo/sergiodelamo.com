@@ -1,11 +1,7 @@
 ---
 title: Test Micronaut POJOs are annotated with @Introspected
 summary: I always annotate my model classes with @Introspected. It is easy to test that you don't forget the annotation.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-17T15:48:21+01:00
-date_modified: 2021-05-17T15:48:21+01:00
 keywords:micronaut,spock,test
 ---
 

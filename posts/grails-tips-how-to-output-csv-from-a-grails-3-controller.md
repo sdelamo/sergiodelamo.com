@@ -1,10 +1,6 @@
 ---
 title: Grails Programmer : How to output CSV from a Grails 3  Controller
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2019-09-20T06:46:00+01:00
-date_modified: 2019-09-20T06:46:00+01:00
 keywords:grails
 ---
 

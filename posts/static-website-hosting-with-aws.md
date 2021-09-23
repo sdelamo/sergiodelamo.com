@@ -1,11 +1,7 @@
 ---
 title: Static Website Hosting with AWS
 summary: CloudFront, S3, AWS Certificate Manager and Route53
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-06T07:53:06+01:00
-date_modified: 2021-08-06T07:53:06+01:00
 keywords:aws,s3,cloudfront,route53,certificate-manager
 ---
 

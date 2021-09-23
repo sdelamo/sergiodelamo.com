@@ -1,7 +1,6 @@
 ---
 title: 📼 GR8Day Warsaw - How to create a conference Android App with Groovy and Wordpress
 date_published: 2016-03-19T09:00:00+01:00
-date_modified: 2016-03-19T09:00:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/how-to-create-a-conference-android-app-with-groovy-and-wordpress
 summary: Slides from my talk at GR8Day Warsaw 2016
 speakerdeck: https://speakerdeck.com/sdelamo/how-to-create-a-conference-android-app-with-groovy-and-wordpress

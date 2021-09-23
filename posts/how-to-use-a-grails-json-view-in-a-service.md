@@ -1,12 +1,7 @@
 ---
 title: How to use a JSON View in a Grails Service
 summary: You can render a model into JSON with a JSON View within a Grails service. 
-
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-22T14:56:34+01:00
-date_modified: 2021-09-22T14:56:34+01:00
 keywords:grails,json-view
 ---
 

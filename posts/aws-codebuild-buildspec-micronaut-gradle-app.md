@@ -1,11 +1,7 @@
 ---
 title: AWS CodeBuild Buildspec.yml example for Gradle and Micronaut 
 summary: I often use CodeBuild to build Micronaut appliations built with Gradle. This post includes an example of a buildspec.yml file.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-24T18:05:34+01:00
-date_modified: 2021-05-24T18:05:34+01:00
 keywords:micronaut,aws,codebuild
 ---
 

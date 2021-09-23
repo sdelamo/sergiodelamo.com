@@ -1,11 +1,7 @@
 ---
 title: Avoid Infinity Pools with iOS Content Restrictions
 summary: Content Restrictions beyond limiting access to adult content
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-04T21:13:15+01:00
-date_modified: 2021-08-04T21:13:15+01:00
 keywords:ios,focus
 ---
 

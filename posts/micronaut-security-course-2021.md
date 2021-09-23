@@ -2,11 +2,7 @@
 title: 🗣 Micronaut Security Course
 external_url: https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-security-deep-dive
 summary: I will be teaching a Micronaut Security 12 hour course next week.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-03-12T17:46:31+01:00
-date_modified: 2021-03-12T17:46:31+01:00
 keywords:micronaut,traning 
 ---
 

@@ -1,10 +1,6 @@
 ---
 title: Ignore a Spock test if running in Travis CI
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-04-27T08:24:00+01:00
-date_modified: 2017-04-27T08:24:00+01:00
 keywords:ci,travis,spock
 ---
 

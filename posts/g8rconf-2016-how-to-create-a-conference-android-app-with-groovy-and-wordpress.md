@@ -1,10 +1,6 @@
 ---
 title: GR8Conf 2016 - How to create a conference android app with Groovy and Wordpres
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-06-03T07:49:00+01:00
-date_modified: 2016-06-03T07:49:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/how-to-create-a-conference-android-app-with-groovy-and-wordpress-1
 summary: Slides from my talk at GR8Conf 2016.
 eventName: GR8Conf EU

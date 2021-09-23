@@ -2,11 +2,7 @@
 title: 👨🏻‍🏫 Integrating Micronaut apps with AWS
 external_url: https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-integration
 summary: I will be teaching a Micronaut / Amazon Web Services workshop at the end of May. 
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-24T06:39:23+01:00
-date_modified: 2021-04-24T06:39:23+01:00
 keywords:micronaut,aws,workshop
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Testing JSON serialization with Micronaut
 summary: In Micronaut applications, you can control JSON serialization with Jackson annotations. Inject ObjectMapper into your tests to verify it.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-07T16:44:51+01:00
-date_modified: 2021-05-07T16:44:51+01:00
 keywords:micronaut,spock,jackson,test
 ---
 

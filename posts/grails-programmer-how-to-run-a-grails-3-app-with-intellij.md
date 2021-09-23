@@ -1,10 +1,6 @@
 ---
 title: Grails Programmer: How to run a Grails 3 App with IntelliJ
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-10-28T07:49:00+01:00
-date_modified: 2016-10-28T07:49:00+01:00
 keywords:grails,gradle,idea
 ---
 

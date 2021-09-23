@@ -1,11 +1,7 @@
 ---
 title: SpringBoot to Micronaut - Application Class
 summary: SpringBoot and Micronaut applications contain a simple application class which starts the application for you.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-27T06:45:56+01:00
-date_modified: 2021-04-27T06:45:56+01:00
 keywords:micronaut,springboot
 ---
 

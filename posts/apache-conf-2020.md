@@ -1,10 +1,6 @@
 ---
 title: (Public Speaking) ApacheCon: Micronaut + Groovy and Taming your browser with Geb
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author:avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-08-27T10:30:00+01:00
-date_modified: 2020-08-27T10:30:00+01:00
 summary: Talks, Micronaut + Groovy and Taming your browser with Geb, at ApacheCon
 eventName: ApacheCon
 eventDate: Sep 29, 2020

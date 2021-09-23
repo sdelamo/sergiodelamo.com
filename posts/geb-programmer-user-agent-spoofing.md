@@ -1,10 +1,6 @@
 ---
 title: Geb Programmer: User Agent Spoofing
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2016-07-27T14:52:00+01:00
-date_modified: 2016-07-27T14:52:00+01:00
 ---
 
 # [%title] 

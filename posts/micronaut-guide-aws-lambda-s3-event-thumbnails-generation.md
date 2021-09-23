@@ -2,11 +2,7 @@
 title: Generate thumbnails with Micronaut AWS Lambda and a S3 Notification trigger
 external_url: https://guides.micronaut.io/latest/micronaut-aws-lambda-s3-event
 summary: Learn how to generate thumbnails for images uploaded to an S3 bucket with AWS Lambda and Micronaut
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-29T09:26:18+01:00
-date_modified: 2021-05-29T09:26:18+01:00
 keywords:micronaut,guide,aws,s3,lambda,thumbnailator
 ---
 

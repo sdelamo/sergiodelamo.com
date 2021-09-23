@@ -3,11 +3,7 @@ title: Micronaut 3 Released
 banner_image: https://images.sergiodelamo.com/micronaut-3-released.png
 external_url: https://micronaut.io/2021/08/18/micronaut-framework-3-released/
 summary: Update your apps to the latest version of Micronaut
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-18T22:08:51+01:00
-date_modified: 2021-08-18T22:08:51+01:00
 keywords:micronaut
 ---
 

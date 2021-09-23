@@ -3,11 +3,7 @@ title: Micronaut Guides updated to 3!
 banner_image: https://images.sergiodelamo.com/micronaut-guides-updated-to-3.png
 external_url: https://micronaut.io/guides/
 summary: Guide are ready for Micronaut Framework 3!
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-18T22:40:29+01:00
-date_modified: 2021-08-18T22:40:29+01:00
 keywords:micronaut
 ---
 

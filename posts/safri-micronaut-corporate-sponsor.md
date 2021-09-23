@@ -3,11 +3,7 @@ title: SAFRI.NET Micronaut Foundation™ sponsor
 external_url: https://micronaut.io/2021/09/02/new-bronze-level-corporate-sponsor-safri-net/
 banner_image: https://images.sergiodelamo.com/safri.net-micronaut-foundation-sponsor.png
 summary: SAFRI.NET joined the Micronaut Foundation as a Bronze-Level Corporate Sponsor
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-06T13:43:44+01:00
-date_modified: 2021-09-06T13:43:44+01:00
 keywords:micronaut
 ---
 

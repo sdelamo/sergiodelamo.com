@@ -1,11 +1,7 @@
 ---
 title:  📼 Micronaut and Camunda
-author.name: Sergio del Amo
 external_url: https://www.youtube.com/watch?v=sg1y1J7ao3E
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-22T17:42:25+01:00
-date_modified: 2021-04-22T17:42:25+01:00
 summary: "Automating Processes with Microservices on Micronaut and Camunda" webinar video
 keywords:micronaut,camunda,talk,video
 ---

@@ -1,11 +1,7 @@
 ---
 title: Test Micronaut POJOs contain validation annotations
 summary: I like to define validation annotations for Micronaut application's models.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-17T16:09:09+01:00
-date_modified: 2021-05-17T16:09:09+01:00
 keywords:micronaut,test,spock
 ---
 

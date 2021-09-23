@@ -40,8 +40,19 @@ class RenderSiteTask extends DefaultTask {
     final Property<String> title = project.objects.property(String)
 
     @Input
-    final Property<String> about =
-            project.objects.property(String)
+    final Property<String> about = project.objects.property(String)
+
+    @Input
+    final Property<String> email = project.objects.property(String)
+
+    @Input
+    final Property<String> authorName = project.objects.property(String)
+
+    @Input
+    final Property<String> authorUrl = project.objects.property(String)
+
+    @Input
+    final Property<String> authorAvatar = project.objects.property(String)
 
     @Input
     final Property<String> url = project.objects.property(String)
@@ -60,7 +71,16 @@ class RenderSiteTask extends DefaultTask {
         File template = document.get()
         final String templateText = template.text
         File o = output.get()
-        Map<String, String> m = siteMeta(title.get(), about.get(), url.get(), keywords.get() as List<String>, robots.get())
+        Map<String, String> m = siteMeta(title.get(),
+                about.get(),
+                url.get(),
+                keywords.get() as List<String>,
+                robots.get(),
+                email.get(),
+                authorName.get(),
+                authorUrl.get(),
+                authorAvatar.get()
+        )
         List<Page> listOfPages = parsePages(pages.get())
         File tempFolder = new File(o.absolutePath + "/" + TEMP)
         if (!tempFolder.exists()) {
@@ -75,20 +95,22 @@ class RenderSiteTask extends DefaultTask {
                                         String about,
                                         String url,
                                         List<String> keywords,
-                                        String robots) {
+                                        String robots,
+                                        String email,
+                                        String authorName,
+                                        String authorUrl,
+                                        String authorAvatar) {
         [
                 title: title,
                 summary: about,
                 url: url,
                 keywords: keywords.join(','),
                 robots: robots,
-                gitter: 'gitter.svg',
-                youtube: 'youtube.svg',
-                github: 'github.svg',
-                twitter: 'twitter.svg',
-                mail: 'mail.svg',
-                micronautlogo: 'micronautlogo.svg',
-                ocilogo: 'oci_logo.svg'
+                email: email,
+                author_name: authorName,
+                author_url: authorUrl,
+                author_avatar: authorAvatar
+
         ] as Map<String, String>
     }
 
@@ -146,6 +168,9 @@ class RenderSiteTask extends DefaultTask {
         if (!resolvedMetadata.containsKey("date_published")) {
             resolvedMetadata.put('date_published', BlogTask.JSON_FEED_FORMAT.format(new Date()))
         }
+        if (!resolvedMetadata.containsKey("date_modified") && resolvedMetadata.containsKey("date_published")) {
+            resolvedMetadata.put('date_modified', resolvedMetadata.get("date_published"))
+        }
         if (!resolvedMetadata.containsKey("date_modified")) {
             resolvedMetadata.put('date_modified', BlogTask.JSON_FEED_FORMAT.format(new Date()))
         }
@@ -171,13 +196,6 @@ class RenderSiteTask extends DefaultTask {
         twittercard += metaTwitter('title',resolvedMetadata['title'])
         twittercard += metaTwitter('description',resolvedMetadata['summary'])
         resolvedMetadata['twittercard'] = twittercard
-
-        if (!resolvedMetadata["author.name"]) {
-            resolvedMetadata["author.name"] = "Sergio del Amo"
-        }
-        if (!resolvedMetadata["meta.author"]) {
-            resolvedMetadata["meta.author"] = resolvedMetadata["author.name"]
-        }
         resolvedMetadata
     }
 

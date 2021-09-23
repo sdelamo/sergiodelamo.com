@@ -4,11 +4,7 @@ title: 🇪🇸 - 🎙Código Bot 012
 external_url: https://codigobot.com/012.html
 summary: Hablo con Kini sobre "🍕 Pizza Casera" su Alexa Skill
 banner_image: https://media.codigobot.com/artwork.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-06-11T18:04:33+01:00
-date_modified: 2021-06-11T18:04:33+01:00
 keywords:codigobot,podcast
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Test Micronaut Health endpoint
 summary: I always expose the /health endpoint in my Micronaut applications. It is easy to test it.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-06T07:05:17+01:00
-date_modified: 2021-05-06T07:05:17+01:00
 keywords:micronaut,test,spock
 ---
 

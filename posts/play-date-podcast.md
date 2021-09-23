@@ -2,11 +2,7 @@
 title: The Story of Playdate Podcast
 summary: I ordered a Playdate after listening to the episode 
 external_url: https://podcast.panic.com/#episode006
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-04T09:43:16+01:00
-date_modified: 2021-09-04T09:43:16+01:00
 keywords:playdate
 ---
 

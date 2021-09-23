@@ -17,7 +17,6 @@ import io.micronaut.rss.RssItem
 import io.micronaut.rss.jsonfeed.JsonFeed
 import io.micronaut.rss.jsonfeed.JsonFeedAuthor
 import io.micronaut.rss.jsonfeed.JsonFeedItem
-import io.micronaut.tags.Tag
 import org.gradle.api.Action
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
@@ -63,7 +62,6 @@ class BlogTask extends DefaultTask {
     public static final String BLOG = 'blog'
     public static final String TAG = 'tag'
     public static final String INDEX = 'index.html'
-
     public static List<String> ALLOWED_TAG_PREFIXES = new ArrayList<>()
     public static final String ROBOTS = 'robots'
     public static final String ROBOTS_INDEX = 'index'
@@ -89,6 +87,18 @@ class BlogTask extends DefaultTask {
 
     @Input
     final Property<String> title = project.objects.property(String)
+
+    @Input
+    final Property<String> email = project.objects.property(String)
+
+    @Input
+    final Property<String> authorName = project.objects.property(String)
+
+    @Input
+    final Property<String> authorUrl = project.objects.property(String)
+
+    @Input
+    final Property<String> authorAvatar = project.objects.property(String)
 
     @Input
     final Property<String> about = project.objects.property(String)
@@ -120,8 +130,15 @@ class BlogTask extends DefaultTask {
         File template = document.get()
         final String templateText = template.text
         File o = dist()
-        Map<String, String> m = RenderSiteTask.siteMeta(title.get(), about.get(), url.get(), keywords.get() as List<String>, robots.get())
-        copyBackgroundImages()
+        Map<String, String> m = RenderSiteTask.siteMeta(title.get(),
+                about.get(),
+                url.get(),
+                keywords.get() as List<String>,
+                robots.get(),
+                email.get(),
+                authorName.get(),
+                authorUrl.get(),
+                authorAvatar.get())
         List<MarkdownPost> listOfPosts = parsePosts(posts.get())
         listOfPosts = filterOutFuturePosts(listOfPosts)
         listOfPosts = listOfPosts.sort { a, b ->
@@ -168,20 +185,6 @@ class BlogTask extends DefaultTask {
             void execute(CopySpec copySpec) {
                 copySpec.from(images)
                 copySpec.into(outputBlogImages)
-                copySpec.include(CopyAssetsTask.IMAGE_EXTENSIONS)
-            }
-        })
-    }
-
-    void copyBackgroundImages() {
-        File images = new File(assets.get().absolutePath + "/" + "bgimages")
-        File outputImages = new File(dist().absolutePath + '/images')
-        outputImages.mkdir()
-        project.copy(new Action<CopySpec>() {
-            @Override
-            void execute(CopySpec copySpec) {
-                copySpec.from(images)
-                copySpec.into(outputImages)
                 copySpec.include(CopyAssetsTask.IMAGE_EXTENSIONS)
             }
         })
@@ -402,16 +405,16 @@ class BlogTask extends DefaultTask {
                     .url(postLink)
                     .id(uuid)
                     .contentHtml(cleanupHtml)
-            if (htmlPost.metadata['author.name'] || htmlPost.metadata['author.url'] || htmlPost.metadata['author.avatar']) {
+            if (htmlPost.metadata['author_name'] || htmlPost.metadata['author_url'] || htmlPost.metadata['author_avatar']) {
                 JsonFeedAuthor.Builder authorBuilder = JsonFeedAuthor.builder()
-                if (htmlPost.metadata['author.name']) {
-                    authorBuilder = authorBuilder.name(htmlPost.metadata['author.name'] as String)
+                if (htmlPost.metadata['author_name']) {
+                    authorBuilder = authorBuilder.name(htmlPost.metadata['author_name'] as String)
                 }
-                if (htmlPost.metadata['author.url']) {
-                    authorBuilder = authorBuilder.url(htmlPost.metadata['author.url'] as String)
+                if (htmlPost.metadata['author_url']) {
+                    authorBuilder = authorBuilder.url(htmlPost.metadata['author_url'] as String)
                 }
-                if (htmlPost.metadata['author.avatar']) {
-                    authorBuilder = authorBuilder.avatar(htmlPost.metadata['author.avatar'] as String)
+                if (htmlPost.metadata['author_avatar']) {
+                    authorBuilder = authorBuilder.avatar(htmlPost.metadata['author_avatar'] as String)
                 }
                 jsonFeedItemBuilder.author(authorBuilder.build())
             }
@@ -536,14 +539,17 @@ class BlogTask extends DefaultTask {
         outputFile.text = new JsonBuilder(jsonFeed.toMap()).toPrettyString()
     }
 
-    private static void renderRss(Map<String, String> sitemeta, List<RssItem> rssItems, File outputFile) {
+    private static void renderRss(Map<String, String> sitemeta,
+                                  List<RssItem> rssItems,
+                                  File outputFile) {
         RssChannel.Builder builder = RssChannel.builder(sitemeta['title'], sitemeta['url'], sitemeta['summary'])
-        builder.pubDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
-        builder.lastBuildDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
-                .docs("http://blogs.law.harvard.edu/tech/rss")
+                .pubDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
+                .lastBuildDate(ZonedDateTime.of(LocalDateTime.now(), ZoneId.of("GMT")))
+                .docs("https://cyber.harvard.edu/rss/rss.html")
                 .generator("Micronaut RSS")
-                .managingEditor("sergio.delamo@softamo.com")
-                .webMaster("sergio.delamo@softamo.com")
+                .managingEditor(sitemeta['email'])
+                .webMaster(sitemeta['email'])
+
         for (RssItem item : rssItems) {
             builder.item(item)
         }

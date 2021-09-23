@@ -2,11 +2,7 @@
 title: 🗣 Micronaut Case Study: Novatec
 external_url: https://objectcomputing.com/products/micronaut/resources/micronaut-in-action
 summary: I will join Novatec's crew to talk about their experience with Micronaut developing a production application (learning curve, memory consumption, startup ...). 
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-12-02T11:08:07+01:00
-date_modified: 2020-12-02T11:08:07+01:00
 event.name: Micronaut Case Study: Novatec
 event.start: 2020-12-11 10:00
 event.end: 2020-12-11 11:30

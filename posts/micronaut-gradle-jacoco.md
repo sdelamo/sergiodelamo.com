@@ -1,11 +1,7 @@
 ---
 title: Gradle, Jacoco and 90% Code Coverage
 summary: With Jacoco Gradle plugin it is easy to setup your project to enforce a coverage percentage.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-04-29T21:24:32+01:00
-date_modified: 2021-04-29T21:24:32+01:00
 keywords:test,gradle,jacoco
 ---
 

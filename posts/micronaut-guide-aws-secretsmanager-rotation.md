@@ -2,11 +2,7 @@
 title: Secret Rotation - Micronaut AWS Lambda and Secrets Manager
 summary: Micronaut Lambda function to rotate a secret saved in AWS Secrets Manager
 external_url: https://guides.micronaut.io/latest/micronaut-aws-secretsmanager-rotation.html
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-10T17:47:37+01:00
-date_modified: 2021-08-10T17:47:37+01:00
 keywords:micronaut,aws,lambda,secretsmanager,guide
 ---
 

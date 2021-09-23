@@ -1,8 +1,12 @@
-import io.micronaut.gradle.MicronautWebsitePlugin
+import io.micronaut.gradle.WebsitePlugin
 
-apply plugin: MicronautWebsitePlugin
+apply plugin: WebsitePlugin
 
-micronaut {
+website {
+    email = 'sergio.delamo@softamo.com'
+    authorName = 'Sergio del Amo'
+    authorUrl = 'https://sergiodelamo.com/me.html'
+    authorAvatar = 'https://images.sergiodelamo.com/smallavatar.png'
     assets = file("assets")
     posts = file("posts")
     pages = file("pages")

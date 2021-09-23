@@ -1,11 +1,7 @@
 ---
 title: cURL command to set a Telegram chatbot's webhook
 summary: To receive Telegram callbacks you have to set the webhook.
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-05-22T07:44:34+01:00
-date_modified: 2021-05-22T07:44:34+01:00
 keywords:telegram,chatbot
 ---
 

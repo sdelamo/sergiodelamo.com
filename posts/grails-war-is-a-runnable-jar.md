@@ -1,10 +1,6 @@
 ---
 title: Grails War is a runnable JAR
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-07-28T14:39:00+01:00
-date_modified: 2017-07-28T14:39:00+01:00
 keywords:grails
 ---
 

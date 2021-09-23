@@ -2,11 +2,7 @@
 title: 👨🏻‍🏫 Teaching Grails Deep Dive
 external_url: https://objectcomputing.com/services/training/schedule/grails-micronaut-combo
 summary: I teach an online 12 hour Grails course December 7, 9 and 10. 
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-11-30T06:12:34+01:00
-date_modified: 2020-11-30T06:12:34+01:00
 event.name: What's new in Grails 4
 event.start: 2020-12-7 08:00
 event.end: 2020-12-10 12:00

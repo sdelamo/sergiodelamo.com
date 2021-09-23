@@ -2,11 +2,7 @@
 title: Micronaut CLI Github Activity
 banner_image: https://images.sergiodelamo.com/micronaut-cli-github-activity.png
 summary: A CLI application to help you gather what you did in Github
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-08-20T18:21:28+01:00
-date_modified: 2021-08-20T18:21:28+01:00
 keywords:micronaut
 ---
 

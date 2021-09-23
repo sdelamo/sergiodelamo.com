@@ -2,11 +2,7 @@
 title: Pushover - Simple notifications
 banner_image: https://images.sergiodelamo.com/micronaut-java-library-for-pushover.png
 summary: Send push notifications from your applications
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-05T11:46:59+01:00
-date_modified: 2021-09-05T11:46:59+01:00
 keywords:micronaut
 ---
 

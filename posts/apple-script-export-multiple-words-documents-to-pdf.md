@@ -2,11 +2,7 @@
 title: AppleScript - Export multiple Word documents as PDFs 
 summary: The AppleScript script prompts you to select multiple word documents, asks you for a folder to save the PDFs, opens each document in Word and saves it as PDF. 
 banner_image: https://images.sergiodelamo.com/applescript-word-to-pdf.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-21T16:23:19+01:00
-date_modified: 2021-07-21T16:23:19+01:00
 keywords:automation,pdf,word,applescript
 ---
 

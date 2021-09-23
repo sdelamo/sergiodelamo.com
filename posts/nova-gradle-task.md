@@ -1,10 +1,6 @@
 ---
 title: Run a Gradle build with Nova editor
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-09-22T11:07:00+01:00
-date_modified: 2020-09-22T11:07:00+01:00
 summary: How to run a Gradle build with Nova custom tasks
 keywords:nova,gradle
 ---

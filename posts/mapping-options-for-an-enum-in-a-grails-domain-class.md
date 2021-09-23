@@ -1,10 +1,6 @@
 ---
 title: Mapping options for an Enum in a Grails Domain class
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-09-18T11:39:00+01:00
-date_modified: 2017-09-18T11:39:00+01:00
 keywords:grails
 ---
 

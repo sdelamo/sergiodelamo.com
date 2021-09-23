@@ -1,10 +1,6 @@
 ---
 title: MacBook Air M1
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-11-19T07:02:00+01:00
-date_modified: 2020-11-19T07:02:00+01:00
 summary: It does not get hot. It is quiet. It is fast. It is the future. It is now.
 keywords:macos,m1,mac
 ---

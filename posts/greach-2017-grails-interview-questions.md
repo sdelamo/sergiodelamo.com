@@ -1,10 +1,6 @@
 ---
 title: Greach - Grails Interview Questions
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2017-03-31T07:07:00+01:00
-date_modified: 2017-03-31T07:07:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/grails-interview-questions
 summary: Slides from my talk about Greach 2017.
 keywords:grails,greach,slides,talk

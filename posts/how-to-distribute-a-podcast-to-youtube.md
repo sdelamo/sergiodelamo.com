@@ -2,11 +2,7 @@
 title: How to distribute a Podcast to YouTube 
 summary:  I used FusionCast, a MacOS app to turn your podcast episodes into videos for publishing on any platform.
 banner_image: https://images.sergiodelamo.com/how-to-distribute-a-podcast-to-youtube.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-07-24T07:21:25+01:00
-date_modified: 2021-07-24T07:21:25+01:00
 keywords:youtube,podcast,fusioncast,macos
 ---
 

@@ -3,11 +3,7 @@ title: Grails Deep Dive Course
 banner_image: https://images.sergiodelamo.com/grails-deep-dive.png
 external_url: https://objectcomputing.com/services/training/catalog/grails/grails-deep-dive
 summary: My colleague Zachary Klein teaches a Grails course next week
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-02T17:18:02+01:00
-date_modified: 2021-09-02T17:18:02+01:00
 keywords:grails
 ---
 

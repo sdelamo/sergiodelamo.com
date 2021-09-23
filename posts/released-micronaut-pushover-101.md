@@ -2,11 +2,7 @@
 title: Micronaut Pushover released
 summary: A Java library to consume the Pushover API
 banner_image: https://images.sergiodelamo.com/micronaut-pushover-released.png
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2021-09-08T05:58:18+01:00
-date_modified: 2021-09-08T05:58:18+01:00
 keywords:micronaut,pushover
 ---
 

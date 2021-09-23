@@ -1,11 +1,7 @@
 ---
 title: Execute a Gradle task shortcut with IntelliJ IDEA
 summary: How to setup a shortcut to execute a Gradle task with IntelliJ IDEA
-author.name: Sergio del Amo
-author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
 date_published: 2020-11-30T12:40:21+01:00
-date_modified: 2020-11-30T12:40:21+01:00
 keywords:gradle,intellijidea,automation
 ---
 
