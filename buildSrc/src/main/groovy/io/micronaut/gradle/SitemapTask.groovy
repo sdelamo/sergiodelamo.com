@@ -8,12 +8,16 @@ import org.gradle.api.provider.Property
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
+
+import java.nio.file.Paths
+
 import static groovy.io.FileType.FILES
 
 @CompileStatic
 class SitemapTask extends DefaultTask {
     static final String FILE_SITEMAP = 'sitemap.xml'
     public static final String LAST_MODIFIED = 'last-modified" content="'
+    public static final String DOT_HTML = '.html'
 
     @OutputDirectory
     final Property<File> output = project.objects.property(File)
@@ -24,17 +28,20 @@ class SitemapTask extends DefaultTask {
     @TaskAction
     void renderSitemap() {
         String websiteUrl = url.get()
-        File inputFile = new File(output.get().absolutePath + "/" + RenderSiteTask.DIST)
-
+        File folder = inputFolder()
         Map<String, File> urlsToFiles = [:]
-        inputFile.eachFileRecurse(FILES) {
-            if (it.name.endsWith('.html')) {
-                urlsToFiles.put("${websiteUrl}${it.absolutePath.replace(inputFile.absolutePath, "")}".toString(), it)
+        folder.eachFileRecurse(FILES) {
+            if (it.name.endsWith(DOT_HTML)) {
+                urlsToFiles.put("${websiteUrl}${it.absolutePath.replace(folder.absolutePath, "")}".toString(), it)
             }
         }
-        File outputFile = new File(inputFile.absolutePath + "/" + FILE_SITEMAP)
+        File outputFile = Paths.get(folder.absolutePath, FILE_SITEMAP).toFile()
         outputFile.createNewFile()
         outputFile.text = sitemapContent(urlsToFiles)
+    }
+
+    private File inputFolder() {
+        new File(output.get().absolutePath, RenderSiteTask.DIST)
     }
 
     @CompileDynamic
