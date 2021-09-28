@@ -3,6 +3,7 @@ title: Micronaut Health Check
 summary: The health endpoint is the easiest way to expose a health check in your Micronaut application.
 date_published: 2021-09-28T10:17:41+01:00
 keywords:micronaut
+banner_image: https://images.sergiodelamo.com/micronaut-health-check.png
 ---
 
 # [%title]
