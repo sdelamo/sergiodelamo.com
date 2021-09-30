@@ -1,6 +1,6 @@
 ---
 title: Micronaut development environment
-summary: I use Micronaut default enviornment to define a development environment.
+summary: I use Micronaut default environment to define a development environment.
 date_published: 2021-09-30T09:45:38+01:00
 keywords:micronaut,environment
 banner_image: https://images.sergiodelamo.com/micronaut-development-environment.png
