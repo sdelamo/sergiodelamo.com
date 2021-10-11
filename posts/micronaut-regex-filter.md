@@ -114,9 +114,9 @@ The key in the above `Filter` is that I am defining my pattern style to be a reg
 
 `/api/v(1|2)/.*` matches:
 
- - ✅ `/api/v1/secrets` 
- - ✅ `/api/v2/secrets`
- - ❌ `/api/v3/secrets`
+ ✅ `/api/v1/secrets`   
+ ✅ `/api/v2/secrets`  
+ ⭕️ `/api/v3/secrets`  
 
 Regular expressions is an art. To work with regular expressions I use [Patterns for MacOS](https://krillapps.com/patterns/) or [RegexBuddy](https://www.regexbuddy.com) in Windows.
 
