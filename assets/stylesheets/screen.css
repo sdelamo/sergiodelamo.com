@@ -186,6 +186,7 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 }
 
 .header {
+    min-height: 30px;
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: #fff;
