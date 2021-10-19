@@ -1,6 +1,6 @@
 ---
 title: Micronaut Filter Regex
-summary: Since Micronaut framework 3.1, you can use a regular expression in the HTTP server filter patterns
+summary: Since Micronaut® framework 3.1, you can use a regular expression in the HTTP server filter patterns
 banner_image: https://images.sergiodelamo.com/micronaut-filter-regex.png
 date_published: 2021-10-11T18:28:53+01:00
 keywords:micronaut

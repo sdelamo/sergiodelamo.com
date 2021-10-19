@@ -2,22 +2,22 @@
 title: Micronaut Guides updated to 3!
 banner_image: https://images.sergiodelamo.com/micronaut-guides-updated-to-3.png
 external_url: https://micronaut.io/guides/
-summary: Guide are ready for Micronaut framework 3!
+summary: Guide are ready for Micronaut® framework 3!
 date_published: 2021-08-18T22:40:29+01:00
 keywords:micronaut
 ---
 
 # [%title]
 
-[Micronaut Guides]([%external_url]) are step by step tutorials to help you learn the [Micronaut framework](https://micronaut.io). 
+[Micronaut Guides]([%external_url]) are step by step tutorials to help you learn the [Micronaut® framework](https://micronaut.io). 
 
 My colleague [Iván López](https://twitter.com/ilopmar) wrote about the [improvements to Micronaut Guides infrastructure](https://micronaut.io/2021/04/12/improving-the-micronaut-guides-infrastructure/) back in April. We have continued to improve and automate the process. 
 
-Thanks to this focus towards automation, [Micronaut Guides](https://guides.micronaut.io) are updated to the latest version of the framework. [Micronaut framework 3.0.0 was released today](https://micronaut.io/2021/08/18/micronaut-framework-3-released/). There are 53 guides. Many of them with up to 6 combinations (3 languages and 2 build tools). Every guide contains a ZIP file with the sample of code written with Micronaut framework 3.0.0. Every guide contains code samples. Every code sample uses 3.0.0.
+Thanks to this focus towards automation, [Micronaut Guides](https://guides.micronaut.io) are updated to the latest version of the framework. [Micronaut® framework 3.0.0 was released today](https://micronaut.io/2021/08/18/micronaut-framework-3-released/). There are 53 guides. Many of them with up to 6 combinations (3 languages and 2 build tools). Every guide contains a ZIP file with the sample of code written with Micronaut® framework 3.0.0. Every guide contains code samples. Every code sample uses 3.0.0.
 
 ## Guides versions
 
-We version Micronaut Guides. You can find the latest (using Micronaut framework 3.0.0) at: 
+We version Micronaut Guides. You can find the latest (using Micronaut® framework 3.0.0) at: 
 
 [[%external_url]]([%external_url])
 
@@ -27,7 +27,7 @@ But if you want to check guides for 2.5.x, you can find them at:
 
 ## From 2.5.x to 3.0.x
 
-The [pull request to update Micronaut Guides to 3.0.0](https://github.com/micronaut-projects/micronaut-guides/pull/388) is a good representation of the changes necessary to update projects from Micronaut framework 2.5.x to 3.0.x.
+The [pull request to update Micronaut Guides to 3.0.0](https://github.com/micronaut-projects/micronaut-guides/pull/388) is a good representation of the changes necessary to update projects from Micronaut® framework 2.5.x to 3.0.x.
 
 - Replacements of `import javax.inject` with `import jakarta.inject`. 
 - Migration from [RxJava2](https://github.com/ReactiveX/RxJava/tree/2.x) to [Project Reactor](https://projectreactor.io). 

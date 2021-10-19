@@ -30,13 +30,13 @@ keywords:micronaut,aws,workshop
 
 > - Deploying a Micronaut app to Elastic Beanstalk
 > - Accessing a relational database hosted with RDS with Micronaut Data
-> - NoSQL persistence with DynamoDB and the Micronaut framework
-> - Uploading files to S3 with the Micronaut framework
-> - Transactional emails with SES and the Micronaut framework
+> - NoSQL persistence with DynamoDB and the Micronaut® framework
+> - Uploading files to S3 with the Micronaut® framework
+> - Transactional emails with SES and the Micronaut® framework
 > - Build a CI/CD pipeline for your Micronaut apps with CodeBuild and CodePipeline
 > - Handle your Micronaut app's user management and authentication with Cognito
-> - Serverless functions with the Micronaut framework and Lambda
-> - Build Alexa skills with the Micronaut framework
+> - Serverless functions with the Micronaut® framework and Lambda
+> - Build Alexa skills with the Micronaut® framework
 > - Monitoring with Cloud Watch
 > - Tracing with X-Ray
 > - Deploying Micronaut GraalVM Native Images to AWS

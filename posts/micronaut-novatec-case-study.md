@@ -17,7 +17,7 @@ I will join [Carlos Barragan](https://twitter.com/barraganc), [Silvio D'Alessand
   📅 <time class="dt-start" datetime="[%event.start]">11<sup>th</sup> December 2020, 10:00 </time> to <time class="dt-end" datetime="[%event.end]">11:00</time> CST. It is <span class="p-location">[%event.location]</span>.   It is free.</p>  
 </div>
 
-> In this 90-minute, complimentary webinar, you'll get a look at the Micronaut framework in its natural habitat – an actual productive environment where it powers an application that handles several thousand calls per minute!
+> In this 90-minute, complimentary webinar, you'll get a look at the Micronaut® framework in its natural habitat – an actual productive environment where it powers an application that handles several thousand calls per minute!
 
 [Register]([%external_url])
 

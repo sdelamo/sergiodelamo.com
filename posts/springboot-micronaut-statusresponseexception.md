@@ -1,5 +1,5 @@
 ---
-title: SpringBoot to the Micronaut framework - @ResponseStatus Exception
+title: SpringBoot to the Micronaut® framework - @ResponseStatus Exception
 summary: In SpringBoot you can annotate your exceptions with @ResponseStatus, Micronaut's HttpStatusException achieves a similar behaviour
 date_published: 2021-04-28T08:05:01+01:00
 keywords:micronaut,springboot
@@ -66,7 +66,7 @@ Date: Tue, 27 Apr 2021 06:09:45 GMT
 
 ## [Micronaut Framework](https:/micronaut.io)
 
-A similar error processing in Micronaut framework could be achieve by extending `HttpStatusException`
+A similar error processing in Micronaut® framework could be achieve by extending `HttpStatusException`
 
 ```java
 package scorekeep;
@@ -120,7 +120,7 @@ connection: keep-alive
 
 ### Error Formatting
 
-By default, Micronaut framework error formatting uses [vnd.error](https://github.com/blongden/vnd.error). I prefer to use [Problem+JSON](https://tools.ietf.org/html/rfc7807). To use Problem+JSON in Micronaut framework, include [micronaut-problem-json](https://micronaut-projects.github.io/micronaut-problem-json/snapshot/guide/) dependency and you will get:
+By default, Micronaut® framework error formatting uses [vnd.error](https://github.com/blongden/vnd.error). I prefer to use [Problem+JSON](https://tools.ietf.org/html/rfc7807). To use Problem+JSON in Micronaut® framework, include [micronaut-problem-json](https://micronaut-projects.github.io/micronaut-problem-json/snapshot/guide/) dependency and you will get:
 
 ```bash
 curl -i localhost:8080/api/score/ZZZ

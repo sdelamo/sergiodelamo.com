@@ -1,5 +1,5 @@
 ---
-title: SpringBoot to Micronaut framework - Application Class
+title: SpringBoot to Micronaut® framework - Application Class
 summary: SpringBoot and Micronaut applications contain a simple application class which starts the application for you.
 date_published: 2021-04-27T06:45:56+01:00
 keywords:micronaut,springboot
@@ -26,7 +26,7 @@ public class Application {
 }
 ```
 
-[Micronaut framework](https:/micronaut.io):
+[Micronaut® framework](https:/micronaut.io):
 
 
 ```java

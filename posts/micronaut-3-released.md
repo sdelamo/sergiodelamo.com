@@ -1,8 +1,8 @@
 ---
-title: Micronaut framework 3 Released
+title: Micronaut® framework 3 Released
 banner_image: https://images.sergiodelamo.com/micronaut-3-released.png
 external_url: https://micronaut.io/2021/08/18/micronaut-framework-3-released/
-summary: Update your apps to the latest version of Micronaut framework
+summary: Update your apps to the latest version of Micronaut® framework
 date_published: 2021-08-18T22:08:51+01:00
 keywords:micronaut
 ---

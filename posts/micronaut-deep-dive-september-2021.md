@@ -19,7 +19,7 @@ keywords:micronaut
 [Enroll Now](https://objectcomputing.com/training/register/offering/298)
 
 > The following topics are covered in this course.
-> - Introduction to the Micronaut framework
+> - Introduction to the Micronaut® framework
 > - Controllers
 > - Compile-time dependency injection
 > - Application configuration

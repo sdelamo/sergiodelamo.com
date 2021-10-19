@@ -1,7 +1,7 @@
 ---
-title: (Public Speaking) Codemotion 2020: Building Chatbots with Micronaut framework.
+title: (Public Speaking) Codemotion 2020: Building Chatbots with Micronaut® framework.
 date_published: 2020-08-28T10:30:00+01:00
-summary: Talks at Codemotion 2020 - Building Chatbots with Micronaut framework.
+summary: Talks at Codemotion 2020 - Building Chatbots with Micronaut® framework.
 eventName: Codemotion
 eventDate: Nov 3, 2020
 eventLocation: online

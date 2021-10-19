@@ -13,7 +13,7 @@ When you run your application behind a [Elastic Load Balancer](https://aws.amazo
 
 In a Micronaut application, you may need to resolve the domain name of your application, for example when using OAuth 2.0 for a `redirect_uri`, or restrict an endpoint to a range of IP Addresses, for example a Stripe's callback.  
 
-Micronaut framework contains two APIs:
+Micronaut® framework contains two APIs:
 
 - `HttpHostResolver` to resolve the host
 - `HttpClientAddressResolver` to resolve the IP. 

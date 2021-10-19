@@ -15,7 +15,7 @@ A [new mayor release of the Grails framework](https://grails.org/blog/2021-10-11
 
 Grails stands on the shoulder of Giants. This release elevates the framework by updating those Giants. 
 
- > This release includes [Apache Groovy 3](https://groovy-lang.org/releasenotes/groovy-3.0.html), [Micronaut framework 3](https://micronaut.io/2021/08/18/micronaut-framework-3-released/), [Gradle 7](https://docs.gradle.org/7.0/release-notes.html), [Spring Boot 2.5](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.5-Release-Notes), [Spring framework 5.3](https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#upgrading-to-version-53), and [Spock 2.0](https://spockframework.org/spock/docs/2.0/release_notes.html).
+ > This release includes [Apache Groovy 3](https://groovy-lang.org/releasenotes/groovy-3.0.html), [Micronaut® framework 3](https://micronaut.io/2021/08/18/micronaut-framework-3-released/), [Gradle 7](https://docs.gradle.org/7.0/release-notes.html), [Spring Boot 2.5](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.5-Release-Notes), [Spring framework 5.3](https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#upgrading-to-version-53), and [Spock 2.0](https://spockframework.org/spock/docs/2.0/release_notes.html).
  
  It should be seamless upgrade. 
  

@@ -10,15 +10,15 @@ keywords:micronaut
 
 ## Reactive Streams implementation agnostic
 
-[Micronaut framework 3](https://micronaut.io/2021/08/18/micronaut-framework-3-released/) no longer exposes a Reactive Streams implementation :
+[Micronaut® framework 3](https://micronaut.io/2021/08/18/micronaut-framework-3-released/) no longer exposes a Reactive Streams implementation :
 
-> Previous releases of the Micronaut framework included RxJava2 as a transitive dependency, and RxJava2 was the reactive streams implementation used to implement many features within the Framework. The Micronaut framework now no longer exposes any reactive streams implementation by default. In addition, all usages of RxJava2 internally have been replaced with Project Reactor.
+> Previous releases of the Micronaut® framework included RxJava2 as a transitive dependency, and RxJava2 was the reactive streams implementation used to implement many features within the Framework. The Micronaut® framework now no longer exposes any reactive streams implementation by default. In addition, all usages of RxJava2 internally have been replaced with Project Reactor.
 
-It makes sense. Micronaut framework is build agnostic. You can use Gradle or Maven. Micronaut framework is JVM programming language agnostic. You can code in Java, Groovy or Kotlin. Now, it is reactive streams agnostic. You choose your favourite poison.
+It makes sense. Micronaut® framework is build agnostic. You can use Gradle or Maven. Micronaut® framework is JVM programming language agnostic. You can code in Java, Groovy or Kotlin. Now, it is reactive streams agnostic. You choose your favourite poison.
 
-## Eurorates updated to Micronaut framework 3
+## Eurorates updated to Micronaut® framework 3
 
-I have released version 2.0.0 of [Eurorates](https://github.com/sdelamo/eurorates), a tiny [g](https://micronaut.io) Java library which helps you consume the [Euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). This new mayor release updates to Micronaut framework 3 and changes the API to be Reactive Streams implementation agnostic. The library does not expose Rx Java 2 or any other reactive streams implementation library as transitive dependency anymore.
+I have released version 2.0.0 of [Eurorates](https://github.com/sdelamo/eurorates), a tiny [Micronaut](https://micronaut.io) Java library which helps you consume the [Euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). This new mayor release updates to Micronaut® framework 3 and changes the API to be Reactive Streams implementation agnostic. The library does not expose Rx Java 2 or any other reactive streams implementation library as transitive dependency anymore.
 
 The main interface used to be: 
 
