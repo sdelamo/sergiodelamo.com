@@ -1,13 +1,13 @@
 ---
-title: 🗣 Automating Processes with Microservices on Micronaut and Camunda 
+title: 🗣 Automating Processes with Microservices on Micronaut framework and Camunda 
 external_url: https://us02web.zoom.us/webinar/register/WN_9Qo6JspDQmWKb2t6v1UtIA
 summary: (optional, string) Is a plain text sentence or two describing the item.
 banner_image: https://images.sergiodelamo.com/camundaandmicronaut.jpg
 date_published: 2021-02-19T07:52:14+01:00
-event.name: Automating Processes with Microservices on Micronaut and Camunda 
+event.name: Automating Processes with Microservices on Micronaut framework and Camunda 
 event.start: 2021-02-25 10:00
 event.end: 2021-02-25 11:00
-event.summary: Integrating Micronaut and Camunda
+event.summary: Integrating Micronaut framework and Camunda
 event.location: Online
 keywords:micronaut,camunda,agenda
 ---

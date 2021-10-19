@@ -16,9 +16,9 @@ keywords:micronaut
 
 It makes sense. Micronaut framework is build agnostic. You can use Gradle or Maven. Micronaut framework is JVM programming language agnostic. You can code in Java, Groovy or Kotlin. Now, it is reactive streams agnostic. You choose your favourite poison.
 
-## Eurorates updated to Micronaut 3
+## Eurorates updated to Micronaut framework 3
 
-I have released version 2.0.0 of [Eurorates](https://github.com/sdelamo/eurorates), a tiny [Micronaut](https://micronaut.io) Java library which helps you consume the [Euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). This new mayor release updates to Micronaut 3 and changes the API to be Reactive Streams implementation agnostic. The library does not expose Rx Java 2 or any other reactive streams implementation library as transitive dependency anymore.
+I have released version 2.0.0 of [Eurorates](https://github.com/sdelamo/eurorates), a tiny [g](https://micronaut.io) Java library which helps you consume the [Euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). This new mayor release updates to Micronaut framework 3 and changes the API to be Reactive Streams implementation agnostic. The library does not expose Rx Java 2 or any other reactive streams implementation library as transitive dependency anymore.
 
 The main interface used to be: 
 

@@ -1,14 +1,14 @@
 ---
-title: Github activity CLI updated to Micronaut 3.1
+title: Github activity CLI updated to Micronaut framework 3.1
 external_url: https://github.com/sdelamo/githubactivity
-summary: I have updated the CLI application, which I use to check my Github activity to Micronaut 3.1.
+summary: I have updated the CLI application, which I use to check my Github activity to Micronaut framework 3.1.
 date_published: 2021-10-16T12:35:06+01:00
 keywords:micronaut
 ---
 
 # [%title]
 
-I have updated the [Github Activity CLI](https://github.com/sdelamo/githubactivity), the command line tool which I use to check my Github activity, to Micronaut 3.1.
+I have updated the [Github Activity CLI](https://github.com/sdelamo/githubactivity), the command line tool which I use to check my Github activity, to Micronaut framework 3.1.
 
 The update is simple:  
 

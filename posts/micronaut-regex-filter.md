@@ -1,6 +1,6 @@
 ---
 title: Micronaut Filter Regex
-summary: Since Micronaut 3.1, you can use a regular expression in the HTTP server filter patterns
+summary: Since Micronaut framework 3.1, you can use a regular expression in the HTTP server filter patterns
 banner_image: https://images.sergiodelamo.com/micronaut-filter-regex.png
 date_published: 2021-10-11T18:28:53+01:00
 keywords:micronaut
@@ -84,7 +84,7 @@ public class SecretsController {
 
 I want to keep `v1`, `v2` endpoints alive. However, I want to notify my consumers that they should migrate to `v3`.
 
-I can add a [`Deprecation` HTTP Header](https://datatracker.ietf.org/doc/html/draft-dalal-deprecation-header-03) to the HTTP Responses emitted by `v1` and `v2` endpoints. Thanks to the support of regular expressions since Micronaut 3.1, it is really easy to do it: 
+I can add a [`Deprecation` HTTP Header](https://datatracker.ietf.org/doc/html/draft-dalal-deprecation-header-03) to the HTTP Responses emitted by `v1` and `v2` endpoints. Thanks to the support of regular expressions since Micronaut Framework 3.1, it is really easy to do it: 
 
 ```java
 package com.example;

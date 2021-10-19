@@ -8,7 +8,7 @@ keywords:micronaut,pushover
 
 # [%title]
 
-I've released  a [Micronaut](https://micronaut.io) Java library to consume the [Pushover API](https://pushover.net/api). It is built with the [Micronaut](https://micronaut.io) Framework and you can use it in a Micronaut app or as a standalone library.
+I've released a [Micronaut](https://micronaut.io) Java library to consume the [Pushover API](https://pushover.net/api). It is built with the [Micronaut framework](https://micronaut.io) and you can use it in a Micronaut app or as a standalone library.
 
 ## Installation
 
@@ -128,7 +128,7 @@ public class HomeController {
 }
 ```
 
-### Without Micronaut
+### Without Micronaut framework
 
 You can use the library without a Micronaut Application Context. In that case, you can do:
 

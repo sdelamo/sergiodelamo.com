@@ -1,5 +1,5 @@
 ---
-title: SpringBoot to Micronaut - Controller annotations
+title: SpringBoot to the Micronaut framework - Controller annotations
 summary: SpringBoot and Micronaut applications ease the creation of routes with similar annotations.
 date_published: 2021-04-27T10:45:56+01:00
 keywords:micronaut,springboot
@@ -34,7 +34,7 @@ public class ScoreController {
 }
 ```
 
-[Micronaut](https:/micronaut.io):
+[Micronaut framework](https:/micronaut.io):
 
 ```java
 package scorekeep;
@@ -58,4 +58,4 @@ public class ScoreController {
 
 I like to include the `@PathVariable` annotation to convey the parameter context. However, it is not required. 
 
-It is easy to migrate Spring Boot request mapping annotations to Micronaut annotations. Micronaut includes annotations for the HTTP verbs `@Get`, `@Post`, `@Delete`, `@Put`... They are succinct. Succinct code is good code.  
+It is easy to migrate Spring Boot request mapping annotations to Micronaut annotations. Micronaut framework includes annotations for the HTTP verbs `@Get`, `@Post`, `@Delete`, `@Put`... They are succinct. Succinct code is good code.  

@@ -16,7 +16,7 @@ keywords:micronaut,aws,ecr,codebuild,elasticbeanstalk,codebuild,codepipeline,doc
 
 ![](https://images.sergiodelamo.com/codepipeline-github-codebuild-ecr-elasticbeanstalk.svg)
 
-Micronaut is build agnostic, you can use either Gradle or Maven. However, Gradle is my build tool of choice. 
+Micronaut framework is build agnostic, you can use either Gradle or Maven. However, Gradle is my build tool of choice. 
 
 ## Changes to Gradle Build
 

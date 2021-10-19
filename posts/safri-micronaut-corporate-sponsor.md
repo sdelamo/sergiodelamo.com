@@ -9,7 +9,7 @@ keywords:micronaut
 
 # [%title]
 
-[Micronaut](https://micronaut.io) is an Open Source JVM Framework licensed via [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+[Micronaut framework](https://micronaut.io) is an Open Source JVM Framework licensed via [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
 
 Often, we use Open Source products and we take them for granted. Moreover, our organisations use those open-source solutions to developer our products. The health of any Open Source solution, which we rely on, affects the health of our technology stack. Hence, it affects the health our products. How easy is to move them forward, how easy is to hire developers interested in the technologies we use. There are many way an organization can support an Open Source product: 
 
@@ -27,4 +27,4 @@ One of those vehicles is the [Micronaut Foundation Corporate Sponsorship](https:
 
 > Micronaut is an important part in our projects and contributes immensely to our productivity and success. For this reason, and because we inherently like to give back to the open source communities, we decided to do the same for Micronaut.
 
-Many thanks to [SAFRI.NET](https://www.safri.net) for their support of the Micronaut Framework and everyone, myself included, involved with it.
+Many thanks to [SAFRI.NET](https://www.safri.net) for their support of the Micronaut framework and everyone, myself included, involved with it.
