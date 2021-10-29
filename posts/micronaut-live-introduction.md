@@ -3,7 +3,7 @@ title: Micronaut Live: Streaming today!
 external_url: https://twitch.tv/micronautfw
 summary: Starting today at 10:30 US CDT and 17:30 CET, I will be streaming at twitch.tv/micronautfw
 date_published: 2021-10-26T07:41:42+01:00
-keywords:micronaut
+keywords:micronaut,micronautlive
 banner_image: https://images.sergiodelamo.com/micronaut-live-streaming-today.png
 ---
 
