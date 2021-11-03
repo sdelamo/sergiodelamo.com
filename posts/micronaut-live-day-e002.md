@@ -4,6 +4,7 @@ external_url: https://www.youtube.com/watch?v=yrjIMJHeFSs
 summary: Summary and video of Micronaut Live second session
 date_published: 2021-11-01T13:04:23+01:00
 keywords:micronaut,micronautlive
+banner_image: https://images.sergiodelamo.com/micronaut-live-e002.png
 ---
 
 # [%title]
