@@ -2,9 +2,9 @@
 title: Micronaut Live - E004
 external_url: https://www.youtube.com/watch?v=KkxZN9c8k7s
 summary: Summary and video of Micronaut Live 4th session
-date_created: 2021-11-08T15:08:03+01:00
+date_published: 2021-11-08T15:10:39+01:00
 keywords:micronaut,micronautlive
----
+------
 
 # [%title]
 
