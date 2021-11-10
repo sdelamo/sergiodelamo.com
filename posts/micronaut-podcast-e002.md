@@ -9,6 +9,4 @@ keywords:micronaut,podcast
 
 # [%title]
 
-[%summary]
-
 I talked to [James Kleeh](https://twitter.com/schlogen), Micronaut development lead, about Micronaut versioning, repository branching, the usage of [Testcontainers](https://twitter.com/testcontainers) in Micronaut testing.
