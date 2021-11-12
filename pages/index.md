@@ -7,16 +7,18 @@ date_modified: 2021-09-23T06:19:05+01:00
 
 Read my [blog]([%url]/blog/index.html) or subscribe to the feed [RSS]([%url]/rss.xml) or [JSON]([%url]/feed.json).
 
-## 🎙Podcast
+## 🎙Podcasts
 
-[Código Bot](https://codigobot.com/index.html) - A podcast in Spanish where I talk with [Kini](https://kinisoftware.com) about Programming, Voice assistants, Chat Bots, Productivity, Open Source, Community ...
+- [The Micronaut Podcast](https://micronautpodcast.com) - A podcast in English where I am joined by a guest. Episodes cover a variety of topics (interviews, tips, news...) surrounding the Micronaut framework
+
+- [Código Bot](https://codigobot.com/index.html) - A podcast in Spanish where I talk with [Kini](https://kinisoftware.com) about Programming, Voice assistants, Chat Bots, Productivity, Open Source, Community ...
 
 ## 🐘 Gradle Plugins
 
 - [Build Info Gradle Plugin](https://sdelamo.github.io/build-info-gradle-plugin/index.html)  
 Gradle plugin to generate a build-info.properties file. To be used in combination with the info endpoint of  a Micronaut app. 
 
-- [Podcast Gradle Plugin](https://github.com/sdelamo/podcast-gradle-plugin) 
+- [Podcast Gradle Plugin](https://github.com/sdelamo/podcast-gradle-plugin)   
 Gradle plugin to generate a Podcast RSS feed.
 
 ## 🖥 Micronaut Java Libraries
