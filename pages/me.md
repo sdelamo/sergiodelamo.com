@@ -11,15 +11,11 @@ date_published: 2020-11-20T10:24:00+01:00
 
 ## Open Source
 
-I am a developer of [Micronaut](http://micronaut.io), the JVM framework, since its inception. I write / review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html) Micronaut's  modules. 
+I am a Principal Software Engineer at [Object Computing](https://objectcomputing.com) where I work as Developer advocate for [Micronaut](https://micronaut.io) and [Grails](https://grails.org) frameworks and the [Apache Groovy](https://groovy-lang.org) programming language.
+
+I am a core developer of [Micronaut](http://micronaut.io), the JVM framework, since its inception. I write / review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), Micronaut's  modules. 
  
 Moreover, I have worked a lot with [Grails Framework](https://grails.org). I have contributed to the framework core code, plugins and guides. 
-
-## Work 
-
-I work as a Principal Software Engineer at [Object Computing](https://objectcomputing.com). OCI is the company behind both, frameworks Micronaut and Grails. I am fortunate to have a job contributing to open source.
-
-Moreover, I often support Object Computing's clients with both frameworks, Micronaut and Grails. 
 
 ## Writing
 
