@@ -18,6 +18,6 @@ In the 6th session of [Micronaut Live](https://sergiodelamo.com/blog/micronaut-l
 
 And, much more!.
 
-Checkout the [Github repository](https://github.com/sdelamo/micronaut-live-newsletter/) which contains the application's code.
+Checkout the [Github repository](https://github.com/micronaut-advocacy/micronaut-live-newsletter/) which contains the application's code.
 
 For another Micronaut Live session, [tune in to twitch](https://twitch.tv/micronautfw) Tuesdays and Thursdays at 10:30 a.m. CST / 17:30 CET to continue building a Micronaut Application.

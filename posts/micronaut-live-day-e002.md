@@ -11,6 +11,6 @@ banner_image: https://images.sergiodelamo.com/micronaut-live-e002.png
 
 In the 2nd session of [Micronaut Live](https://sergiodelamo.com/blog/micronaut-live-introduction.html), I integrate [Micronaut Data JDBC](https://micronaut-projects.github.io/micronaut-data/latest/guide/#dbc) to the application.
 
-Checkout the [Github repository](https://github.com/sdelamo/micronaut-live-newsletter/) which contains the application's code.
+Checkout the [Github repository](https://github.com/micronaut-advocacy/micronaut-live-newsletter/) which contains the application's code.
 
 For another Micronaut Live session, [tune in to twitch](https://twitch.tv/micronautfw) tomorrow at 10:30 a.m. CDT / 17:30 CET to continue building a Micronaut Application. 
