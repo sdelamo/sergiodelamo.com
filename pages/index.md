@@ -42,4 +42,4 @@ I write [Groovy Calamari](https://groovycalamari.com). A curated email publicati
 
 ## 👨🏼‍🏫 Greach Conf
 
-I organize [Greach Conf](https://greachconf). A conference around microservices, JVM frameworks (Quarkus, SpringBoot, Grails, Geb, Spock, Griffon, Ratpack) & JVM Languages (Java, Groovy, Kotlin, Micronaut,  ... ).
+I organize [Greach Conf](https://greachconf). A conference around microservices, JVM frameworks (Micronaut, Quarkus, SpringBoot, Grails, Geb, Spock, Griffon, Ratpack) & JVM Languages (Java, Groovy, Kotlin, ...).
