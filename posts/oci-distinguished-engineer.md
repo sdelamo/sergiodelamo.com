@@ -13,7 +13,7 @@ I got promoted to
 > OCI recognizes individuals who have demonstrated subject matter expertise in one or more technology areas, and who serve as an organizational and community thought leader and champion, as “Distinguished Engineer”.
 
 
-A Distinguished enginner:
+A Distinguished engineer:
 
 > - Demonstrates subject matter expertise in specific technology area(s)
 > - Applies expertise to create novel approaches to problems
