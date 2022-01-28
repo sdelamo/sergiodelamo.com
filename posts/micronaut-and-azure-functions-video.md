@@ -1,6 +1,6 @@
 ---
 title: 📼 Micronaut + Azure Functions
-external_url: https://www.youtube.com/watch?v=lyHVcDpFcjE
+external_url: https://www.youtube.com/watch?v=-Kk_PNxdXSk
 date_published: 2020-10-05T17:42:25+01:00
 summary: "Micronaut + Azure Functions" webinar video
 keywords:micronaut,azure,talk,video
