@@ -1,9 +1,9 @@
 ---
-title: Merida (Mexico) JUG - Introduction to Micronaut® framework 🎥
+title: 📼 Merida (Mexico) JUG - Introduction to Micronaut® framework
 date_published: 2020-09-20T10:30:00+01:00 
 summary: Introduction to Micronaut online talk by Sergio del Amo at JUG Merida (Mexico)
 video: https://www.youtube.com/watch?v=qsaI1xzUdLw
-keywords:video
+keywords:video,talk,micronaut
 ---
 
 # [%title]
