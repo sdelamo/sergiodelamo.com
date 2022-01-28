@@ -9,7 +9,7 @@ keywords:presentation,micronaut
 
 Presented at [Bucharest JUG](https://sergiodelamo.com/blog/micronaut-webinar-bucharest-2021-09-16.html), [Manchester JUG](https://sergiodelamo.com/blog/micronaut-webinar-manchester-2022-03-17.html), [Merida (Mexico) JUG](https://sergiodelamo.com/blog/jugmerida-intro-to-micronaut.html)
 
-In this session, [Sergio del Amo](https://sergiodelamo.com) - Micronaut developer advocate and core committer - introduces the Micronaut framework and demonstrates how Micronaut’s unique compile-time approach enables the development of ultra-lightweight Microservices for Java. 
+In this session, [Sergio del Amo](https://sergiodelamo.com) - Micronaut developer advocate and core committer - introduces the Micronaut framework and demonstrates how its unique compile-time approach enables the development of ultra-lightweight Java applications. 
 
 Compelling aspects of the Micronaut framework include:
 
