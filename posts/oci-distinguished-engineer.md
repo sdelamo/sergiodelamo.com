@@ -23,4 +23,4 @@ A Distinguished engineer:
 > - Provides significant contributions to related open source software
 > - Brings name recognition to OCI through involvement in user groups, conferences, standards bodies, or similar
 
-Two collagues, which admire a lot [Paul King](https://twitter.com/paulk_asert) (Apache Groovy Development lead) and [James Kleeh](https://twitter.com/Schlogen) (Micronaut Development Lead), received the same promotion. I am humbled to receive the same promotion as they did.
+Two colleagues, which admire a lot [Paul King](https://twitter.com/paulk_asert) (Apache Groovy Development lead) and [James Kleeh](https://twitter.com/Schlogen) (Micronaut Development Lead), received the same promotion. I am humbled to receive the same promotion as they did.
