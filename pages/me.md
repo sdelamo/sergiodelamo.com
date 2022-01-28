@@ -13,7 +13,7 @@ date_published: 2020-11-20T10:24:00+01:00
 
 I am a Principal Software Engineer at [Object Computing](https://objectcomputing.com) where I work as Developer advocate for [Micronaut](https://micronaut.io) and [Grails](https://grails.org) frameworks and the [Apache Groovy](https://groovy-lang.org) programming language.
 
-I am a core developer of [Micronaut](http://micronaut.io), the JVM framework, since its inception. I write / review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), Micronaut's  modules. 
+I am a core developer of the [Micronaut Framework](http://micronaut.io) since its inception. I write / review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), [Email](https://micronaut-projects.github.io/micronaut-email/latest/guide/index.html), Micronaut's  modules. 
  
 Moreover, I have worked a lot with [Grails Framework](https://grails.org). I have contributed to the framework core code, plugins and guides. 
 
@@ -23,7 +23,7 @@ Since early 2015, Sergio has been the author of the newsletter [Groovy Calamari
 
 ## Conference & Public Speaking
 
-I often [talk in conferences](http://localhost/sergiodelamo.com/blog/tag/slides.html). Both in Spain and Internationally. Mostly, about Groovy related technologies, Micronaut and Grails.
+I often [talk in conferences](https://sergiodelamo.com/blog/tag/talk.html). Both in Spain and Internationally. Mostly, about Micronaut, Gradle, Grails and Groovy.
 
 Since 2019, I organize [Greach Conference](https://greachconf.com).
 
