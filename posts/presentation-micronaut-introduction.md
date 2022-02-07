@@ -8,6 +8,8 @@ keywords:presentation,micronaut
 # [%title]
 
 I did a similar presentation at [Bucharest JUG](https://sergiodelamo.com/blog/micronaut-webinar-bucharest-2021-09-16.html), [Merida JUG (Spanish talk)](https://sergiodelamo.com/blog/jugmerida-intro-to-micronaut.html).
+
+---
  
 In this session, [Sergio del Amo](https://sergiodelamo.com) introduces the [Micronaut® framework](https://micronaut.io) and demonstrates how the Framework's unique compile-time approach enables the development of ultra-lightweight Java applications.
 
