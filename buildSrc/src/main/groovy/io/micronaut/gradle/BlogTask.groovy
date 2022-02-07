@@ -370,11 +370,16 @@ class BlogTask extends DefaultTask {
             if (metadata.containsKey('external_url')) {
                 markdown = markdown + "\n\n[Go to the linked site](${metadata['external_url']})\n\n"
             }
-            
+
+
             String contentHtml = wrapTags(metadata, MarkdownUtil.htmlFromMarkdown(markdown))
             String iframe = RenderSiteTask.parseVideoIframe(metadata)
             if (iframe) {
                 contentHtml = contentHtml + iframe
+            }
+
+            if (mdPost.title.contains('Micronaut®')) {
+                contentHtml += "<p><small>Micronaut® is a registered trademark of Object Computing, Inc. Use is for referential purposes and does not imply any endorsement or affiliation with any third-party product. Unauthorized use is strictly prohibited.</small></p>"
             }
 
             Set<String> postTags = parseTags(contentHtml) + getTags(mdPost)

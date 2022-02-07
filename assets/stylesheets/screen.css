@@ -127,6 +127,10 @@ td, th, p, ul, ol {
     line-height: 1.8;
 }
 
+p small {
+    font-size: 14px;
+}
+
 td, th {
     padding: 10px 5px;
     text-align: left;
