@@ -1,6 +1,6 @@
 ---
-title: Micronaut Framework and AWS Lambda
-summary: This talk explains how to deploy Micronaut applications to AWS Lambda.
+title: Micronaut® Framework and AWS Lambda
+summary: This talk introduces the Micronaut framework integration with AWS Lambda.
 date_published: 2022-01-28T17:28:31+01:00
 keywords:presentation,micronaut,aws,lambda,graalvm
 ---
