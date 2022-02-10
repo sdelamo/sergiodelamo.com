@@ -24,3 +24,7 @@ You will learn:
 - How to build AWS Lambda Functions with the Micronaut framework and deploy them to a Java runtime or a custom runtime as a GraalVM Native image. 
 
 Sergio del Amo is a Micronaut core committer,  Developer Advocate for the Micronaut Foundation, and host of the [Micronaut podcast](https://micronautpodcast.com).
+
+## Elevator Pitch 
+
+Java applications have struggled in AWS Lambda. Mainly due to slow cold starts. Building your functions with the Micronaut Framework makes AWS Lambda a viable platform. 
