@@ -28,6 +28,10 @@ Discover how easy it is to work with Micronaut Security and learn how to tailor 
 
 Sergio del Amo is a Micronaut core committer,  Developer Advocate for the Micronaut Foundation, and host of the [Micronaut podcast](https://micronautpodcast.com).
 
+## Elevator Pitch
+
+Every application needs security. In this talk, attendees discover how easy it is to work with Micronaut Security and learn how to tailor it to your needs.
+
 ## Note to Organizer
 
 This content can be a talk or a workshop. 
