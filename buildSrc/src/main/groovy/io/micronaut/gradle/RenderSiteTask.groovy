@@ -5,6 +5,11 @@ import groovy.transform.CompileStatic
 import io.micronaut.ContentAndMetadata
 import io.micronaut.MarkdownUtil
 import io.micronaut.Page
+import io.micronaut.core.util.StringUtils
+import net.fortuna.ical4j.data.CalendarBuilder
+import net.fortuna.ical4j.data.ParserException
+import net.fortuna.ical4j.model.component.CalendarComponent
+import net.fortuna.ical4j.model.component.VEvent
 import org.gradle.api.DefaultTask
 import org.gradle.api.provider.ListProperty
 import org.gradle.api.provider.Property
@@ -12,6 +17,10 @@ import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
+
+import java.text.SimpleDateFormat
+import java.util.stream.Collectors
+
 import static groovy.io.FileType.FILES
 
 import javax.annotation.Nonnull
@@ -19,6 +28,13 @@ import javax.validation.constraints.NotNull
 
 @CompileStatic
 class RenderSiteTask extends DefaultTask {
+
+    static final Comparator<VEvent> START_DATE_COMPARATOR = new Comparator<VEvent>() {
+        @Override
+        int compare(VEvent o1, VEvent o2) {
+            return o1.getStartDate().getDate().compareTo(o2.getStartDate().getDate())
+        }
+    }
 
     public static final String YOUTUBE_WATCH = 'https://www.youtube.com/watch?v='
     static final String TWITER_HANDLE = '@sdelamo'
@@ -29,6 +45,7 @@ class RenderSiteTask extends DefaultTask {
     public static final int TWITTER_CARD_PLAYER_HEIGHT = 315
     public static final String TEMP = "temp"
     public static final String ROBOTS = "robots"
+    public static final String ICAL_NAME = "sdelamocalendar.ics"
 
     @InputDirectory
     final Property<File> pages = project.objects.property(File)
@@ -201,7 +218,52 @@ class RenderSiteTask extends DefaultTask {
         twittercard += metaTwitter('title',resolvedMetadata['title'])
         twittercard += metaTwitter('description',resolvedMetadata['summary'])
         resolvedMetadata['twittercard'] = twittercard
+
+        resolvedMetadata['events'] = calendarHtml().orElse('');
+
         resolvedMetadata
+    }
+
+    static Optional<String> calendarHtml() {
+        String html = null
+        try {
+            FileInputStream fin = new FileInputStream(ICAL_NAME);
+            CalendarBuilder builder = new CalendarBuilder();
+            net.fortuna.ical4j.model.Calendar calendar = builder.build(fin)
+            List<VEvent> events = []
+            for (CalendarComponent calendarComponent : calendar.getComponents()) {
+                if (calendarComponent instanceof VEvent) {
+                    VEvent e = (VEvent) calendarComponent;
+                    events.add(e)
+                }
+            }
+            for (VEvent e : events.stream().sorted(START_DATE_COMPARATOR).collect(Collectors.toList())) {
+                Optional<String> htmlOptional = htmlOfEvent(e)
+                if (htmlOptional.isPresent()) {
+                    if (StringUtils.isEmpty(html)) {
+                        html = "My next events:<br/>"
+                    }
+                    html += htmlOptional.get()
+                }
+            }
+        } catch(IOException e) {
+
+        } catch(ParserException e) {
+
+        }
+        StringUtils.isEmpty(html) ? Optional.empty() : Optional.of("<p>" + html + "</p>")
+    }
+
+    static Optional<String> htmlOfEvent(VEvent e) {
+        Date startDate = e.getStartDate().getDate();
+        if (startDate.after(new Date())) {
+            return Optional.of("🗓 <span>"
+            + new SimpleDateFormat("MMM dd HH:mm").format(startDate)
+            + "</span> "
+            + "<a href=\"" + e.getProperty("DESCRIPTION").getValue() + "\">" + e.getProperty("SUMMARY").getValue() + "</a>"
+            + "</a><br/>")
+        }
+        Optional.empty()
     }
 
     @Nullable

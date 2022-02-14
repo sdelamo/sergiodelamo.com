@@ -67,6 +67,7 @@ class BlogTask extends DefaultTask {
     public static final String ROBOTS_INDEX = 'index'
     public static final String ROBOTS_NOINDEX = 'noindex'
     public static final String ROBOTS_FOLLOW = 'follow'
+    public static final String EVENTS_TAG = "[%events]"
     static {
         List<String> characters = 'A'..'Z'
         List<Integer> digits = [0,1,2,3,4,5,6,7,8,9]
@@ -371,6 +372,9 @@ class BlogTask extends DefaultTask {
                 markdown = markdown + "\n\n[Go to the linked site](${metadata['external_url']})\n\n"
             }
 
+            if (!markdown.contains(EVENTS_TAG)) {
+                markdown += "\n\n" + EVENTS_TAG
+            }
 
             String contentHtml = wrapTags(metadata, MarkdownUtil.htmlFromMarkdown(markdown))
             String iframe = RenderSiteTask.parseVideoIframe(metadata)

@@ -5,6 +5,8 @@ date_published: 2020-11-20T10:24:00+01:00
 date_modified: 2021-09-23T06:19:05+01:00
 ---
 
+[%events]
+
 Read my [blog]([%url]/blog/index.html) or subscribe to the feed [RSS]([%url]/rss.xml) or [JSON]([%url]/feed.json).
 
 ## 🎙Podcasts
