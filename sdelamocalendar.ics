@@ -7,8 +7,7 @@ DTSTAMP:20220214T100223Z
 DTSTART:20220317T133000
 DTEND:20220317T143000
 SUMMARY:Introduction to Micronaut at Manchester JUG
-DESCRIPTION:https://www.meetup.com/ManchesterUK-Java-Community/events/283
- 472160/
+DESCRIPTION:https://www.meetup.com/ManchesterUK-Java-Community/events/283472160/
 UID:
 TZID:Europe/Madrid
 END:VEVENT
@@ -17,8 +16,7 @@ DTSTAMP:20220214T100223Z
 DTSTART:20220214T160000
 DTEND:20220214T190000
 SUMMARY:Introduction to Grails Security
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/
- grails-security-workshop
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/grails-security-workshop
 UID:
 TZID:Europe/Madrid
 END:VEVENT
@@ -27,8 +25,16 @@ DTSTAMP:20220214T100223Z
 DTSTART:20220216T160000
 DTEND:20220216T190000
 SUMMARY:Using Micronaut Features in a Grails Application
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/
- micronaut-and-grails
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/micronaut-and-grails
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220328T100223Z
+DTSTART:20220328T160000
+DTEND:20220328T190000
+SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
 UID:
 TZID:Europe/Madrid
 END:VEVENT
