@@ -3,29 +3,11 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20220214T100223Z
-DTSTART:20220317T133000
-DTEND:20220317T143000
-SUMMARY:Introduction to Micronaut at Manchester JUG
-DESCRIPTION:https://www.meetup.com/ManchesterUK-Java-Community/events/283472160/
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220214T100223Z
-DTSTART:20220214T160000
-DTEND:20220214T190000
-SUMMARY:Introduction to Grails Security
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/grails-security-workshop
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220214T100223Z
-DTSTART:20220216T160000
-DTEND:20220216T190000
-SUMMARY:Using Micronaut Features in a Grails Application
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/grails/micronaut-and-grails
+DTSTAMP:20220720T090000Z
+DTSTART:20220720T090000
+DTEND:20220720T180000
+SUMMARY:Workshop Security in the Micronaut Framework
+DESCRIPTION:https://www.jbcnconf.com/2022/infoTalk.html?id=6229f5eb56274e0bddf007a2
 UID:
 TZID:Europe/Madrid
 END:VEVENT
