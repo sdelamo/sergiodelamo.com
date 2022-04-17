@@ -1,6 +1,6 @@
 ---
 title: Security in the Micronaut® Framework
-summary: This talk intrudces Micronaut Security, a fully featured and customizable security solution for your applications.
+summary: This talk introduces Micronaut Security, a fully featured and customizable security solution for your applications.
 date_published: 2022-01-28T17:28:31+01:00
 keywords:presentation,micronaut
 ---
