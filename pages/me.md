@@ -11,7 +11,9 @@ date_published: 2020-11-20T10:24:00+01:00
 
 ## Open Source
 
-I am a Distinguished Engineer at [Object Computing](https://objectcomputing.com), where I work as a [Micronaut Framework](https://micronaut.io) Development Lead. Moreover, I work as a Developer Advocate for [Micronaut Framework](https://micronaut.io), [Grails](https://grails.org) frameworks, and the [Apache Groovy](https://groovy-lang.org) programming language.
+I am a [Micronaut](https://micronaut.io) core committer, member of the Micronaut Foundation Board Of Directors / Technology Advisory Board / Developer Advocate, and host of the [Micronaut podcast](https://micronautpodcast.com).
+
+I am a Distinguished Engineer at [Object Computing](https://objectcomputing.com), where I also work as a Developer Advocate for  and [Grails](https://grails.org) frameworks and the Apache Groovy programming language.
 
 I have been a core developer of the Micronaut Framework since its inception. I write / review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), [Email](https://micronaut-projects.github.io/micronaut-email/latest/guide/index.html), Micronaut's modules.
  
