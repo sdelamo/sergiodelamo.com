@@ -2,7 +2,7 @@
 title: Talk at Geecon 2022 - Getting Started with the Micronaut® Framework    
 summary: I will be talking at Warsaw for GeeCon 2022.
 date_published: 2022-05-03T18:28:45+01:00
-keywords:micronaut,aws,lambda
+keywords:micronaut
 external_url: https://2022.geecon.org/schedule/
 ---
 
