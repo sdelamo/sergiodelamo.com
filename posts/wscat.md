@@ -1,5 +1,5 @@
 ---
-title: Testing websockets with WSCAT
+title: Testing websockets with wscat
 summary: The wscat utility is a convenient tool for testing a WebSocket API
 date_published: 2022-06-06T16:40:09+01:00
 keywords:websocket
