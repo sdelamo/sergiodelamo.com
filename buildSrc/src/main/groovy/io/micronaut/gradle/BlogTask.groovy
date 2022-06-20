@@ -243,28 +243,28 @@ class BlogTask extends DefaultTask {
         MarkupBuilder mb = new MarkupBuilder(writer)
         mb.div {
             mkp.yieldUnescaped(htmlPost.html)
-        }
-        mb.p {
-            if (htmlPost.metadata['keywords']) {
-                mkp.yield('Tags: ')
-                for (String tag : htmlPost.metadata['keywords'].split(',')) {
-                    a(href: "./tag/${tag}.html") {
-                        mkp.yield("#${tag}")
+            p {
+                if (htmlPost.metadata['keywords']) {
+                    mkp.yield('Tags: ')
+                    for (String tag : htmlPost.metadata['keywords'].split(',')) {
+                        a(href: "./tag/${tag}.html") {
+                            mkp.yield("#${tag}")
+                        }
                     }
                 }
-            }
-            br {
+                br {
 
-            }
-            if (htmlPost.metadata['date_published']) {
-                span(class: "date") {
-                    mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(htmlPost.metadata['date_published'] as String)))
-                    mkp.yield('.')
                 }
-            }
-            if (htmlPost.metadata['author.name']) {
-                span(class: "author") {
-                    mkp.yield(htmlPost.metadata['author.name'])
+                if (htmlPost.metadata['date_published']) {
+                    span(class: "date") {
+                        mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(htmlPost.metadata['date_published'] as String)))
+                        mkp.yield('.')
+                    }
+                }
+                if (htmlPost.metadata['author.name']) {
+                    span(class: "author") {
+                        mkp.yield(htmlPost.metadata['author.name'])
+                    }
                 }
             }
         }
@@ -279,6 +279,7 @@ class BlogTask extends DefaultTask {
         if (metadata['body']) {
             html = html.replace("<body>", "<body class='${metadata['body']}'>")
         }
+        html += RenderSiteTask.renderHtmlWithTemplateContent("", metadata, "<div class='wrapper'><div class='container'><hr/>\n\n" + EVENTS_TAG + "</div></div>")
         html
     }
 
@@ -372,9 +373,6 @@ class BlogTask extends DefaultTask {
                 markdown = markdown + "\n\n[Go to the linked site](${metadata['external_url']})\n\n"
             }
 
-            if (!markdown.contains(EVENTS_TAG)) {
-                markdown += "\n\n" + EVENTS_TAG
-            }
 
             String contentHtml = wrapTags(metadata, MarkdownUtil.htmlFromMarkdown(markdown))
             String iframe = RenderSiteTask.parseVideoIframe(metadata)
@@ -387,6 +385,7 @@ class BlogTask extends DefaultTask {
             }
 
             Set<String> postTags = parseTags(contentHtml) + getTags(mdPost)
+                        
             new HtmlPost(metadata: postMetadata, html: contentHtml, path: mdPost.path, tags: postTags)
         }
     }
