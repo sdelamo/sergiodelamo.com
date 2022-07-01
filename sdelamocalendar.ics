@@ -3,6 +3,33 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
+DTSTAMP:20220711T160000Z
+DTSTART:20220711T160000
+DTEND:20220711T190000
+SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220712T160000Z
+DTSTART:20220712T160000
+DTEND:20220712T190000
+SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220713T160000Z
+DTSTART:20220713T160000
+DTEND:20220713T190000
+SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
+DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
 DTSTAMP:20220920T090000Z
 DTSTART:20220920T090000
 DTEND:20220920T200000
