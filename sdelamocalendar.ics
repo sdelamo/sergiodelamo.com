@@ -3,33 +3,6 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20220711T160000Z
-DTSTART:20220711T160000
-DTEND:20220711T190000
-SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220712T160000Z
-DTSTART:20220712T160000
-DTEND:20220712T190000
-SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220713T160000Z
-DTSTART:20220713T160000
-DTEND:20220713T190000
-SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
 DTSTAMP:20220920T090000Z
 DTSTART:20220920T090000
 DTEND:20220920T200000
@@ -44,42 +17,6 @@ DTSTART:20220923T090000
 DTEND:20220923T200000
 SUMMARY:JCON Online 2022 - Micronaut® Framework and Microstream Java-native persistence engine
 DESCRIPTION:https://2022.jcon.one
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220527T090000Z
-DTSTART:20220527T090000
-DTEND:20220527T190000
-SUMMARY:AWS Dublin - Micronaut and AWS Lambda
-DESCRIPTION:https://twitter.com/MarkSailes3/status/1521126979818295296?s=20&t=tmhpsStohOmo7-VkDQUrow
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220511T114000Z
-DTSTART:20220511T114000
-DTEND:20220511T124000
-SUMMARY:Geecon - Getting started with the Micronaut Framework
-DESCRIPTION:https://2022.geecon.org/schedule/
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220720T090000Z
-DTSTART:20220720T090000
-DTEND:20220720T180000
-SUMMARY:Workshop Security in the Micronaut Framework
-DESCRIPTION:https://www.jbcnconf.com/2022/infoTalk.html?id=6229f5eb56274e0bddf007a2
-UID:
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20220328T100223Z
-DTSTART:20220328T160000
-DTEND:20220328T190000
-SUMMARY:Jumpstart your Micronaut Applications with AWS Lambda
-DESCRIPTION:https://objectcomputing.com/services/training/catalog/micronaut-training/micronaut-aws-lambda
 UID:
 TZID:Europe/Madrid
 END:VEVENT
