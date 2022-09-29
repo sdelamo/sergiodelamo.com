@@ -2,7 +2,7 @@
 title: London Workshop about AWS Lambda and the Micronaut Framework
 summary: I will be delivering a workshop in the AWS London offices next week. 
 date_published: 2022-09-29T10:20:19+01:00
-keywords:micronaut,aws
+keywords:micronaut,aws,lambda
 external_url: https://jumpstartyourjavaapplicationsw.splashthat.com
 ---
 
