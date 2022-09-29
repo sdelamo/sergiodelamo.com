@@ -100,6 +100,9 @@ buildscript {
 }
 ```
 
+## Mixing Architectures
+
+It is impossible to generate a GraalVM native Image of your Micronaut Application in an Apple Silicon Mac and deploy it to an AWS Lambda Custom Runtime using x86 architecture.
 
 ## Deployment instructions
 
