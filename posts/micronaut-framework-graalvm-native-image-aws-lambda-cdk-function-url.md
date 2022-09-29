@@ -92,6 +92,8 @@ cdk synth
 cdk deploy
 ```
 
+If you have never run CDK commands in the AWS account, you must first run `cdk bootstrap`. 
+
 ## Outputs
 
 After deployment, the console output shows something similar to: 
