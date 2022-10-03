@@ -1,5 +1,5 @@
 ---
-title: cloc Count Lines of Code
+title: CLI cloc - Count Lines of Code
 summary: cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 date_published: 2022-10-03T07:04:41+01:00
 keywords:cli
@@ -8,7 +8,7 @@ external_url: https://github.com/AlDanial/cloc
 
 # [%title]
 
-[%summary]
+> [%summary]
 
 ```
 % cloc .
