@@ -3,11 +3,56 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20221005T090000Z
-DTSTART:20221005T170000Z
-DTEND:20220920T200000
-SUMMARY:Jumpstart your Java applications with AWS Lambda and Micronaut
-DESCRIPTION:https://jumpstartyourjavaapplicationsw.splashthat.com
+DTSTAMP:20221013T160000Z
+DTSTART:20221013T160000Z
+DTEND:20221013T170000Z
+SUMMARY:Leveraging Microstream in your Micronaut Applications
+DESCRIPTION:https://us02web.zoom.us/webinar/register/4316649895023/WN_QzaxD_9kQpGAqpfxbZNJSQ
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221025T160000Z
+DTSTART:20221025T160000Z
+DTEND:20221025T170000Z
+SUMMARY:Geecon Prague / Micronaut Turbo - The return of the Monolith
+DESCRIPTION:https://2022.geecon.cz/speakers/#bio
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221107T160000Z
+DTSTART:20221107T160000Z
+DTEND:20221107T190000Z
+SUMMARY:Micronaut Data Workshop
+DESCRIPTION:https://micronaut.io/professional-training/micronaut-data/
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221108T160000Z
+DTSTART:20221108T160000Z
+DTEND:20221108T190000Z
+SUMMARY:Micronaut Data Workshop
+DESCRIPTION:https://micronaut.io/professional-training/micronaut-data/
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221109T160000Z
+DTSTART:20221109T160000Z
+DTEND:20221109T190000Z
+SUMMARY:Micronaut Data Workshop
+DESCRIPTION:https://micronaut.io/professional-training/micronaut-data/
+UID:
+TZID:Europe/Madrid
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221110T160000Z
+DTSTART:20221110T160000Z
+DTEND:20221110T190000Z
+SUMMARY:Micronaut Data Workshop
+DESCRIPTION:https://micronaut.io/professional-training/micronaut-data/
 UID:
 TZID:Europe/Madrid
 END:VEVENT
