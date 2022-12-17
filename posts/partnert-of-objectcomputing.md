@@ -7,7 +7,7 @@ keywords:oci
 
 # [%title]
 
-Earlier this month, I flew to St. Louis to attend Object Computing's holiday partner. [Gina, **Gina M Bremehr**. President and COO, welcomed me as a new partner of Object Computing Inc](https://www.linkedin.com/feed/update/urn:li:activity:7008850408336953344/) - a milestone in my professional career.
+Earlier this month, I flew to St. Louis to attend Object Computing's holiday partner. [Gina M Bremehr, President and COO, welcomed me as a new partner of Object Computing Inc](https://www.linkedin.com/feed/update/urn:li:activity:7008850408336953344/) - a milestone in my professional career.
 
 > Excited and grateful to welcome Teresa Cathey, Tino Nwamba, Sergio del Amo Caballero, Kianna Reed, and Robert Elfanbaum as Object Computing Partners and Equity Shareholders. Thank you to each of you for your outstanding contributions and leadership.
 
