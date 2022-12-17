@@ -3,6 +3,7 @@ title: Micronaut Essentials 2022
 summary: This week, I delivered a 12-hour online course of Micronaut Essentials.
 date_published: 2022-12-17T09:18:42+01:00
 keywords:micronaut
+external_link: https://micronaut.io/professional-training/micronaut-essentials/
 ---
 
 # [%title]
