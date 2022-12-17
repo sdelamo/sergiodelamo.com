@@ -15,4 +15,4 @@ Earlier this month, I flew to St. Louis to attend Object Computing's holiday par
 Innovate courageously and mindfully.
 Share it back.
 
-What a journey since my [first day at OCI](http://localhost/sergiodelamo.com/blog/my-first-day-at-oci.html).
+What a journey since my [first day at OCI](https://sergiodelamo.com/sergiodelamo.com/blog/my-first-day-at-oci.html).
