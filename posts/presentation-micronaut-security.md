@@ -7,7 +7,7 @@ keywords:presentation,micronaut
 
 # [%title]
 
-Similar presentation at [GRConf 2019](https://sergiodelamo.com/sergiodelamo.com/blog/gr8eu-2019-micronaut-security.html). 
+Similar presentation at [GRConf 2019](https://sergiodelamo.com/blog/gr8eu-2019-micronaut-security.html). 
 
 ---
 

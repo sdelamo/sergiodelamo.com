@@ -19,6 +19,6 @@ keywords:mac,apple
 <figcaption>Source: <a href="https://sixcolors.com/post/2021/07/apple-posts-81b-quarterly-results-charts/">Sixcolors Mac revenue Q3 2021</a></figcaption>
 </figure>
 
-Half a year later, what I said about the [Macbook Air M1](https://sergiodelamo.com/sergiodelamo.com/blog/macbook-air-m1.html) stays true. And, it is translating into record sales.
+Half a year later, what I said about the [Macbook Air M1](https://sergiodelamo.com/blog/macbook-air-m1.html) stays true. And, it is translating into record sales.
 
 > It does not get hot. It is quiet. It is fast. It is the future. It is now.
