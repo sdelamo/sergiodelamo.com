@@ -1,5 +1,6 @@
 package io.micronaut.gradle
 
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import io.micronaut.ContentAndMetadata
 import io.micronaut.MarkdownUtil
@@ -254,6 +255,7 @@ class RenderSiteTask extends DefaultTask {
         StringUtils.isEmpty(html) ? Optional.empty() : Optional.of("<p>" + html + "</p>")
     }
 
+    @CompileDynamic
     static Optional<String> htmlOfEvent(VEvent e) {
         Date startDate = e.getStartDate().getDate();
         if (startDate.after(new Date())) {
