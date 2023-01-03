@@ -1,10 +1,10 @@
 package io.micronaut.gradle
 
-import edu.umd.cs.findbugs.annotations.Nullable
 import groovy.transform.CompileStatic
 import io.micronaut.ContentAndMetadata
 import io.micronaut.MarkdownUtil
 import io.micronaut.Page
+import io.micronaut.core.annotation.Nullable
 import io.micronaut.core.util.StringUtils
 import net.fortuna.ical4j.data.CalendarBuilder
 import net.fortuna.ical4j.data.ParserException

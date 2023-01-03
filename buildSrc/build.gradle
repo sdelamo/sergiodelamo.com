@@ -25,7 +25,6 @@ dependencies {
     implementation("org.codehaus.groovy:groovy-json")
 
     implementation("org.yaml:snakeyaml:1.20")
-    implementation("com.github.spotbugs:spotbugs-annotations:4.0.3")
     implementation("javax.validation:validation-api:2.0.1.Final")
     
     implementation('com.vladsch.flexmark:flexmark:0.61.26')
