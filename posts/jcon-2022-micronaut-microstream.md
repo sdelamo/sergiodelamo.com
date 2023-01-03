@@ -1,5 +1,5 @@
 ---
-title: 📼 JCON 2022 - Micronaut Framework and MicroStream Java-native persistence engine
+title: JCON 2022 - Micronaut Framework and MicroStream Java-native persistence engine
 summary: Video of my talk at the online conference JCON 2022.
 date_published: 2022-11-03T10:20:42+01:00
 keywords:micronaut,microstream,talk

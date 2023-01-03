@@ -1,8 +1,8 @@
 ---
-title: 📼 Micronaut Framework and AWS Webinar
+title: Micronaut Framework and AWS Webinar
 summary: I did a joined webinar with Stefano Buliani from AWS about Micronaut framework integration with AWS.  
 date_published: 2020-01-20T19:03:59+01:00
-video: https://www.youtube.com/watch?v=eJyfI1SksUo
+external_url: https://www.youtube.com/watch?v=eJyfI1SksUo
 slides: https://images.sergiodelamo.com/slide_deck_Micronaut_and_AWS_webinar.pdf
 keywords:micronaut,talk
 ---

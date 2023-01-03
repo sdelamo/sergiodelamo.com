@@ -332,11 +332,7 @@ class BlogTask extends DefaultTask {
         CSS
     }
 
-    static String linkToPrism(MarkdownPost mdPost, Prism prism) {
-        String prepath = ''
-        mdPost.getPath().split('/').length.times {
-            prepath += '../'
-        }
+    static String linkToPrism(String prepath, Prism prism) {
         switch (prism) {
             case Prism.CSS:
                 return "${prepath}$PRISM_CSS".toString()
@@ -345,12 +341,24 @@ class BlogTask extends DefaultTask {
         }
     }
 
+    static void addCodeHighlighting(Map<String, String> meta, MarkdownPost mdPost) {
+        String prepath = ''
+        mdPost.getPath().split('/').length.times {
+            prepath += '../'
+        }
+        addCodeHighlighting(meta, prepath)
+    }
+
+    static void addCodeHighlighting(Map<String, String> meta, String path) {
+        meta['JAVASCRIPT'] = meta['JAVASCRIPT'] ? "${meta['JAVASCRIPT']},${linkToPrism(path, Prism.JS)}".toString() : linkToPrism(path, Prism.JS)
+        meta['CSS'] = meta['CSS'] ? "${meta['CSS']},${linkToPrism(path, Prism.JS)}".toString() : linkToPrism(path, Prism.CSS)
+    }
+
     static List<HtmlPost> processPosts(Map<String, String> globalMetadata, List<MarkdownPost> markdownPosts) {
         markdownPosts.collect { MarkdownPost mdPost ->
             Map<String, String> meta = globalMetadata + mdPost.metadata
             if (containsCodeSnippet(mdPost)) {
-                meta['JAVASCRIPT'] = meta['JAVASCRIPT'] ? "${meta['JAVASCRIPT']},${linkToPrism(mdPost, Prism.JS)}".toString() : linkToPrism(mdPost, Prism.JS)
-                meta['CSS'] = meta['CSS'] ? "${meta['CSS']},${linkToPrism(mdPost, Prism.JS)}".toString() : linkToPrism(mdPost, Prism.CSS)
+                addCodeHighlighting(meta, mdPost)
             }
             Map<String, String> metadata = RenderSiteTask.processMetadata(meta)
             PostMetadata postMetadata = new PostMetadataAdapter(metadata)
@@ -427,9 +435,8 @@ class BlogTask extends DefaultTask {
             }
             String postLink = postLink(htmlPost)
             String uuid = htmlPost.path.replace(".html", "")
-            String cleanupHtml = htmlWithoutTitleAndDate(htmlPost.html)
+            String cleanupHtml = indexPostHtml(htmlPost)
             cleanupHtml = cleanupHtml.replace('\n','')
-
             rssItems.add(rssItemWithPage(htmlPost.metadata.title,
                     parseDate(htmlPost.metadata.datePublished),
                     postLink,
@@ -481,6 +488,7 @@ class BlogTask extends DefaultTask {
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
         renderJsonFeed(globalMetadata, feedItems, new File(outputDir.absolutePath + "/../" + JSONFEED_FILE))
         renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
+        renderArchive(new File(outputDir.getAbsolutePath() + "/../" + "index.html"), listOfPosts, templateText, globalMetadata, null)
         renderTagIndex(new File(outputDir.getAbsolutePath() + "/tag/index.html"), tagsMap, templateText, globalMetadata, "Tags")
     }
 
@@ -504,7 +512,7 @@ class BlogTask extends DefaultTask {
 
     static String tagsHtml(String h2, String url, Collection<String> tags) {
         String html = "<article class='post'>"
-        html += "<h2>${h2}<h2>"
+        html += "<header>${h2}<header>"
         html += "<ul>"
         for (String tag : tags) {
             html += "<li><a href=\"${url}/blog/tag/${tag}.html\">${tag}</a></li>"
@@ -518,6 +526,8 @@ class BlogTask extends DefaultTask {
                                 Map<String, String> metadata,
                                 String html) {
         Map<String, String> m = new HashMap<>(metadata)
+        addCodeHighlighting(m, "./")
+
         m = RenderSiteTask.processMetadata(m)
         m[ROBOTS] = [ROBOTS_NOINDEX, ROBOTS_FOLLOW].join(', ')
         String renderedHtml = RenderSiteTask.renderHtmlWithTemplateContent(html, m, templateText)
@@ -530,12 +540,100 @@ class BlogTask extends DefaultTask {
                        String templateText,
                        Map<String, String> metadata,
                        String title) {
-        String html = "<h1>${title}</h1>"
+        String html = EVENTS_TAG
+        html += title ? "<h1>${title}</h1>" : ""
         int count = 0
-        html += posts.collect { post ->
-            "<article class='post'><h2><a ${count++ == 0 ? "accesskey=\"1\"": ""} href=\"${post.metadata['url']}/blog/${post.path}\">${post.metadata['title']}</a></h2><p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
+        html += posts.collect { post -> htmlForPost(count++, post, title != null)
+
         }.join("\n")
         renderIndexPage(output, templateText, metadata, html)
+    }
+
+    static boolean isVideoUrl(String url) {
+        if (!url) {
+            return false
+        }
+        url.contains("youtube")
+    }
+
+    static boolean isLinkToVideo(HtmlPost post) {
+        isVideoUrl(post.metadata['external_url'] as String)
+    }
+
+    static String htmlForPost(int count, HtmlPost post, boolean archive) {
+        String postTitle = post.metadata['title']
+        String externalUrl = post.metadata["external_url"] ?: post.metadata["speakerdeck"]
+        if (isLinkToVideo(post)) {
+            postTitle = "📼 " + postTitle
+        }
+        String postLink = "${post.metadata['url']}/blog/${post.path}"
+        String header = "<h1><a ${count++ == 0 ? 'accesskey=\"1\"': ''} href=\"${postLink}\">${postTitle}</a></h1>"
+        if (archive) {
+            return "<article class='post'>${header}<p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
+        }
+        if (externalUrl) {
+            header = "<h1><a href=\"${externalUrl}\">${postTitle}</a><a class='anchorentity' href=\"${postLink}\">&#9875;</a></h1>"
+        }
+        String html = removeGoToLinkedSite(indexPostHtml(post), externalUrl as String)
+        "<article class='post'>${header}<span class='date'>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))}</span><br/>${html}</article>"
+    }
+
+    static String indexPostHtml(HtmlPost post) {
+        String html = cleanupTrademarkNotice(
+                removeSpeakerDeckScript(
+                        removeIframes(
+                                htmlWithoutTitleAndDate(post.html)
+                        ), post.metadata["speakerdeck"] as String
+                )
+        )
+        html = addMetadataLinks(post, html)
+        html
+    }
+
+    static String addMetadataLinks(HtmlPost post, String html) {
+        String result = html
+        String externalUrl = post.metadata["external_url"] ?: post.metadata["speakerdeck"]
+        String speakerDeckUrl = post.metadata["speakerdeck"]
+        if (externalUrl && externalUrl.contains("youtube.com") && speakerDeckUrl) {
+            result += "<p>"
+            result += "<a href=\"${externalUrl}\">Video</a><br/>"
+            result += "<a href=\"${speakerDeckUrl}\">Slides</a>>"
+            result += "</p>"
+        }
+        result
+    }
+
+    static String cleanupTrademarkNotice(String html) {
+        html.replace("<p><small>Micronaut® is a registered trademark of Object Computing, Inc. Use is for referential purposes and does not imply any endorsement or affiliation with any third-party product. Unauthorized use is strictly prohibited.</small></p>", "")
+    }
+
+    static String removeGoToLinkedSite(String html, String externalUrl) {
+        externalUrl ? html.replace("<p><a href=\"${externalUrl}\">Go to the linked site</a></p>", "") : html
+    }
+
+    final static String OPENING_IFRAME = "<iframe"
+    final static String CLOSING_IFRAME = "</iframe>"
+
+    static String removeIframes(String html) {
+        String result = html
+        if (html.contains(OPENING_IFRAME) && html.contains(CLOSING_IFRAME)) {
+            result = html.substring(0, html.indexOf(OPENING_IFRAME)) + html.substring(html.indexOf(CLOSING_IFRAME) + CLOSING_IFRAME.length())
+        }
+        if (result.contains(OPENING_IFRAME) && html.contains(CLOSING_IFRAME)) {
+            return removeIframes(result)
+        }
+        result
+    }
+
+    final static String OPENING_SCRIPT_SPEAKER_DECK = "<script async class=\"speakerdeck-embed\" "
+    final static String CLOSING_SCRIPT = "</script>"
+
+    static String removeSpeakerDeckScript(String html, String url) {
+        if (html.contains(OPENING_SCRIPT_SPEAKER_DECK) && html.contains(CLOSING_SCRIPT)) {
+            return html.substring(0, html.indexOf(OPENING_SCRIPT_SPEAKER_DECK)) +
+                    html.substring(html.indexOf(CLOSING_SCRIPT) + CLOSING_SCRIPT.length())
+        }
+        html
     }
 
     static Set<String> parseTags(String html) {

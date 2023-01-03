@@ -1,5 +1,5 @@
 ---
-title: 📼 GR8Conf 2017 - Grails Multi-Project Builds & Multi tenancy
+title: GR8Conf 2017 - Grails Multi-Project Builds & Multi tenancy
 date_published: 2017-06-01T09:32:00+01:00
 external_url: https://www.youtube.com/watch?v=Dkdmdw2ZE3E
 speakerdeck: https://speakerdeck.com/sdelamo/grails-multi-project-builds-multitenancy

@@ -1,8 +1,9 @@
 ---
-title: Micronaut® framework 2: AWS Lambda Functions 🔗 
+title: Micronaut® framework 2: AWS Lambda Functions 
 date_published: 2020-09-01T10:30:00+01:00
 summary: Micronaut® framework 2 brings improvements to the way you write AWS Lambda functions. There are several things to consider (what's is your Lambda trigger, are you able to write a GraalVM Native Image of the function) which define what dependencies do you need, what is your handler, how to mitigate cold startup.
 keywords:micronaut,aws,lambda
+external_url: https://micronaut.io/blog/2020-08-31-micronaut-2-aws-lambda.html
 ---
 
 # [%title]

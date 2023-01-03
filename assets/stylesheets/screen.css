@@ -102,7 +102,7 @@ footer {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 19px;
     line-height: 1.1;
     font-family: iAWriterQuattroSBold, -apple-system, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -112,23 +112,26 @@ blockquote {
     padding-left: 20px;
 }
 
+article.post h1,
 h2 {
-    font-size: 24px;
+    font-size: 17px;
     line-height: 1.3333333333;
 }
 
+article.post h2,
 h3 {
-    font-size: 21px;
+    font-size: 15px;
     line-height: 1.7;
 }
 
-td, th, p, ul, ol {
-    font-size: 18px;
+td, th, p, ul, ol, span {
+    font-size: 13px;
     line-height: 1.8;
 }
 
+span.date,
 p small {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 td, th {
@@ -265,22 +268,32 @@ p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
 h1 {
     margin-bottom: 20px;
 }
+article.post h1 {
+    margin-bottom: 3px;
+}
 
 .wrapper ol,
 .wrapper ul,
 .wrapper figure {
     list-style-type: disc;
     padding-left: 20px;
-    margin-bottom: 20px !important;
 }
 .wrapper iframe {
     overflow: auto;
-    margin-bottom: 20px !important;
 }
-.wrapper p {
-    margin-bottom: 20px;
-}
+.wrapper ol,
+.wrapper ul,
+.wrapper figure,
+.wrapper iframe,
+.wrapper p,
 .wrapper pre,
 .wrapper table {
-    margin-bottom: 20px;
+    margin: 0 0 1.6em 0;
+}
+
+.anchorentity {
+    margin-left: 10px;
+}
+.post {
+    margin: auto auto 5em 0em;
 }

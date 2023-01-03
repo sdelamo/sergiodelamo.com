@@ -1,5 +1,5 @@
 ---
-title: 📼 Northem Quality - Control your browser with Geb
+title: Northem Quality - Control your browser with Geb
 external_url: https://www.youtube.com/watch?v=00bqYXNKH18
 date_published: 2019-07-11T06:46:00+01:00
 summary: Video of my talk at Northem Quality user group

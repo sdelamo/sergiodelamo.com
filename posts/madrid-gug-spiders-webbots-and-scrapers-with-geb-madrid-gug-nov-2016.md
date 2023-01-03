@@ -1,5 +1,5 @@
 ---
-title: 📼 Madrid GUG - Spiders, Webbots and Scrappers with Geb
+title: Madrid GUG - Spiders, Webbots and Scrappers with Geb
 date_published: 2016-11-08T11:07:00+01:00
 speakerdeck: https://speakerdeck.com/sdelamo/spiders-webbots-and-scrapers-with-geb-madrid-gug-nov-2016
 summary: Slides from my talk at Madrid Groovy User Group.
