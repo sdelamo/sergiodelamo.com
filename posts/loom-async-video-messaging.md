@@ -12,5 +12,3 @@ tags:check-ins
 [%summary]
 
 A written check-in is better. However, I am the kind of person who is annoyed by getting audio messages on WhatsApp.
-
-
