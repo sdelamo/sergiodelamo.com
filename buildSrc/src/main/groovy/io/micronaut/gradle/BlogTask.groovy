@@ -541,11 +541,12 @@ class BlogTask extends DefaultTask {
                        Map<String, String> metadata,
                        String title) {
         String html = EVENTS_TAG
+        int max = 20
+        boolean archive = title != null
         html += title ? "<h1>${title}</h1>" : ""
         int count = 0
-        html += posts.collect { post -> htmlForPost(count++, post, title != null)
-
-        }.join("\n")
+        html += archive && posts.size() > max ? posts.subList(0, max).collect { post -> htmlForPost(count++, post, archive)}.join("\n") :
+                posts.collect { post -> htmlForPost(count++, post, archive)}.join("\n")
         renderIndexPage(output, templateText, metadata, html)
     }
 
@@ -569,11 +570,14 @@ class BlogTask extends DefaultTask {
         String postLink = "${post.metadata['url']}/blog/${post.path}"
         String header = "<h1><a ${count++ == 0 ? 'accesskey=\"1\"': ''} href=\"${postLink}\">${postTitle}</a></h1>"
         if (archive) {
-            return "<article class='post'>${header}<p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${post.metadata['summary']}</p></article>"
+            String summary = MarkdownUtil.htmlFromMarkdown(post.metadata['summary'] as String)
+            return "<article class='post'>${header}<p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${summary}</p></article>"
         }
         if (externalUrl) {
             header = "<h1><a href=\"${externalUrl}\">${postTitle}</a><a class='anchorentity' href=\"${postLink}\">&#9875;</a></h1>"
         }
+
+
         String html = removeGoToLinkedSite(indexPostHtml(post), externalUrl as String)
         "<article class='post'>${header}<span class='date'>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))}</span><br/>${html}</article>"
     }
