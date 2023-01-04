@@ -4,6 +4,7 @@ summary: Today, I got my first Loom video. It is exciting to see a wave of solut
 date_published: 2023-01-04T07:39:21+01:00
 keywords:automation
 external_url: https://www.loom.com
+tags:check-ins
 ---
 
 # [%title]
