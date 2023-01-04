@@ -1,0 +1,20 @@
+name: Invalidate
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        description: '/blog/apache-conf-2020-microanut-groovy.html'
+        required: true
+jobs:
+  invalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Invalidate    
+        run: |
+          aws cloudfront create-invalidation --distribution-id ECETJB04M75S7 --paths "${{ github.event.inputs.path }}"
