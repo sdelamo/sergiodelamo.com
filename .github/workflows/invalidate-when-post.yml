@@ -17,4 +17,4 @@ jobs:
           aws-region: us-east-1
       - name: Invalidate Feeds and Home Page    
         run: |
-          aws cloudfront create-invalidation --distribution-id ECETJB04M75S7 --paths "/index.html"
+          aws cloudfront create-invalidation --distribution-id ECETJB04M75S7 --paths "/index.html /rss.xml"
