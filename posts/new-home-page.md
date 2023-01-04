@@ -1,5 +1,5 @@
 ---
-title: New Home Page
+title: Home Page with latest blog posts
 summary: New home page with posts entries with fast external links.
 date_published: 2023-01-04T13:51:41+01:00
 ---
