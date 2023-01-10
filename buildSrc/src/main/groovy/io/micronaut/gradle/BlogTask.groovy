@@ -519,6 +519,7 @@ class BlogTask extends DefaultTask {
         }
         html += "</ul>"
         html += "</article>"
+        html
     }
 
     static void renderIndexPage(File output,
@@ -542,7 +543,7 @@ class BlogTask extends DefaultTask {
                        String title) {
         String html = EVENTS_TAG
         int max = 20
-        boolean archive = title != null
+        boolean archive = title == null
         html += title ? "<h1>${title}</h1>" : ""
         int count = 0
         html += archive && posts.size() > max ? posts.subList(0, max).collect { post -> htmlForPost(count++, post, archive)}.join("\n") :
