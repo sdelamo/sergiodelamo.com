@@ -1,8 +1,7 @@
-
 ---
 title: Serverless monolith
 summary: A serverless monolith is an architecture easy to reason about, scales on demand, and boosts developer productivity.
-date_published: 2023-01-10T22:00:59+01:00
+date_published: 2023-01-11T07:23:25+01:00
 keywords:aws,micronaut,serverless,presentation
 ---
 
