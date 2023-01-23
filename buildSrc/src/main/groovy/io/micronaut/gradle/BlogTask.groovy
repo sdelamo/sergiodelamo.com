@@ -559,7 +559,7 @@ class BlogTask extends DefaultTask {
     }
 
     static boolean isLinkToVideo(HtmlPost post) {
-        isVideoUrl(post.metadata['external_url'] as String)
+        isVideoUrl(post.metadata['external_url'] as String) || isVideoUrl(post.metadata['video'] as String)
     }
 
     static String htmlForPost(int count, HtmlPost post, boolean archive) {
