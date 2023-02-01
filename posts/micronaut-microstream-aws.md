@@ -6,6 +6,11 @@ keywords:micronaut,presentation,microstream
 ---
 
 # [%title]
+
+Similar presentation at [JCON Online 2022](https://www.youtube.com/watch?v=Azy6nSBVw7k).
+
+---
+
 [%summary]
 
 You will see an example of a persistence layer built with MicroStream in a Micronaut application. 

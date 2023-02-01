@@ -7,6 +7,11 @@ keywords:presentation,micronaut,turbo
 
 # [%title]
 
+
+Similar presentation at [JCON Prague](https://speakerdeck.com/sdelamo/micronaut-turbo-return-of-the-monolith).
+
+---
+
 In this session, [Sergio del Amo](https://sergiodelamo.com) introduces [Turbo integration](https://micronaut-projects.github.io/micronaut-views/latest/guide/#turbo) with the Micronaut® Framework.
 
 [Turbo](https://turbo.hotwired.dev) allows you to get the speed of a single-page web application without writing any JavaScript.
