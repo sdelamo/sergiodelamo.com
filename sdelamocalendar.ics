@@ -3,12 +3,12 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20230117T190000Z
-DTSTART:20230117T190000Z
-DTEND:20230117T210000Z
-SUMMARY:January 2023 Brighton Kotlin Meetup
-DESCRIPTION:https://www.meetup.com/brighton-kotlin/events/290553314/
-UID:january-2023-brighton-kotlin-meetup
+DTSTAMP:20230315T184500Z
+DTSTART:20230315T184500Z
+DTEND:20230315T204500Z
+SUMMARY:Nexthink 1st 2023 Meetup & Micronaut Framework & Product Talks!
+DESCRIPTION:https://www.meetup.com/madrid-scrum-user-group/events/291614517/
+UID:nexthink-micronaut-meetup
 TZID:Europe/Madrid
 END:VEVENT
 END:VCALENDAR
