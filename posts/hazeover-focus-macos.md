@@ -1,5 +1,5 @@
 ---
-title: HazeOver — Distraction Dimmer™ for Mac
+title: HazeOver — Distraction Dimmer for Mac
 summary: Turn distractions down and focus on your current task.
 date_published: 2023-03-22T09:59:22+01:00
 keywords:automation,macos,focus
