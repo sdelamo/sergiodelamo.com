@@ -26,4 +26,13 @@ SUMMARY:What's New with Micronaut 4.0 Webinar
 DESCRIPTION:https://zoom.us/webinar/register/9316851145833/WN_G_SlsMs9Rf-gsoWbbAgalQ#/registration
 TZID:Europe/Madrid
 END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP:20230724T160000Z
+DTSTART:20230724T160000Z
+DTEND:20230630T190000Z
+SUMMARY:Micronaut Essentials
+DESCRIPTION:https://micronaut.io/professional-training/micronaut-essentials/
+TZID:Europe/Madrid
+END:VEVENT
 END:VCALENDAR
