@@ -4,7 +4,7 @@ summary: Sergio del Amo's short bio and skills.
 date_published: 2020-11-20T10:24:00+01:00
 ---
 
-<a href="https://images.sergiodelamo.com/avatar.png"><img src="https://images.sergiodelamo.com/avatar.png" 
+<a href="https://images.sergiodelamo.com/avatar.jpg"><img src="https://images.sergiodelamo.com/avatar.jpg" 
      alt="Sergio del Amo" 
      style="width: 300px !important; padding: 20px;"
      class="align-right"/></a>

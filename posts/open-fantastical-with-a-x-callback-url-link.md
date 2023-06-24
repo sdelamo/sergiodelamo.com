@@ -3,7 +3,7 @@ title: Launch Fantastical with a x-callback-url
 summary: x-fantastical3://show/calendar to open fantastical 
 author.name: Sergio del Amo
 author.url: https://sergiodelamo.com/me.html
-author.avatar: https://images.sergiodelamo.com/smallavatar.png 
+author.avatar: https://images.sergiodelamo.com/smallavatar.jpg
 date_published: 2021-04-05T07:25:25+01:00
 keywords:fantastical,omnifocus,xcallbackurl
 ---
