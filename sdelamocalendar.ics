@@ -3,31 +3,6 @@ PRODID:-//Sergio del Amo//iCal4j 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20230621T100000Z
-DTSTART:20230621T100000Z
-DTEND:20230621T110000Z
-SUMMARY:Micronaut® Framework and Microstream Java-Native Persistence Engine
-DESCRIPTION:https://jconeurope2023.sched.com/event/1K3zq/micronautr-framework-and-microstream-java-native-persistence-engine
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230622T100000Z
-DTSTART:20230622T100000Z
-DTEND:20230622T110000Z
-SUMMARY: How to Deploy in AWS a Micronaut Application which Persists with MicroStream?
-DESCRIPTION:https://jconeurope2023.sched.com/event/1K3ys/how-to-deploy-in-aws-a-micronaut-application-which-persists-with-microstream?iframe=no&w=100%&sidebar=yes&bg=no
-TZID:Europe/Madrid
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230630T160000Z
-DTSTART:20230630T160000Z
-DTEND:20230630T170000Z
-SUMMARY:What's New with Micronaut 4.0 Webinar
-DESCRIPTION:https://zoom.us/webinar/register/9316851145833/WN_G_SlsMs9Rf-gsoWbbAgalQ#/registration
-TZID:Europe/Madrid
-END:VEVENT
-
-BEGIN:VEVENT
 DTSTAMP:20230724T160000Z
 DTSTART:20230724T160000Z
 DTEND:20230630T190000Z
