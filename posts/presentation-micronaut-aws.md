@@ -13,6 +13,20 @@ Similar presentation at [Barcelona JUG](https://www.youtube.com/watch?v=S3qYOVNa
 
 In this session, [Sergio del Amo](https://sergiodelamo.com) introduces the [Micronaut framework](https://micronaut.io) integration with [AWS Lambda](https://aws.amazon.com/lambda/). 
 
+Can my Lambda functions be fast if I use Java? Can I write my applications with everything I love (dependency injection, configuration injection, ease routing) and deploy to AWS Lambda? In this deep dive, you will that it is possible with the Micronaut Framework.  
+
+You will learn how to fast cold startups with:
+
+- The GraalVM native executable generation built-in in the Micronaut Gradle and Maven plugins and the Micronaut AWS integration with AWS Lambda Custom runtimes.  
+
+- 
+- Micronaut integration with Amazon Cloud Development Kit (CDK) to generate infrastructure as code. You can setup your Amazon API Gateway, AWS Lambda function and DynamoDB table without effort.  
+
+Micronaut Framework supports deploying functions to the AWS Lambda Java runtime or as native executables built with GraalVM to a custom runtime. 
+Moreover, with [Micronaut CRaC](https://micronaut-projects.github.io/micronaut-crac/latest/guide/) it integrates seamlessly with AWS Lambda Snapstart. With Micronaut framework, you can get fast cold startups for your Java applications.
+
+Moreover, the framework offer
+
 Java applications have struggled in AWS Lambda. Mainly due to slow cold starts.
 
 Micronaut applications' characteristics, such as fast start-up, low memory consumption, and [GraalVM](https://www.graalvm.org) integration, can help you workaround cold startups in AWS Lambda.
