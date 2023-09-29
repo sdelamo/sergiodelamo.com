@@ -10,7 +10,9 @@ keywords:java,graalvm,gradle
 
 ```java
 private static boolean isGraalVMJava() {
-    return Arrays.asList("jvmci.Compiler", "java.vendor.version", "java.vendor")
+    return
+        (System.getProperty("java.home") != null && java.nio.file.Files.exists(java.nio.file.Paths.get("${System.getProperty("java.home")}/lib/graalvm")))
+        || Arrays.asList("jvmci.Compiler", "java.vendor.version", "java.vendor")
             .stream()
             .anyMatch(propertyName -> {
                 String value = System.getProperty(propertyName);
