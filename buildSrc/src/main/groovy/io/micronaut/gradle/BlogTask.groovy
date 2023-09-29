@@ -558,8 +558,19 @@ class BlogTask extends DefaultTask {
         url.contains("youtube")
     }
 
+   static boolean isGuideUrl(String url) {
+        if (!url) {
+            return false
+        }
+        url.startsWith("https://guides.micronaut.io")
+    }
+    
     static boolean isLinkToVideo(HtmlPost post) {
         isVideoUrl(post.metadata['external_url'] as String) || isVideoUrl(post.metadata['video'] as String)
+    }
+    
+    static boolean isLinkToGuide(HtmlPost post) {
+        isGuideUrl(post.metadata['external_url'] as String)
     }
 
     static String htmlForPost(int count, HtmlPost post, boolean archive) {
@@ -567,6 +578,9 @@ class BlogTask extends DefaultTask {
         String externalUrl = post.metadata["external_url"] ?: post.metadata["speakerdeck"]
         if (isLinkToVideo(post)) {
             postTitle = "📼 " + postTitle
+        }
+        if (isLinkToGuide(post)) {
+            postTitle = "📖 " + postTitle
         }
         String postLink = "${post.metadata['url']}/blog/${post.path}"
         String header = "<h1><a ${count++ == 0 ? 'accesskey=\"1\"': ''} href=\"${postLink}\">${postTitle}</a></h1>"
