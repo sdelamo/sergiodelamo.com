@@ -2,7 +2,7 @@
 title: System Stubs
 summary: > System Stubs is used to test code which depends on methods in java.lang.System.
 date_published: 2023-10-03T11:58:16+01:00
-keywords:java,junit5
+keywords:java,junit5,test
 external_url: https://github.com/webcompere/system-stubs#system-stubs
 ---
 
