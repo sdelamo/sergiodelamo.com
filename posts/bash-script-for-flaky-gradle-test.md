@@ -20,7 +20,7 @@ SUCCESSFUL_RUNS=0
 
 # Run the Gradle task in a loop
 for ((i=1; i<=$NUM_RUNS; i++)); do
-  echo "Executing Gradle Task (Run $i/$NUM_RUNS)..."
+  echo "Executing Test (Run $i/$NUM_RUNS)..."
   ./gradlew :micronaut-gcp-pubsub:test --tests io.micronaut.gcp.pubsub.integration.SubscriberShutdownSpec --rerun || EXIT_STATUS=$?
 
   if [ $EXIT_STATUS -ne 0 ]; then
