@@ -2,7 +2,7 @@
 title: Website Monitoring
 summary: Serveral options to monitor a website.
 date_published: 2024-01-09T21:41:03+01:00
-keywords:web
+keywords:monitoring
 ---
 
 # [%title]
