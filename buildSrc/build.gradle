@@ -4,7 +4,7 @@ plugins {
 }
 
 ext {
-    micronautVersion = '3.8.0'
+    micronautVersion = '4.4.2'
 }
 
 repositories {
@@ -12,23 +12,18 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor(platform("io.micronaut:micronaut-bom:$micronautVersion"))
+    annotationProcessor(platform("io.micronaut.platform:micronaut-platform:$micronautVersion"))
     annotationProcessor "io.micronaut:micronaut-inject-java"
-    annotationProcessor("io.micronaut:micronaut-validation")
-
-    implementation(platform("io.micronaut:micronaut-bom:$micronautVersion"))
-    implementation("io.micronaut:micronaut-validation")
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
+    implementation(platform("io.micronaut.platform:micronaut-platform:$micronautVersion"))
+    implementation("io.micronaut.validation:micronaut-validation")
     implementation "io.micronaut:micronaut-inject"
     implementation("io.micronaut.rss:micronaut-jsonfeed-core")
     implementation("io.micronaut.rss:micronaut-rss-core")
-
-    implementation("org.codehaus.groovy:groovy-json")
-
-    implementation("org.yaml:snakeyaml:1.20")
-    implementation("javax.validation:validation-api:2.0.1.Final")
-    
+    implementation("org.apache.groovy:groovy:4.0.21")
+    implementation("org.apache.groovy:groovy-json:4.0.21")
+    implementation("org.yaml:snakeyaml")
     implementation('com.vladsch.flexmark:flexmark:0.64.0')
     implementation('com.vladsch.flexmark:flexmark-ext-tables:0.64.0')
-
     implementation('org.mnode.ical4j:ical4j:3.2.7')
 }

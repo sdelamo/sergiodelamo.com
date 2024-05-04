@@ -24,8 +24,7 @@ import java.util.stream.Collectors
 
 import static groovy.io.FileType.FILES
 
-import javax.annotation.Nonnull
-import javax.validation.constraints.NotNull
+import jakarta.validation.constraints.NotNull
 
 @CompileStatic
 class RenderSiteTask extends DefaultTask {
@@ -355,10 +354,9 @@ class RenderSiteTask extends DefaultTask {
                 new ContentAndMetadata(metadata: metadata, content: lines.join("\n"))
     }
 
-    @Nonnull
-    static String renderHtmlWithTemplateContent(@Nonnull @NotNull String html,
-                                         @Nonnull @NotNull Map<String, String> meta,
-                                         @NotNull @Nonnull final String templateText) {
+    static String renderHtmlWithTemplateContent(@NotNull String html,
+                                         @NotNull Map<String, String> meta,
+                                         @NotNull final String templateText) {
         String outputHtml = templateText
         String result = outputHtml.replace(' data-document>', ">" + html)
         result = replaceLineWithMetadata(result, meta)
