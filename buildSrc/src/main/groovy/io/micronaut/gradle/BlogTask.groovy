@@ -235,40 +235,76 @@ class BlogTask extends DefaultTask {
     }
 
     @CompileDynamic
-    static String renderPostHtml(HtmlPost htmlPost,
-                                 String templateText,
-                                 List<HtmlPost> posts) {
-
+    static String backToTopFooter(String url) {
         StringWriter writer = new StringWriter()
         MarkupBuilder mb = new MarkupBuilder(writer)
-        mb.div {
-            mkp.yieldUnescaped(htmlPost.html)
-            p {
-                if (htmlPost.metadata['keywords']) {
+        mb.footer(class:  "py-5 text-center text-body-secondary bg-body-tertiary") {
+            p(class: "mb-0") {
+                a(href: url) {
+                    mkp.yield("Back to top")
+
+                }
+            }
+        }
+        writer.toString()
+    }
+
+    @CompileDynamic
+    static String renderPost(boolean  renderHeader,
+                             String title,
+                             String postLink,
+                             String externalUrl,
+                             Object datePublished,
+                             String authorName,
+                            String keywords,
+                             String html) {
+        StringWriter writer = new StringWriter()
+        MarkupBuilder mb = new MarkupBuilder(writer)
+        mb.article(class: "blog-post") {
+            if (renderHeader) {
+                h2(class: "display-6 link-body-emphasis mb-1") {
+                    a(href: externalUrl ?: postLink) {
+                        mkp.yield(title)
+                    }
+                }
+                p(class: "blog-post-meta") {
+                    if (datePublished) {
+                        mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(datePublished as String)))
+                        mkp.yield('.')
+                    }
+                    if (authorName) {
+                        mkp.yield(" by " + authorName)
+                    }
+                    if (externalUrl) {
+                        a(href: postLink) {
+                            mkp.yield("Permalink")
+                        }
+                    }
+                }
+            }
+
+            mkp.yieldUnescaped(html)
+
+
+            if (keywords) {
+                p {
                     mkp.yield('Tags: ')
-                    for (String tag : htmlPost.metadata['keywords'].split(',')) {
+                    for (String tag : keywords.split(',')) {
                         a(href: "./tag/${tag}.html") {
                             mkp.yield("#${tag}")
                         }
                     }
                 }
-                br {
-
-                }
-                if (htmlPost.metadata['date_published']) {
-                    span(class: "date") {
-                        mkp.yield(YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(htmlPost.metadata['date_published'] as String)))
-                        mkp.yield('.')
-                    }
-                }
-                if (htmlPost.metadata['author.name']) {
-                    span(class: "author") {
-                        mkp.yield(htmlPost.metadata['author.name'])
-                    }
-                }
             }
         }
-        String html = writer.toString()
+        return writer.toString()
+    }
+
+    @CompileDynamic
+    static String renderPostHtml(HtmlPost htmlPost,
+                                 String templateText,
+                                 List<HtmlPost> posts) {
+        String html = renderPost(false, htmlPost.title, htmlPost.link, htmlPost.externalUrl, htmlPost.metadata['date_published'], htmlPost.metadata['author_name'] as String, htmlPost.metadata['keywords'], htmlPost.html)
         Map<String, String> metadata = htmlPost.metadata.toMap()
         if (!metadata['keywords']) {
             metadata['keywords'] = htmlPost.tags.join(',')
@@ -320,8 +356,8 @@ class BlogTask extends DefaultTask {
         }
     }
 
-    static String PRISM_CSS = "stylesheets/prism.css"
-    static String PRISM_JS = "javascripts/prism.js"
+    static String PRISM_CSS = "[%url]/stylesheets/prism.css"
+    static String PRISM_JS = "[%url]/javascripts/prism.js"
 
     static boolean containsCodeSnippet(MarkdownPost mdPost) {
         mdPost.content.contains('```')
@@ -335,9 +371,9 @@ class BlogTask extends DefaultTask {
     static String linkToPrism(String prepath, Prism prism) {
         switch (prism) {
             case Prism.CSS:
-                return "${prepath}$PRISM_CSS".toString()
+                return PRISM_CSS;
             case Prism.JS:
-                return "${prepath}$PRISM_JS".toString()
+                return PRISM_JS;
         }
     }
 
@@ -487,7 +523,7 @@ class BlogTask extends DefaultTask {
         }
         renderRss(globalMetadata, rssItems, new File(outputDir.absolutePath + "/../" + RSS_FILE))
         renderJsonFeed(globalMetadata, feedItems, new File(outputDir.absolutePath + "/../" + JSONFEED_FILE))
-        renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Archive")
+        renderArchive(new File(outputDir.getAbsolutePath() + "/" + "index.html"), listOfPosts, templateText, globalMetadata, "Blog")
         renderArchive(new File(outputDir.getAbsolutePath() + "/../" + "index.html"), listOfPosts, templateText, globalMetadata, null)
         renderTagIndex(new File(outputDir.getAbsolutePath() + "/tag/index.html"), tagsMap, templateText, globalMetadata, "Tags")
     }
@@ -512,10 +548,10 @@ class BlogTask extends DefaultTask {
 
     static String tagsHtml(String h2, String url, Collection<String> tags) {
         String html = "<article class='post'>"
-        html += "<header>${h2}<header>"
-        html += "<ul>"
+        html += "<header><h2>${h2}</h2><header>"
+        html += "<ul class='list-group mb-5'>"
         for (String tag : tags) {
-            html += "<li><a href=\"${url}/blog/tag/${tag}.html\">${tag}</a></li>"
+            html += "<li class='list-group-item'><a href=\"${url}/blog/tag/${tag}.html\">${tag}</a></li>"
         }
         html += "</ul>"
         html += "</article>"
@@ -551,50 +587,12 @@ class BlogTask extends DefaultTask {
         renderIndexPage(output, templateText, metadata, html)
     }
 
-    static boolean isVideoUrl(String url) {
-        if (!url) {
-            return false
-        }
-        url.contains("youtube")
-    }
-
-   static boolean isGuideUrl(String url) {
-        if (!url) {
-            return false
-        }
-        url.startsWith("https://guides.micronaut.io")
-    }
-    
-    static boolean isLinkToVideo(HtmlPost post) {
-        isVideoUrl(post.metadata['external_url'] as String) || isVideoUrl(post.metadata['video'] as String)
-    }
-    
-    static boolean isLinkToGuide(HtmlPost post) {
-        isGuideUrl(post.metadata['external_url'] as String)
-    }
-
     static String htmlForPost(int count, HtmlPost post, boolean archive) {
-        String postTitle = post.metadata['title']
-        String externalUrl = post.metadata["external_url"] ?: post.metadata["speakerdeck"]
-        if (isLinkToVideo(post)) {
-            postTitle = "📼 " + postTitle
-        }
-        if (isLinkToGuide(post)) {
-            postTitle = "📖 " + postTitle
-        }
-        String postLink = "${post.metadata['url']}/blog/${post.path}"
-        String header = "<h1><a ${count++ == 0 ? 'accesskey=\"1\"': ''} href=\"${postLink}\">${postTitle}</a></h1>"
-        if (archive) {
-            String summary = MarkdownUtil.htmlFromMarkdown(post.metadata['summary'] as String)
-            return "<article class='post'>${header}<p>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))} - ${summary}</p></article>"
-        }
-        if (externalUrl) {
-            header = "<h1><a href=\"${externalUrl}\">${postTitle}</a><a class='anchorentity' href=\"${postLink}\">&#9875;</a></h1>"
-        }
-
-
-        String html = removeGoToLinkedSite(indexPostHtml(post), externalUrl as String)
-        "<article class='post'>${header}<span class='date'>${YYYY_MM_DD_FORMAT.format(JSON_FEED_FORMAT.parse(post.metadata['date_published'] as String))}</span><br/>${html}</article>"
+        String html = archive
+                ? MarkdownUtil.htmlFromMarkdown(post.metadata['summary'] as String)
+                : indexPostHtml(post)
+        html = removeGoToLinkedSite(html, post.externalUrl)
+        return renderPost(true, post.title, post.link, post.externalUrl, post.metadata['date_published'], post.metadata['author_name'] as String, "",  html)
     }
 
     static String indexPostHtml(HtmlPost post) {
