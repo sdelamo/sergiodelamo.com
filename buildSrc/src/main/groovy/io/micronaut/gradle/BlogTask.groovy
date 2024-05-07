@@ -283,6 +283,7 @@ class BlogTask extends DefaultTask {
                 }
             }
 
+            html = html.replace("<img src=", "<img class=\"img-fluid\" src=")
             mkp.yieldUnescaped(html)
 
 
