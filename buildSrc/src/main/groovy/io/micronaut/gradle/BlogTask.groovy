@@ -284,6 +284,7 @@ class BlogTask extends DefaultTask {
             }
 
             html = html.replace("<img src=", "<img class=\"img-fluid\" src=")
+            html = html.replace("<table>", "<table class=\"table table-striped\">")
             mkp.yieldUnescaped(html)
 
 
