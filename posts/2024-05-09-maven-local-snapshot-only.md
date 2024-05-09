@@ -14,6 +14,11 @@ It is easy to do it with the Gradle Kotlin DSL.
 ```
 repositories {
     mavenCentral()
+    mavenLocal {
+        mavenContent {
+            snapshotsOnly()
+        }
+    }
     maven {
         setUrl("https://s01.oss.sonatype.org/content/repositories/snapshots/")
         mavenContent {
