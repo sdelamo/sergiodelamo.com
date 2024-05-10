@@ -14,7 +14,7 @@ I delivered a 12-hour online course of [Micronaut Essentails](https://micronaut.
 
 I did a lot of live coding and interactions with the attendees. We wrote an application that used Micronaut Security, Micronaut Data JDBC, Micronaut Serialization, Problem+JSON, Micronaut Views, Open API, and Micronaut Reactor. 
 
-We will teach Micronaut Essentials again next year. I am looking forward to seeing you on the course. 
+We will teach [Micronaut Essentials](https://micronaut.io/professional-training/micronaut-essentials/9) again next year. I am looking forward to seeing you on the course. 
 
 
 
