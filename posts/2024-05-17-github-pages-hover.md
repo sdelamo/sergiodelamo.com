@@ -2,7 +2,7 @@
 title: Hosting a static website in GitHub Pages and Hover
 summary: In this blog post, I show you how to host a website in [GitHub Pages](https://pages.github.com) and manage the domain with [Hover](https://www.hover.com)
 date_published: 2024-05-17T10:12:17+01:00
-  keywords:github,github-actions,ghpages,hover,static-website,boostrap
+  keywords:github,github-actions,github-pages,hover,static-website,boostrap
 ---
 
 # [%title]
