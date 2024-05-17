@@ -79,9 +79,11 @@ I use [Hover](https://www.hover.com) as a domain registrar. I use the following 
 | CNAME | www | ajedrezcallejeroguadalajara.github.io | 15 Minutes  | 
 
 
-## Conclusion
+## Cost
+The total cost for the association is 18 USD per year - the cost of the domain.
 
-I hope this post shows you how easy is to publish a website with Hover and GitHub Pages. The total cost for the association is 18 USD per year - the cost of the domain.
+## Summary
+I hope this post shows you how easy is to host a website in [GitHub Pages](https://pages.github.com) and manage the domain with [Hover](https://www.hover.com). 
 
 If you are in the Guadalajara (Spain) area, I hope to play chess against you soon. You can find the meetup information at [ajedrezcallejeroguadalajara.com](https://ajedrezcallejeroguadalajara.com).
 
