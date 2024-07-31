@@ -9,7 +9,7 @@ keywords: career
 
 [%summary]
 
-It has been seven and a half years and a half. Thanks to OCI, I started a career in Open-Source, first in [Grails](https://grails.org) and later in [Micronaut](https://micronaut.io).
+It has been seven and a half years. Thanks to OCI, I started a career in Open-Source, first in [Grails](https://grails.org) and later in [Micronaut](https://micronaut.io).
 
 **Remote and flexible**. Many years of remote work. I remember the pandemic. I was at home with two kids - 4 and 1 years old. My wife was the only one going out. She kept working in a hospital, buying food, etc. I kept working during those months thanks to my wife and OCI's flexibility.
 
