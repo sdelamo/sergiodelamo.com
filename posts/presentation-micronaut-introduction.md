@@ -30,3 +30,7 @@ Sergio del Amo is a Micronaut core committer,  Developer Advocate for the Micron
 # Elevator Pitch
 
 This talk demonstrates how easy it is to get started with the [Micronaut Framework](https://micronaut.io) through live-coding examples. Attendees will discover the most exciting features of the Framework and leave with the fundamentals necessary to begin building Micronaut applications.
+
+# Talk Outline
+
+I deliver the talk with some slides introducing the framework, followed by a demo where I create a Micronaut Application and talk about some of the framework features; I leave some time at the end for Q&A.
