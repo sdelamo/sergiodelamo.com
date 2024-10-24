@@ -409,7 +409,7 @@ class BlogTask extends DefaultTask {
             }
             if (metadata.containsKey('image')) {
                 if (metadata.containsKey('external_url')) {
-                    markdown = markdown + "[![](${metadata['image']})](${metadata['external_url']})\n\n"
+                    markdown = markdown + "\n\n[![](${metadata['image']})](${metadata['external_url']})\n\n"
                 } else {
             markdown = markdown + "![](${metadata['image']})\n\n"        
                 }
