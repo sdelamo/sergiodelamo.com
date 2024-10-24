@@ -7,7 +7,13 @@ keywords:presentation,micronaut
 
 # [%title]
 
-I did a similar presentation at [GeeCON 2022](https://www.youtube.com/watch?v=ibf8T1hoXMM&list=PL9UkPxJVi4FT3gitylnECKe27Aar1c_Er), [JCON-ONLINE 2022](https://www.youtube.com/watch?v=-d-sOaGpg34&t=18s), [Bucharest JUG](https://sergiodelamo.com/blog/micronaut-webinar-bucharest-2021-09-16.html), [Merida JUG (Spanish talk)](https://sergiodelamo.com/blog/jugmerida-intro-to-micronaut.html), and [Brighton Kotlin User Group](https://www.youtube.com/watch?v=vgVXRsIC3E8).
+I did a similar presentation at
+[JDevSummit 2024](https://www.youtube.com/watch?v=AR8AGGbkMcg),
+[GeeCON 2022](https://www.youtube.com/watch?v=ibf8T1hoXMM&list=PL9UkPxJVi4FT3gitylnECKe27Aar1c_Er), 
+[JCON-ONLINE 2022](https://www.youtube.com/watch?v=-d-sOaGpg34&t=18s), 
+[Bucharest JUG](https://sergiodelamo.com/blog/micronaut-webinar-bucharest-2021-09-16.html), 
+[Merida JUG (Spanish talk)](https://sergiodelamo.com/blog/jugmerida-intro-to-micronaut.html), and 
+[Brighton Kotlin User Group](https://www.youtube.com/watch?v=vgVXRsIC3E8).
 
 ---
 In this session, [Sergio del Amo](https://sergiodelamo.com) introduces the [Micronaut® framework](https://micronaut.io) and demonstrates how the Framework's unique compile-time approach enables the development of ultra-lightweight Java applications.

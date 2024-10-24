@@ -7,6 +7,10 @@ keywords:presentation,micronaut,turbo
 
 # [%title]
 
+I did a similar presentation at
+[JCON World 2023](/blog/jconworld-2023-micronaut-eclipsestore.html), and
+[JCON 2023](/blog/jcon-2023-micronaut-and-microstream.html).
+
 [Sergio del Amo](https://sergiodelamo.com) introduces [Microstream integration](https://micronaut-projects.github.io/micronaut-microstream/snapshot/guide/) with the Micronaut® Framework in this session.
 
 [Microstream](https://microstream.one) is an Object-Graph Persistence solution that allows ultra-fast in-memory data processing with pure Java.
