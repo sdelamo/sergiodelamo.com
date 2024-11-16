@@ -134,3 +134,8 @@ I’ve presented at conferences such as JCON, JBCNConf, ApacheCon, GeeCon, GR8Co
 #### [Introduction to Micronaut Framework](https://www.youtube.com/watch?v=qsaI1xzUdLw) - Merida (Mexico) Java User Group
 
 [![Merida JUG talk screenshot](https://images.sergiodelamo.com/jug-merida.jpg)](https://www.youtube.com/watch?v=qsaI1xzUdLw)
+
+## Español
+
+Soy un programador Open-Source del ecosistema Java.  Fui committer de Grails y ahora soy  committer de  [Micronaut](https://micronaut.io).  He sido un committer de  Micronaut desde su creación y escribo/reviso todas las [guías de Micronaut](https://guides.micronaut.io). Soy un miembro del Board Of Directors de la  [Fundación de Micronaut](https://micronaut.io/foundation/) y del [GraalVM Advisory Board](https://www.graalvm.org/community/advisory-board/).
+>>>>>>> 4039a83 (kamal talks)
