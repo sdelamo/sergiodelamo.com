@@ -9,10 +9,11 @@ date_published: 2020-11-20T10:24:00+01:00
 Email: <a href="mailto:sergio.delamo@softamo.com">sergio.delamo@softamo.com</a>
 
 Twitter: [@sdelamo](https://twitter.com/sdelamo)
+Twitter: [@sdelamo](https://twitter.com/sdelamo)
 
 Mastodon [jvm.social/@sdelamo](https://jvm.social/@sdelamo)
 
-Github: [@sdelamo](https://github.com/sdelamo)
+Bsky: [@sdelamo.bsky.social](https://bsky.app/profile/sdelamo.bsky.social)
 
 [StackOverflow](https://stackoverflow.com/users/2138/sergio-del-amo)
 
