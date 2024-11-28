@@ -7,9 +7,7 @@ keywords:presentation
 
 # [%title]
 
-[%summary]
-
-In this talk, you will learn how Micronaut eases the development of a Software as a Service application (Saas) with the following capabilities: 
+In this talk, you will learn how [Micronaut](https://micronaut.io) eases the development of a Software as a Service application (Saas) with the following capabilities: 
 
 - Micronaut Data JDBC Multi-Tenancy with Column Discriminator. 
 - [GraalVM Native Image](https://www.graalvm.org/latest/reference-manual/native-image/) Deployment. 
@@ -23,5 +21,8 @@ You will see an open-source application and how seamlessly Micronaut integrates 
  
 After this talk, you will understand what the Micronaut framework offers to simplify the development of your next Saas application.
  
+## Elevator Pitch
+
+[%summary]
 
  
