@@ -25,6 +25,12 @@ I do [online webinars and short videos on the Micronaut Framework Youtube channe
 
 I’ve presented at conferences such as JCON, JBCNConf, ApacheCon, GeeCon, GR8Conf, Greach, and GGX, and in many user groups such as Manchester JUG, Merida MX JUG, Madrid GUG, Barcelona JUG, London GUG.
 
+## 2025
+
+### April 2025
+
+#### [Despliegues Docker con Kamal](https://koliseo.com/commit/commit-conf-2025/agenda/P-qxG9TF3OPiQ9aPNt7hvK?selected=MzuBfHOfdCz3LqxgxYvI) - Commit Conf 2025
+
 ## 2024
 
 ### November 2024
