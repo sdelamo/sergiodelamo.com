@@ -19,3 +19,7 @@ You will learn how to test your implementation using the [MCP Inspector tool](ht
 ## Target Audience
 
 Developers interested in creating an MCP (Model Context Protocol) Server in Java.
+
+## Elevator Pitch
+
+MCP allows you to expose reusable tools and resources to build agentic microservices. Doing this takes us beyond basic LLM chatbots to dynamic, problem-solving systems that deliver real value in real professional settings. In this session, you will learn how to build your first MCP Server.
