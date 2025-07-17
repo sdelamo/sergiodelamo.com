@@ -15,6 +15,10 @@ During this talk, I will show you how to deploy a Micronaut application programm
 
 If you attend this talk, you will discover what Kamal is, what it offers, and how to deploy fast into production with Docker.
 
- 
+## Elevator Pitch
+
+Docker deployments sound good, but for most companies, deploying with Kubernetes is too complex. Kamal offers a seamless deployment experience for any kind of application that can be containerized.
+
+This presentation will show developers another way to deploy.
 
  
