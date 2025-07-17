@@ -6,7 +6,7 @@ title:  Speaking Credentials
 
 ## Youtube 
 
-Since 2015, I have been regularly speaking at conferences and user groups. Mostly about Micronaut and Grails frameworks.  
+Since 2015, I have been regularly speaking at conferences and user groups. Mostly about Groovy, Java, Micronaut and Grails frameworks.  
 
 I do [online webinars and short videos on the Micronaut Framework Youtube channel](https://www.youtube.com/playlist?list=PLzR4N8lGQvWgMfFNsYrmFj_gsoJcnEH98).
 
