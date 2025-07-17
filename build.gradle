@@ -13,7 +13,7 @@ website {
     template = file("templates/document.html")
     output = project.buildDir
     title = 'Sergio del Amo Blog'
-    url = System.getenv('GITHUB_RUN_ID') != null ? 'https://sergiodelamo.com' : 'http://localhost/' + rootProject.name
+    url = System.getenv('GITHUB_RUN_ID') != null ? 'https://sergiodelamo.com' : 'http://localhost:8000'
     summary = 'Personal blog of Sergio del Amo'
     keywords = ['gradle', 'spock', 'geb', 'grails', 'groovy','java', 'wordpress', 'woocommerce', 'micronaut']
     robots = 'index, follow'

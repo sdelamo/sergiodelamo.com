@@ -16,6 +16,10 @@ My name is Sergio del Amo. I am proactive developer. I like to consider myself a
 
 <hr class="mt-4 mb-4"/>
 
+## Job
+
+I work as a Principal Member of Technical Staff at Oracle.
+
 ## Open Source Contributor
 
 I am the [Micronaut](https://micronaut.io) Development Lead Engineer at the [Micronaut Foundation](https://micronaut.io/foundation/). I am a member of the Micronaut Foundation Board Of Directors and the Micronaut Technology Advisory Board. Additionally, I am a member of the [GraalVM Advisory Board](https://www.graalvm.org/community/advisory-board/). 
