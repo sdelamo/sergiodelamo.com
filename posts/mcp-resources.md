@@ -9,7 +9,7 @@ keywords:mcp,ai
 
 [%summary]
 
-# [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 
+## [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 
 
 ## Videos
 [Why MCP really is a big deal with Tim Berglund](https://www.youtube.com/watch?v=FLpS7OfD5-s) 
