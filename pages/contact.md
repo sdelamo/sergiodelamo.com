@@ -8,8 +8,9 @@ date_published: 2020-11-20T10:24:00+01:00
 
 Email: <a href="mailto:sergio.delamo@softamo.com">sergio.delamo@softamo.com</a>
 
-Twitter: [@sdelamo](https://twitter.com/sdelamo)
-Twitter: [@sdelamo](https://twitter.com/sdelamo)
+X: [@sdelamo](https://x.com/sdelamo)
+
+[Youtube](https://www.youtube.com/channel/UC-ZOt0P3l97wtL_fNbi9DvQ)
 
 Mastodon [jvm.social/@sdelamo](https://jvm.social/@sdelamo)
 

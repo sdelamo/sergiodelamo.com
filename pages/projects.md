@@ -9,6 +9,9 @@ date_modified: 2021-09-23T06:19:05+01:00
 
 # Projects
 
+## 🎥 Youtube Channel
+
+I have a [Youtube Channel](https://www.youtube.com/channel/UC-ZOt0P3l97wtL_fNbi9DvQ) with similar content to this website. 
 
 ## ✏️ Writing
 
