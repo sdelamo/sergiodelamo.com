@@ -12,7 +12,7 @@ X: [@sdelamo](https://x.com/sdelamo)
 
 [Youtube](https://www.youtube.com/channel/UC-ZOt0P3l97wtL_fNbi9DvQ)
 
-Mastodon [jvm.social/@sdelamo](https://jvm.social/@sdelamo)
+Mastodon: [@sdelamo@foojay.social](https://foojay.social/@sdelamo)
 
 Bsky: [@sdelamo.bsky.social](https://bsky.app/profile/sdelamo.bsky.social)
 
