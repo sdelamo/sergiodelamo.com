@@ -11,6 +11,11 @@ keywords:mcp,ai
 
 ## [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 
 
+# Courses
+
+## Anthropic Academy
+- [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol)
+
 ## Videos
 [Why MCP really is a big deal with Tim Berglund](https://www.youtube.com/watch?v=FLpS7OfD5-s) 
 
