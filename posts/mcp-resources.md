@@ -9,12 +9,18 @@ keywords:mcp,ai
 
 [%summary]
 
+> The Model Context Protocol (MCP) was [open sourced by Anthropic](https://www.anthropic.com/news/model-context-protocol) in November 2024 to provide users and developers with an easy way to extend the capabilities of AI-powered apps by integrating them with data sources and applications.
+
 ## [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 
 
 # Courses
 
 ## Anthropic Academy
 - [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol)
+
+## Courses
+
+- [Model Context Protocol with Agentic AI](https://www.linkedin.com/learning/model-context-protocol-mcp-hands-on-with-agentic-ai/)
 
 ## Videos
 [Why MCP really is a big deal with Tim Berglund](https://www.youtube.com/watch?v=FLpS7OfD5-s) 
