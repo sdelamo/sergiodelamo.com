@@ -26,7 +26,20 @@ keywords:mcp,ai
 [Why MCP really is a big deal with Tim Berglund](https://www.youtube.com/watch?v=FLpS7OfD5-s) 
 
 
-[The official Java SDK for Model Context Protocol servers and clients. Maintained in collaboration with Spring AI](https://github.com/modelcontextprotocol/java-sdk)
+
+## MCP Java SDK
+
+- [The official Java SDK for Model Context Protocol servers and clients. Maintained in collaboration with Spring AI](https://github.com/modelcontextprotocol/java-sdk). I have contributed some code as well. 
 
 - [MCP Java Github Organization](https://github.com/mcp-java)
 - [Java MCP Server Configurator Generator](https://mcp-java.github.io)
+
+
+
+## Spring
+
+[Spring AI MCP](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-overview.html)
+
+
+
+[MCP Server Spring Boot Starter Documentation](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html)
