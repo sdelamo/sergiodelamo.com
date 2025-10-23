@@ -2,7 +2,7 @@
 title: Build an MCP Server with Java
 summary: This session shows how to build an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server in Java.
 date_published: 2025-07-15T08:06:47+01:00
-keywords: presentation
+keywords:mcp,presentation
 ---
 
 # [%title]
@@ -18,7 +18,7 @@ You will learn how to test your implementation using the [MCP Inspector tool](ht
 
 ## Target Audience
 
-Developers interested in creating an MCP (Model Context Protocol) server in Java.
+Developers interested in creating an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server in Java.
 
 ## Elevator Pitch
 
