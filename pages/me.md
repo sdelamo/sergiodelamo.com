@@ -22,11 +22,12 @@ I work as a Principal Member of Technical Staff at Oracle.
 
 ## Open Source Contributor
 
-I am a member of the Micronaut Foundation Board Of Directors and the Micronaut Technology Advisory Board. Additionally, I am a member of the [GraalVM Advisory Board](https://www.graalvm.org/community/advisory-board/). 
+I have been a core developer of the [Micronaut Framework](https://micronaut.io) since its inception. I am a member of the Micronaut Foundation Board of Directors.
+I write/review most of the [Micronaut Guides](https://guides.micronaut.io). I contribute throughout the framework but with focus in the [MCP](https://micronaut-projects.github.io/micronaut-mcp/latest/guide/index.html), [Langchain4j](https://micronaut-projects.github.io/micronaut-langchain4j/latest/guide/index.html), [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), [Email](https://micronaut-projects.github.io/micronaut-email/latest/guide/index.html), Micronaut's modules.
 
-I have been a core developer of the Micronaut Framework since its inception. I write/review most of the [Micronaut Guides](https://guides.micronaut.io). I work a lot in the [MCP](https://micronaut-projects.github.io/micronaut-mcp/latest/guide/index.html), [Langchain4j](https://micronaut-projects.github.io/micronaut-langchain4j/latest/guide/index.html), [Security](https://micronaut-projects.github.io/micronaut-security/latest/guide/index.html), [AWS](https://micronaut-projects.github.io/micronaut-aws/latest/guide/index.html), [Views](https://micronaut-projects.github.io/micronaut-views/latest/guide/index.html), [RSS](https://micronaut-projects.github.io/micronaut-rss/latest/guide/index.html), [Problem+JSON](https://micronaut-projects.github.io/micronaut-problem-json/latest/guide/index.html), [Email](https://micronaut-projects.github.io/micronaut-email/latest/guide/index.html), Micronaut's modules.
- 
-Moreover, I have worked a lot with [Grails Framework](https://grails.org). I have contributed to the framework core code, plugins, and guides. 
+I am a committer of [Apache Groovy](http://groovy-lang.org), contributing a little bit to [Geb](https://groovy.apache.org/geb/).
+
+In the past, I contributed to [Apache Grails Framework](https://grails.apache.org) - core code, plugins, and guides. 
 
 <hr class="mt-4 mb-4"/>
 
