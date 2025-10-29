@@ -2,7 +2,7 @@
 title: Micronaut Fundamentals
 summary: During this year, I recorded Micronaut Fundamentals, a video course available for free on [Oracle MyLearn](https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/) with an OCI Free Learning Subscription.
 date_published: 2025-10-29T14:46:22+01:00
-  keywords:micronaut
+keywords: micronaut,video,course
 external_url: https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/
 ---
 
