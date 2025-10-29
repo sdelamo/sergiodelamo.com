@@ -37,3 +37,5 @@ It is a 7-hour and 37-minute course covering the following topics:
 - Packaging and distribution
 - GraalVM Native Image
 - Graal Development Kit for Micronaut
+
+Announcement in [Oracle Blog](https://blogs.oracle.com/java/post/micronaut-fundamentals). 
