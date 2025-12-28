@@ -23,3 +23,15 @@ Developers interested in creating an [MCP (Model Context Protocol)](https://mode
 ## Elevator Pitch
 
 MCP allows you to expose reusable tools and resources to build agentic microservices. Doing this takes us beyond basic LLM chatbots to dynamic, problem-solving systems that deliver real value in real professional settings. In this session, you will learn how to build your first MCP server.
+
+
+## 🇪🇸Construye un servidor MCP con Java
+
+Esta sesión muestra cómo construir un servidor [MCP (Model Context Protocol)](https://modelcontextprotocol.io) en Java.
+
+Primero discutimos cómo construir un servidor MCP con Java sin ningún framework, y luego comparamos lo que ofrecen los frameworks
+([Spring Boot](https://spring.io/projects/spring-boot), [Micronaut](https://micronaut.io) y [Quarkus](https://quarkus.io)).
+
+Implementaremos un servidor MCP con cada framework. El servidor MCP expondrá herramientas personalizadas a las que se puede acceder mediante clientes MCP.
+
+Aprenderás cómo probar tu implementación usando la [herramienta MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) y cómo conectarte a tu servidor MCP con [Claude](https://www.anthropic.com/claude) como cliente.
