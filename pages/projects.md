@@ -9,9 +9,11 @@ date_modified: 2021-09-23T06:19:05+01:00
 
 # Projects
 
-## 🎥 Youtube Channel
+## 🎥 Video
 
-I have a [Youtube Channel](https://www.youtube.com/channel/UC-ZOt0P3l97wtL_fNbi9DvQ) with similar content to this website. 
+I have a [Youtube Channel](https://www.youtube.com/channel/UC-ZOt0P3l97wtL_fNbi9DvQ) with similar content to this website.
+
+I created a Micronaut Fundamentals, a video course available for free on [Oracle MyLearn](https://mylearn.oracle.com/ou/course/micronaut-fundamentals/151938/) with an OCI Free Learning Subscription.
 
 ## ✏️ Writing
 
