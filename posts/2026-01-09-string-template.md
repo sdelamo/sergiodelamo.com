@@ -13,7 +13,9 @@ While reading [Spring AI in Action](https://www.manning.com/books/spring-ai-in-a
 > StringTemplate is a Java template engine for generating source code, web pages, emails, or any other formatted text output. 
 > StringTemplate is particularly good at code generators, multiple site skins, and internationalization / localization. StringTemplate also powers ANTLR.
 
-- [Website](https://www.stringtemplate.org)  
+- [License BSD](https://es.wikipedia.org/wiki/Licencia_BSD)
+- [Website](https://www.stringtemplate.org)
+- [Maven Central Repository](https://central.sonatype.com/artifact/org.antlr/stringtemplate/)
 - [GitHub Repository](https://github.com/antlr/stringtemplate4)
 - [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/8041-stringtemplate-v4)  
 
