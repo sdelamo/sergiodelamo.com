@@ -10,8 +10,9 @@ external_url: https://www.youtube.com/watch?v=93fbmBLhJB8
 
 [%summary]
 
-I updated my MCP demos in the [GitHub Repository](https://github.com/sdelamo/devoxxbe-2025-mcp-server).
+I updated my MCP demos in the [GitHub Repository](https://github.com/sdelamo/devoxxbe-2025-mcp-server) and the [Video]([%external_url]) is uploaded in the Madrid JUG Youtube channel.
+
+![Madrid JUG Java MCP Server Meetup](https://images.sergiodelamo.com/2026-01-13-madrid-jug-mcp-server.jpg)
 
 [![](https://images.sergiodelamo.com/2026-01-13-madrid-jug-meetup.png)](https://secure.meetupstatic.com/photos/event/8/0/1/7/highres_532052791.webp?w=1080)
 
-![Madrid JUG Java MCP Server Meetup](https://images.sergiodelamo.com/2026-01-13-madrid-jug-mcp-server.jpg)
