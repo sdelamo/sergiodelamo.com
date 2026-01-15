@@ -25,7 +25,21 @@ I do [online webinars and short videos on the Micronaut Framework Youtube channe
 
 I’ve presented at conferences such as JCON, JBCNConf, ApacheCon, GeeCon, GR8Conf, Greach, and GGX, and in many user groups such as Manchester JUG, Merida MX JUG, Madrid GUG, Barcelona JUG, London GUG.
 
+## 2026
+
+### January 2026
+
+#### [Build an MCP Server with Java](https://sergiodelamo.com/blog/2026-01-13-madrid-jupg-java-mcp.html) - Madrid JUG/GUG
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/93fbmBLhJB8?si=lSQzHdN0Gc5FavEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 2025
+
+### October 2025
+
+#### [Build an MCP Server with Java](https://www.youtube.com/watch?v=Ne9CGoHwACY) - Devoxx Belgium 2025
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne9CGoHwACY?si=GjwQXRyLxfVV57pZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### April 2025
 
