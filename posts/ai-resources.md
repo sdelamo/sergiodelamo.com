@@ -30,3 +30,7 @@ date_published: 2026-06-30T16:40:09+01:00
 ### Local models
 
 [Gemma4](https://ollama.com/library/gemma4)
+
+## Voice To Text
+
+[Wisprflow - Voice to text](https://wisprflow.ai)
