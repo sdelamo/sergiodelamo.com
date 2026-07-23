@@ -4,6 +4,9 @@ summary:
 keywords:ai
 date_published: 2026-06-30T16:40:09+01:00
 ---
+# [%title]
+
+[%summary]
 
 ## Gateways
 
