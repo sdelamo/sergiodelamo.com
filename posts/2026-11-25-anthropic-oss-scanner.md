@@ -11,7 +11,7 @@ keywords: security,open-source,ai,java,micronaut,grails
 
 I maintain Micronaut, and I commit to Grails. The expensive part of a security report is deciding whether the finding is a bug, a duplicate, or the framework doing what we documented.
 
-[OSS Scanner](https://red.anthropic.com/oss-scanner) scans accepted projects periodically with Anthropic's strongest models, at no cost, and the reports go out before a person has reviewed them. The slower path is still [coordinated vulnerability disclosure](https://red.anthropic.com/2026/cvd/): a human reviews the finding first. By October 2026 they say they had given human review to over 6,000 reports. The [launch post](https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source) of 8 October 2026 describes the six months before that: more than 29,000 candidate vulnerabilities, about 6,000 of them triaged by hand, and nearly 5,000 unvalidated reports sent to maintainers who asked for the full set. The Frontier Red Team runs it with Safeguards Research, informed by their Claude work on [Project Glasswing](https://www.anthropic.com/glasswing).
+[OSS Scanner](https://red.anthropic.com/oss-scanner) scans accepted projects periodically with Anthropic's strongest models, at no cost, and the reports go out before a person has reviewed them. The slower path is still [coordinated vulnerability disclosure](https://red.anthropic.com/2026/cvd/): a human reviews the finding first. By October 2026 they say they had given human review to over 6,000 reports. The [launch post](https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source) of 8 October 2026 describes the six months before that: more than 29,000 candidate vulnerabilities, about 6,000 of them triaged by hand, and nearly 5,000 unvalidated reports sent to maintainers who asked for the full set. The Frontier Red Team runs it with Safeguards Research, informed by their use of Claude to find vulnerabilities during [Project Glasswing](https://www.anthropic.com/glasswing).
 
 ## What you receive
 
@@ -37,7 +37,7 @@ On an early version, the penetration testers who review Anthropic's CVD findings
 
 ## Limits
 
-A report may miss bugs, describe a non-bug, mis-rank severity, and propose a patch that breaks the build. Review it before you change code. Share it only with the project's maintainers, and keep unpatched details confidential until the issue is fixed or disclosed. Anthropic can refuse a project or stop the service, and there is no fee. A credit line is optional:
+A report may miss bugs, describe a non-bug, mis-rank severity, and propose a patch that breaks the build. Review it before you change code. Share it only with the project's maintainers, and keep unpatched details confidential until the issue is fixed or disclosed. Anthropic can refuse a project or stop the service, and there is no fee. A credit line is optional, in the form they show:
 
 > Discovered by Anthropic's OSS Scanner, as vulnerability `ANT-2026-ABCD1234`.
 
